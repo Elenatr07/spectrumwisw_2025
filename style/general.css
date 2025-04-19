@@ -194,12 +194,12 @@ body {
 .header_logo{
     background-image: var(--image-logo-light);
     background-repeat: no-repeat;
-    width: 400px;
+    min-width: 230px;
     background-position: left top;
 }
 .header_block{
     display: flex;
-    margin: 0 auto;
+    margin: 35px auto 0 auto;
     width: 100%;
     justify-content: center;
 }
@@ -277,6 +277,9 @@ body {
 .contact_in_header{
     display: none;
 }
+.lang_in_header {
+    display: block;
+}
 
 
 
@@ -288,7 +291,7 @@ body {
         display: none;
     }
     .nav {
-        min-height: 100px;
+        min-height: 25px;
         float: right;
         max-width: 1167px;
         width: 100%;
@@ -307,9 +310,7 @@ body {
         flex-direction: row;
         width: 100%;
     }
-    .lang_in_header {
-        display: none;
-    }
+   
     .contact_in_menu{
         display: none;
     }
