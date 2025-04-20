@@ -42,7 +42,9 @@ body {
     /*--bg-light-grey:#F9F9FC; /*цвет фона для белого стиля*/
     --image-logo-light: url(../img/logo_light.svg);
     --lang-row-down: url(../img/vector_down.svg);
+    --lang-row-up: url(../img/vector_up.svg);
     --toggle-back:rgba(249, 249, 252, 1);
+ 
 
    /* --image-news1: url(../img/Group_40073.svg);
     --image-news4: url(../img/Group_40093.svg);
@@ -72,6 +74,7 @@ body {
    /* --text-copyright: rgba(255, 255, 255, 0.5);*/
     --image-logo-light: url(../img/logo_dark.svg); 
     --lang-row-down: url(../img/vector_down_for_dark.svg);
+    --lang-row-up: url(../img/vector_up_dark.svg);
     --toggle-back:rgba(237, 237, 239, 1);
 
    /* --image-news1: url(../img/Group_40072.svg);
@@ -243,6 +246,7 @@ body {
     margin: 35px auto 0 auto;
     width: 100%;
     justify-content: center;
+    
 }
 .up_block{
     width: 100%;
@@ -270,14 +274,18 @@ body {
  
  
  
- #dropbtn::after {
-    background: var(--lang-row-down) no-repeat scroll center center;
-    content: "";
-    height: 4px;
-    top: 15px;
-    width: 10px;
-    padding-left: 47px;
-    
+ .row_down {
+    background: var(--lang-row-down) no-repeat left center;
+    padding-left: 0;
+    padding-right: 40px;
+  
+ }
+ .row_up {
+    background: var(--lang-row-up) no-repeat left center;
+    padding-left: 0;
+    padding-right: 40px;
+    display: none;
+  
  }
  
 
@@ -296,18 +304,18 @@ body {
  
 
  
- .dropdown:hover #dropbtn::after {
-    background: var(--lang-row-up) no-repeat scroll center center;
-}
+
 .contact_in_menu{
     display: block;
     width: 100%;
 }
 .contact_in_header{
     display: none;
+    
 }
 .lang_in_header {
     display: block;
+    cursor: pointer;
 }
 .link,
 #dropbtn {
@@ -320,7 +328,81 @@ body {
     margin: 0 20px;
 
 }
+#contact_in_header{
+    position: relative;
+    border: 1px solid transparent;
+    width: 151px;
+    height: 36px;
+    color: var(--text-white);
+    border-radius: 45px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    background: var(--bg-dark) /* #0C0C2D*/;
+    vertical-align: middle;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 6px 13px;
+    
 
+
+}
+#contact_in_header::before{
+    background: linear-gradient(92.11deg, #F73E94 5.48%, #97238A 37.96%, #5456AB 70.44%, #22DCD9 102.92%);
+    border-radius: 34px;
+    z-index: -2;
+    position: absolute;
+    content: "";
+    width: 153px;
+    height: 38px;
+    right: -2px;
+    top: -2px;
+
+}
+.dropbtn{
+    display: flex;
+    flex-direction: row;
+}
+.main_info_wrapper {
+    width: 100%;
+    margin: 125px auto 0 auto;
+    max-width: 2560px;
+    text-align: center;
+}
+.main_header {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 47px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: var(--text-white);
+
+}
+.main_header_p {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(99.94deg, #F73E94 0%, #97238A 33.33%, #5456AB 66.67%, #22DCD9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	color: transparent;
+    width: 251px;
+    margin: 47px auto 91px auto;
+
+}
+.main_img {
+    background: url(../img/circle_light.svg);
+    background-repeat: no-repeat;
+    height: 425px;
+    background-position: center center;
+}
 
 
 
@@ -331,7 +413,7 @@ body {
         display: none;
     }
     .nav {
-        min-height: 30px;
+        min-height: 42px;
         height: 100%;
         float: right;
         max-width: 1167px;
@@ -340,7 +422,7 @@ body {
         position: relative;
         z-index: 99999;
         display: flex;
-        padding: 4px 0;
+        padding: 4px 1px;
         justify-content: space-around;
     }
     .menu {
@@ -350,6 +432,7 @@ body {
         height: 100%;
         flex-direction: row;
         width: 100%;
+        margin: auto 0;
     }
    
     .contact_in_menu{
@@ -358,5 +441,7 @@ body {
     .contact_in_header{
         display: block;
         min-width: fit-content;
-    }
+        
+    };
+
 }
