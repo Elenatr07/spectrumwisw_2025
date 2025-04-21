@@ -5,11 +5,28 @@ var lang_default = $('#dropbtn').text('English');
     $('.toggle_dark_left').css('display', 'none');
     $('.toggle_light_right').css('display', 'block');
     $('.dropdown-content').css('display', 'none');
+ 
+  function scroling(){
+     let height = $(window).scrollTop();
+    let width = $(window).width();
+    const verticalScroll = window.scrollY; // Сколько прокручено по вертикали
+const horizontalScroll = window.scrollX; // Сколько прокручено по горизонтали
+    console.log("height", height)
+    console.log("width", width)
+  }
 
     
 $(document).ready(function() {
+    scroling();
+    
+
     $('#side-menu').on('click', function(){
-        $('#nav_shadov').addClass("shadow")
+        if( $('#nav_shadow').hasClass('shadow')) {
+            $('#nav_shadow').removeClass("shadow")
+        } else {
+           $('#nav_shadow').addClass("shadow")  
+        }
+       
     });
 
     $('#toggle').on('click', function(){
