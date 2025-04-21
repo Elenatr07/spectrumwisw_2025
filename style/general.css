@@ -17,8 +17,9 @@ body {
     margin: 0px;
     padding: 0px;
     width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
+  /*  height: 100vh;*/
+    overflow-x: hidden;*/
+  
 
     vertical-align: middle;
     background-color: var(--bg-dark);
@@ -438,15 +439,15 @@ body {
 
 }
 .second_block{
-    padding: 90px 9%;
+    padding: 90px 12%;
     
 }
 .img_block_items{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    max-width: 2560px;
+    margin: 60px auto;
 }
 .img_block_item{
     cursor: pointer;
@@ -489,11 +490,15 @@ body {
 #img1 {
     top: -63px;
     right: -194px;
+   
     
-    transform: translateX(-150%);
-    animation: ani 1s forwards;
 }
-@keyframes ani {
+
+.anime_img1 {
+    transform: translateX(-150%);
+    animation: ani1 1s forwards;
+}
+@keyframes ani1 {
     0% {transform: translateX(-150%);}
     100% {transform: translateY(0);}
   }
@@ -502,10 +507,29 @@ body {
     left: -170px;
 
 }
+.anime_img3 {
+    transform: translateX(50%);
+    animation: ani3 1s forwards;
+}
+@keyframes ani3 {
+    0% {transform: translateX(50%);}
+    100% {transform: translateY(0);}
+  }
+
+
 #img2 {
     top: 179px;
     right: -103px;
 }
+
+.anime_img2{
+    transform: translateX(150%);
+    animation: ani2 1s forwards;
+}
+@keyframes ani2 {
+    0% {transform: translateX(150%);}
+    100% {transform: translateY(0);}
+  }
 
 @media (min-width: 1000px)  {
     .hamb {

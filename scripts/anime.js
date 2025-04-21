@@ -4,6 +4,16 @@ function scroling (){
     let width = $(window).width()
    console.log("height", height)
     console.log("width", width)
+
+   if(height > 900) {
+    $('#img1').addClass('anime_img1');
+    $('#img1').removeAttr('hidden');
+    $('#img2').addClass('anime_img2');
+    $('#img2').removeAttr('hidden');
+    $('#img3').addClass('anime_img3');
+    $('#img3').removeAttr('hidden')
+    
+   }
     
     /*if((width <600)) {
         $('.vehicle_central_wrapper.commuter.premio img').attr("src", 'img/seat_map14_1.png' )
@@ -76,7 +86,13 @@ function scroling (){
 
 $(window).scroll(function(){
 	scroling();
-    console.log ('jjjj')
+    
 });
+$(document).ready(function(){
+    scroling();
+    
+})
+
+
 
 /* $('#img1').fadeIn(4000);*/

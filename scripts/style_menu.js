@@ -6,18 +6,12 @@ var lang_default = $('#dropbtn').text('English');
     $('.toggle_light_right').css('display', 'block');
     $('.dropdown-content').css('display', 'none');
  
-  function scroling(){
-     let height = $(window).scrollTop();
-    let width = $(window).width();
-    const verticalScroll = window.scrollY; // Сколько прокручено по вертикали
-const horizontalScroll = window.scrollX; // Сколько прокручено по горизонтали
-    console.log("height", height)
-    console.log("width", width)
-  }
+   
+ 
+   
+$(document).ready(function() {
 
     
-$(document).ready(function() {
-    scroling();
     
 
     $('#side-menu').on('click', function(){
