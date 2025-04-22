@@ -1,0 +1,169 @@
+/**
+  * SimpleAdaptiveSlider by itchief (https://github.com/itchief/ui-components/tree/master/simple-adaptive-slider)
+  * Copyright 2020 - 2022 Alexander Maltsev
+  * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+  */
+
+/* стили для корневого элемента слайдера */
+.itcss {
+  position: relative;
+  max-width: 1352px;;
+  width: 100%;
+  height: 100%;
+  margin: auto ;
+  z-index: 1;
+}
+
+/* стили для wrapper */
+.itcss__wrapper {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  width: 90%;
+    margin: 0 auto;
+
+}
+
+/* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+.itcss__items {
+  display: flex;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
+  will-change: transform;
+  position: relative;
+  margin-top: 60px;
+}
+
+/* стили для элементов */
+.itcss__item {
+  position: relative;
+  flex: 0 0 100%;
+  max-width: 100%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* кнопки Prev и Next */
+.itcss__btn {
+  position: absolute;
+  border: 1px solid transparent;
+  height: 58px;
+  color: var(--text-white);
+  border-radius: 45px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  background: var(--bg-dark) /* #0C0C2D*/;
+  vertical-align: middle;
+  cursor: pointer;
+  display: block;
+  padding: 6px 28px;
+  top: 40%;
+  margin: 0 2px;
+
+  
+}
+
+.itcss__btn_hide {
+  display: none;
+}
+
+.itcss__btn_next {
+  right: 0;
+}
+
+.itcss__btn::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.itcss__btn_prev::before {
+  background: linear-gradient(92.11deg, #F73E94 5.48%, #97238A 37.96%, #5456AB 70.44%, #22DCD9 102.92%);
+    border-radius: 34px;
+    z-index: -2;
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    right: -2px;
+    top: -2px;
+}
+
+.itcss__btn_next::before {
+  background: linear-gradient(92.11deg, #F73E94 5.48%, #97238A 37.96%, #5456AB 70.44%, #22DCD9 102.92%);
+    border-radius: 34px;
+    z-index: -2;
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    right: -2px;
+    top: -2px;
+}
+.itcss__btn_prev:hover::before,
+.itcss__btn_next:hover::before{
+  background: linear-gradient(75deg, #22DCD9 0%, #5456AB 33.3%, #97238A 66.67%, #F73E94 100% );
+}
+
+/* Индикаторы */
+.itcss__indicators {
+  display: flex;
+    justify-content: center;
+    margin: 0 15%;
+    padding-left: 0;
+    list-style: none;
+    user-select: none;
+    margin-top: 60px;
+}
+
+.itcss__indicator {
+  background:  hsla(218, 26%, 88%, 1);
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  margin: auto 6px;
+ 
+
+}
+
+.itcss__indicator_active {
+  background: hsla(332, 92%, 61%, 1);
+
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+	
+
+}
+
+/* класс для отключения transition */
+.transition-none {
+  transition: none;
+}
+
+.d-none {
+  display: none;
+}
+.itcss__items {
+  counter-reset: slide;
+}
+
+.itcss__item {
+  counter-increment: slide;
+}
+
+
+

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/simple-adaptive-slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Oswald:wght@200;500;700&display=swap"
@@ -97,8 +98,70 @@
                     <a class="button_view" href="#">Contact Us</a>
             </div>
             </div>
+            <div class="second_block_wrapper">
+                <div class="second_block">
+                    <h3 class="h3_block">Services</h3>
+                    <div class="itcss">
+                        <div class="itcss__wrapper">
+                            <div class="itcss__items">
+                                <div class="itcss__item">
+                                    <div class="slider_img"><img src="img/men1.svg" alt=""></div>
+                                    <div class="slider_info">
+                                        <h3 class="h3_slider_info">Web Design & Development</h3>
+                                        <h4 class="h4_slider_info">Create a website that wins the hearts of your clients</h4>
+                                        <p class="text_slider">We design unique, responsive, and functional websites to deliver an exceptional user experience and drive the growth of your business.</p>
+                                    
+                                    </div>
+                                </div>
+                                <div class="itcss__item">
+                                    <div class="slider_img"><img src="img/nib.svg" alt=""></div>
+                                    <div class="slider_info">
+                                        <h3 class="h3_slider_info">Graphic Design</h3>
+                                        <h4 class="h4_slider_info">Bring to life a design that will captivate and charm your clients</h4>
+                                        <p class="text_slider">Our designs are crafted to set your brand apart and grab attention. We develop a visual style that amplifies your marketing impact and elevates your brand's presence.</p>
+                                      
+                                    </div>
+                                </div>
+                                <div class="itcss__item">
+                                    <div class="slider_img"><img src="img/men2.svg" alt=""></div>
+                                    <div class="slider_info">
+                                        <h3 class="h3_slider_info">Content Marketing</h3>
+                                        <h4 class="h4_slider_info">Create content that captures and holds attention</h4>
+                                        <p class="text_slider">We develop strategically crafted content designed to captivate your target audience, boost engagement, and foster significant business growth.</p>
+                                      
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            
+                            
+                        </div>
+                        <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
+                        <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button>
+                        <div class="button_block in_slider">
+                            <a class="button_view" href="#">Find Out More</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
            
 
+        </div>
+        <div class="third_block_wrapper">
+            <div class="second_block">
+                <h3 class="h3_block">Ready Solutions</h3>
+                <div class="img_block_items">
+                    <a href="#" class="img_block_item"><img src="img/project_5.png" alt=""></a>
+                    <a href="#" class="img_block_item"><img src="img/project_6.png" alt=""></a>
+                    <a href="#" class="img_block_item"><img src="img/project_7.png" alt=""></a>
+                    <a href="#" class="img_block_item"><img src="img/project_8.png" alt=""></a>
+                </div>
+                <div class="button_block">
+                    <a class="button_view" href="#">View All</a>
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -110,6 +173,21 @@
     <script src="scripts/style_menu.js"></script>
     <script src="scripts/change_color.js"></script>
     <script src="scripts/anime.js"></script>
+    <script src="scripts/simple-adaptive-slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          // активация слайдера 
+          var slider = new ItcSimpleSlider('.itcss', {
+            loop: true,
+            autoplay: false,
+            swipe: true,
+            onInit(slider) {
+          //   console.log(slider);
+            }
+          });
+    
+        });
+      </script>
     
 
     
