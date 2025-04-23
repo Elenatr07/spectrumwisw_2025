@@ -7,7 +7,7 @@ var lang_default_footer = $('#drop_footer_lang').text('English');
     $('.toggle_light_right').css('display', 'block');
     $('.dropdown-content').css('display', 'none');
  
-   
+
  
    
 $(document).ready(function() {

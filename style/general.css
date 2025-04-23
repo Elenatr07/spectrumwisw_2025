@@ -366,6 +366,7 @@ body {
     display: block;
     padding: 6px 28px;
     margin: 0 25px;
+    min-width: 109px;
     
 
 
@@ -382,6 +383,7 @@ body {
     height: 38px;
     right: -2px;
     top: -2px;
+    
 
 }
 .button_view::before {
@@ -394,6 +396,7 @@ body {
     height: 38px;
     right: -2px;
     top: -2px;
+    min-width: 111px;
 }
 .button_block {
     display: block;
@@ -432,9 +435,9 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 	color: transparent;
-    width: 251px;
+    width: fit-content;
     margin: 47px auto 0 auto;
-    letter-spacing: 4px;
+    letter-spacing: 8px;
 
 }
 .main_img {
@@ -456,18 +459,20 @@ body {
     letter-spacing: 8px;
     text-align: center;
     color: var(--text-white);
+    margin-bottom: 60px;
 
 }
 .second_block{
-    padding: 90px 12%;
+    padding: 90px 195px;
     
 }
 .img_block_items{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 2560px;
-    margin: 60px auto;
+    max-width: 1920px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
 }
 .img_block_item{
     cursor: pointer;
@@ -752,6 +757,74 @@ body {
     margin: 0;
     width: fit-content;
 }
+.current_link {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    pointer-events: none;
+  cursor: default;
+}
+.filter_block_wrapper{
+    display: flex;
+    max-width: 1920px;
+    justify-content: space-around;
+    margin: 0 20% 115px 20%;
+}
+.filter_header{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 47px;
+    line-height: 100%;
+    color: var(--text-white);
+    text-align: left;
+}
+.filter_buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.filter_block,
+.filter_img{
+    width: 50%;
+}
+.filter_buttons .button_block{
+    margin: 0;
+}
+.filter_buttons .button_view{
+    margin: 0 10px;
+}
+.filter_block .main_header_p{
+    margin: 47px 0 0 0;
+}
+.filter_img{
+    text-align: end;
+}
+.filter_item_img{
+    position: relative;
+    width: 450px;
+    margin: 30px 30px;
+}
+.filter_item_img p {
+    position: absolute;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 5px;
+    color: hsla(0, 0%, 100%, 1);
+    bottom: 20px;
+    left: 20px;
+    
+
+}
+.img_block_item img {
+    width: 450px;
+}
+.filter_item_img p.white {
+    color: hsla(0, 0%, 0%, 1);
+    ;
+}
+
 
 
 @media (min-width: 1000px)  {
