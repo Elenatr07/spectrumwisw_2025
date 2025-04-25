@@ -2,8 +2,8 @@
 function scroling (){
     let height = $(window).scrollTop();
     let width = $(window).width()
-   console.log("height", height)
-    console.log("width", width)
+   //console.log("height", height)
+    //console.log("width", width)
 
    if(height > 900) {
     $('#img1').addClass('anime_img1');

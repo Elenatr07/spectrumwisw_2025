@@ -824,6 +824,10 @@ body {
     color: hsla(0, 0%, 0%, 1);
     ;
 }
+.hidden {
+    display: none;
+    transition: 17s ease-in-out;
+}
 
 
 
