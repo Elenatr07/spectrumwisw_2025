@@ -474,6 +474,9 @@ body {
     flex-wrap: wrap;
     margin-bottom: 60px;
 }
+#anchor_filter{
+    justify-content: space-around;
+}
 .img_block_item{
     cursor: pointer;
 }
@@ -828,7 +831,10 @@ body {
     display: none;
     transition: 17s ease-in-out;
 }
-
+.filter_item_img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s linear;
+}
 
 
 @media (min-width: 1000px)  {
