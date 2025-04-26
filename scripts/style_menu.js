@@ -96,23 +96,30 @@ $(document).ready(function() {
             var filter_items = $(items)
             per = 6,
                 i = 1,
+                b = 0,
                 total = 0;
                 
              if ($(item).hasClass(category)) {
                           
                 $(items).slice(0, pagination).fadeIn(200).addClass('active').removeClass('hidden')
                 //console.log(hidden.length)
-                $(this)[total >= filter_items.length ? 'hide' : 'show']();
+              //  $(this)[total >= filter_items.length ? 'hide' : 'show']();
                
+                
              
                 }   
                 $('#see_more_button').on('click', function(){
                    
                     //console.log(category)
-                    total = per * (i++);
+                    total = per * (i++); 
+                    el = $(hidden)[b++]
+                   $(el).attr('id', b++)
+                // $('#see_more_txt').attr('href', '#'+b++)
                     hidden.slice(0, total).fadeIn(200).addClass('active').removeClass('hidden')
+                  
+                   console.log (total)
                     $(this)[total >= hidden.length ? 'hide' : 'show']();
-                 
+                  
                     
                 }).click();
           //   console.log(hidden)   
