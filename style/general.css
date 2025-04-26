@@ -806,6 +806,7 @@ body {
     position: relative;
     width: 450px;
     margin: 30px 30px;
+    display: none;
 }
 .filter_item_img p {
     position: absolute;

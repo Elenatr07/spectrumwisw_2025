@@ -7,34 +7,43 @@ var lang_default_footer = $('#drop_footer_lang').text('English');
     $('.toggle_light_right').css('display', 'block');
     $('.dropdown-content').css('display', 'none');
  
-    $('.filter_item_img').hide();
-    var itemsCount = 0,
+   $('.filter_item_img').slice(0, 6).show();
+    let count = 0;
+    var itemsCount = 6,
     itemsMax = $('.filter_item_img').length;
     var pagination = 6;
+    per = 6,
+    a= 1,
+               
+    total = 0;
+    total1 =0
+    total2 =0
 
-function showNextItems() {
+/*function showNextItems() {
+    console.log('start show card')
     
     for (var i = itemsCount; i < (itemsCount + pagination); i++) {
         $('.filter_item_img:eq(' + i + ')').show();
+       // console.log(i, itemsCount ) 
+         $.scrollTo(`#f${itemsCount+1}`);
+       console.log("itemsCount:" +itemsCount, 'i:'+i) 
        
     }
     itemsCount += pagination;
       if (itemsCount > itemsMax) {
-        $('#see_more_button').hide();
+       // $('#see_more_button').hide();
+       console.log("itemsCount:" +itemsCount, 'i:'+i) 
     }
-};
+};*/
 
-showNextItems();
+//showNextItems();
 
 
  
    
 $(document).ready(function() {
 
-    $('#see_more_button').on('click', function (e) {
-        e.preventDefault();
-        showNextItems();
-    });
+   
     $('#side-menu').on('click', function(){
         if( $('#nav_shadow').hasClass('shadow')) {
             $('#nav_shadow').removeClass("shadow")
@@ -77,68 +86,99 @@ $(document).ready(function() {
         $('#select_russian_footer').css('display', 'none')
     }
     //Filter
-
-    $(function(){
-        $('#see_more_txt').text('See more')
+    $('#see_more_txt').text('See more')
         
-        $('.filter_buttons .button_block').on('click', function(){
-            let category = $(this).attr("data-filter");
-            $('#see_more_button').off( "click" ) //отключение функции, чтобы не задваивать активные элементы при клике
-
-            $('.filter_item_img').removeClass('active')
-            $(".button_block").removeClass("active");
-          //  $(this).addClass("active");
-            let item = $(".img_block_items .filter_item_img");
-            var items = $('.'+category);
-            item.fadeOut("slow");
-            $(items).addClass('hidden');
-            let hidden = $('.'+category+'.hidden');
-            var filter_items = $(items)
-            per = 6,
-                i = 1,
-                b = 0,
-                total = 0;
-                
-             if ($(item).hasClass(category)) {
-                          
-                $(items).slice(0, pagination).fadeIn(200).addClass('active').removeClass('hidden')
-                //console.log(hidden.length)
-              //  $(this)[total >= filter_items.length ? 'hide' : 'show']();
-               
-                
-             
-                }   
-                $('#see_more_button').on('click', function(){
-                   
-                    //console.log(category)
-                    total = per * (i++); 
-                    el = $(hidden)[b++]
-                   $(el).attr('id', b++)
-                // $('#see_more_txt').attr('href', '#'+b++)
-                    hidden.slice(0, total).fadeIn(200).addClass('active').removeClass('hidden')
-                  
-                   console.log (total)
-                    $(this)[total >= hidden.length ? 'hide' : 'show']();
-                  
-                    
-                }).click();
-          //   console.log(hidden)   
-           
-           
+    $('.filter_buttons .button_block').on('click', function( ){
+        $.scrollTo(`#anchor_filter`, 500);
+        let item = $(".img_block_items .filter_item_img");
+        let category = $(this).attr("data-filter");
+        var items = $('.'+category);
+        $('.filter_item_img').removeClass('active')
+        $(".button_block").removeClass("selectrd");
+        $(this).addClass("selected");
+        item.fadeOut(200);
+        hasActive = $(item).hasClass('active')
+        if(!hasActive){
+            $(item).removeAttr('data')
+        }
+        $(items).addClass('hidden');
+                        
+            if ($(item).hasClass(category)) {
+                        
+            $(items).slice(0, pagination).fadeIn(200).removeClass('hidden')
+            $(items).attr('data', category).addClass('active')
+        
             
-       
-          
+        }   
       
-            
-        }) 
+    })
+   
+                
+    $('#see_more_button').on('click', function (e) {
+        e.preventDefault();
+        noFilter = $('.filter_item_img')
      
         
-    })
+       
+        let filterData = $('.active.hidden');
+        let hasClassCard = $('.filter_item_img').hasClass('active')
+        if(!hasClassCard){
+            count++
+            
+            b = (pagination * count)
+            href = noFilter.eq(b).attr('id')
+           // noFilter.slice(i, pagination * count).show();
+           
+       
+            
 
+            for (var i = itemsCount; i < (itemsCount + pagination); i++) {
+                $('.filter_item_img:eq(' + i + ')').show();
+      
+             //     $.scrollTo(`#${noFilter.eq(i).attr('id')}`, 1000);
+            // console.log(`#${noFilter.eq(i).attr('id')}`) 
+               
+              
+            }
+             
+             $.scrollTo(`#${href}`, 1000);
+            console.log(('scroll to' + `#${href}`)) 
+         
+            
+            console.log(`#${href}`)
+            itemsCount += pagination;
+              if (itemsCount > itemsMax) {
+               // $('#see_more_button').hide();
+               console.log("itemsCount:" +itemsCount, 'i:'+i) 
+            }
+        } else  { 
+            
+        if(pagination > total < filterData.length){
+            console.log(count)
+            //console.log(filterData.next())
+            filterData.slice(0, pagination).fadeIn(200).removeClass('hidden')
+                //  $(this)[total >= filterData.length ? 'hide' : 'show']();
+               
+            $.scrollTo(`#${filterData.eq(0).attr('id')}`, 1000);
+            
+            
+            //console.log (`#${filterData.eq(0).attr('id')}`)
+           } else { 
+              filterData.slice(0, pagination).fadeIn(200).removeClass('hidden')
+              $.scrollTo(`#${filterData.eq(0).attr('id')}`, 1000);
+                       
+           }
+              
+                
+    }
+ 
 
     
    
   
-})
+    })
 
+
+    
+})
 
