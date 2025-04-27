@@ -91,6 +91,47 @@ $(document).ready(function() {
         $('#select_russian_footer').css('display', 'none')
     }
     //Filter
+    /*
+     var list = $(".partners__ul li");
+    var numToShow = 4;
+    var button = $(".partners__button__a");
+    var numInList = list.length;
+    var isShowing = true;
+    list.hide();
+    if (numInList > numToShow) {
+        button.show();
+    }
+    list.slice(0, numToShow).show();
+    button.click(function() {
+        var showing = list.filter(':visible').length;
+        if(isShowing){
+        list.slice(showing - 1, showing + numToShow).fadeIn(100,onFadeComplete);
+        }
+        else{
+        list.slice(showing - numToShow, numInList).fadeOut(100,onFadeComplete);
+        }
+    
+    
+    });
+  
+    function onFadeComplete(){
+    var nowShowing = list.filter(':visible').length;
+   
+    if(nowShowing == numInList && isShowing){
+        isShowing = false;
+        button.text("Show less");  
+    }
+    else if(isShowing){
+        button.text("Show even more");
+    }
+    
+    if(nowShowing == numToShow){
+      button.text("Show more");
+      isShowing = true;
+    }  
+    
+    }
+    */
     $('#see_more_txt').text('See more')
         
     $('.filter_buttons .button_block').on('click', function( ){
@@ -118,13 +159,13 @@ $(document).ready(function() {
       
     })
    
+
                 
     $('#see_more_button').on('click', function (e) {
         e.preventDefault();
         noFilter = $('.filter_item_img')
-     
-        
-       
+        let length = noFilter.length
+             
         let filterData = $('.active.hidden');
         let hasClassCard = $('.filter_item_img').hasClass('active')
         if(!hasClassCard){
@@ -134,14 +175,21 @@ $(document).ready(function() {
             href = noFilter.eq(b).attr('id')
            for (var i = itemsCount; i < (itemsCount + pagination); i++) {
                 $('.filter_item_img:eq(' + i + ')').show();
+                console.log('i:' +i, 'itemsCount' + itemsCount) 
+               
+                
             }
-             
+            
              $.scrollTo(`#${href}`, 1000);
              itemsCount += pagination;
-            if (itemsCount > itemsMax) {
-                $('#see_more_txt').text('See less')
+           
+             total += pagination
+            console.log('final', 'noFilter.length' + length, 'itemsCount:' + itemsCount, 'i:' +i) 
+            if (24 == itemsCount ) {
+            //     $('#see_more_txt').text('See less')
+                console.log( 'noFilter.length' + noFilter.length, 'i:' + (i)) 
                // $('#see_more_button').hide();
-               console.log('final') 
+               
             }
         } else  { 
             
@@ -161,11 +209,17 @@ $(document).ready(function() {
               
                        
            }
-              
-                
-    }
- 
-
+        }
+        if($('#see_more_txt').text() == 'See less' && !hasClassCard ){
+            console.log('содержит показать меньше')
+           // noFilter.fadeOut(200)
+            $('.filter_item_img').slice(0, pagination).show();
+            $('.filter_item_img').slice(pagination).hide();
+          //  $('#see_more_txt').text('See more')
+            total = 0
+            itemsCount = 6
+            console.log('итоговый total' +total, 'итоговый itemsCount' +itemsCount)
+        }
     
    
   
