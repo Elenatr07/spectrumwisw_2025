@@ -70,8 +70,13 @@ $(document).ready(function() {
         $('.dropdown-content').toggle();
         $('.row_down').toggle();
         $('.row_up').toggle();
+      
               
     })
+   /* $('.dropdown-content').mouseover(function(){
+        $('.dropdown-content').toggle();
+    })*/
+    
     $('#button_view_footer').on('click', function(){
         $('#select_lang_button').toggle();
         $('.row_down').toggle();
@@ -127,45 +132,33 @@ $(document).ready(function() {
             
             b = (pagination * count)
             href = noFilter.eq(b).attr('id')
-           // noFilter.slice(i, pagination * count).show();
-           
-       
-            
-
-            for (var i = itemsCount; i < (itemsCount + pagination); i++) {
+           for (var i = itemsCount; i < (itemsCount + pagination); i++) {
                 $('.filter_item_img:eq(' + i + ')').show();
-      
-             //     $.scrollTo(`#${noFilter.eq(i).attr('id')}`, 1000);
-            // console.log(`#${noFilter.eq(i).attr('id')}`) 
-               
-              
             }
              
              $.scrollTo(`#${href}`, 1000);
-            console.log(('scroll to' + `#${href}`)) 
-         
-            
-            console.log(`#${href}`)
-            itemsCount += pagination;
-              if (itemsCount > itemsMax) {
+             itemsCount += pagination;
+            if (itemsCount > itemsMax) {
+                $('#see_more_txt').text('See less')
                // $('#see_more_button').hide();
-               console.log("itemsCount:" +itemsCount, 'i:'+i) 
+               console.log('final') 
             }
         } else  { 
             
         if(pagination > total < filterData.length){
-            console.log(count)
+            
             //console.log(filterData.next())
             filterData.slice(0, pagination).fadeIn(200).removeClass('hidden')
                 //  $(this)[total >= filterData.length ? 'hide' : 'show']();
                
             $.scrollTo(`#${filterData.eq(0).attr('id')}`, 1000);
             
-            
+            console.log('final-2')
             //console.log (`#${filterData.eq(0).attr('id')}`)
            } else { 
               filterData.slice(0, pagination).fadeIn(200).removeClass('hidden')
               $.scrollTo(`#${filterData.eq(0).attr('id')}`, 1000);
+              
                        
            }
               

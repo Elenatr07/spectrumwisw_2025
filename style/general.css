@@ -258,7 +258,7 @@ body {
     background-image: var(--image-logo-light);
     background-repeat: no-repeat;
     min-width: 230px;
-    background-position: left center;
+    background-position: left top;
     margin-left: 25px;
     cursor: pointer;
 }
@@ -269,7 +269,8 @@ body {
     
 }
 .up_block{
-    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 .menu {
     height: 100%;
@@ -287,9 +288,10 @@ body {
  /* Dropdown Content (Hidden by Default) */
  .dropdown-content {
     display: none;
-    position: fixed;
+    position: relative;
     width: 140px;
     margin-top: 18px;
+    top: 0px;
  }
  
  
@@ -336,6 +338,7 @@ body {
 .lang_in_header {
     display: block;
     cursor: pointer;
+    height: 100px;
 }
 .link,
 #dropbtn {
@@ -412,7 +415,7 @@ body {
 }
 .main_info_wrapper {
     width: 100%;
-    margin: 125px auto 0 auto;
+    margin: 53px auto 0 auto;
     max-width: 2560px;
     text-align: center;
 }
@@ -472,10 +475,10 @@ body {
     justify-content: space-between;
     max-width: 1920px;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin: 0 auto 60px auto;
 }
 #anchor_filter{
-    justify-content: space-around;
+    justify-content: center;
 }
 .img_block_item{
     cursor: pointer;
@@ -767,10 +770,11 @@ body {
   cursor: default;
 }
 .filter_block_wrapper{
-    display: flex;
+    display: flex    ;
     max-width: 1920px;
     justify-content: space-around;
-    margin: 0 20% 115px 20%;
+    margin: 0 auto 115px auto;
+    padding: 0 392px;
 }
 .filter_header{
     font-family: 'Montserrat';
@@ -785,10 +789,11 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 70px;
+    max-width: 455px;
 }
 .filter_block,
 .filter_img{
-    width: 50%;
+    width: 440px;
 }
 .filter_buttons .button_block{
     margin: 0;
@@ -843,14 +848,14 @@ body {
         display: none;
     }
     .nav {
-        min-height: 42px;
+        min-height: fit-content;
         height: 100%;
         float: right;
         max-width: 1590px;
         width: 100%;
         right: 0;
         position: relative;
-        z-index: 99999;
+       /* z-index: 99999;*/
         display: flex;
         padding: 4px 1px;
         justify-content: space-around;
