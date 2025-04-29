@@ -59,15 +59,21 @@ $(document).ready(function(){
             
         }   
           console.log ($('.filter_item_img').filter('.active.hidden'))  
-          console.log ($('.filter_item_img').filter('.active.hidden').length)
-          console.log ($(".button_block").hasClass("selected"))
+        //  console.log ($('.filter_item_img').filter('.active').length)
+        //  console.log ($(".button_block").hasClass("selected"))
 
           console.log($(".button_block").hasClass("selected"))
           if($('.filter_item_img').filter('.active.hidden').length == 0 && $(".button_block").hasClass("selected")) {
             button.hide();
             console.log ($('.filter_item_img').filter('.active.hidden').length)
             console.log($('.filter_item_img').filter('.active.hidden').length)
-        } else {
+        } else if ($('.filter_item_img').filter('.active.hidden').length > 0 && $(".button_block").hasClass("selected") ){
+            button.text("Show more");  
+            console.log('Show less22')
+            isShowing = true;
+            button.show();
+        }
+        else {
             button.show();
         }
       
@@ -156,7 +162,7 @@ $(document).ready(function(){
         
        // console.log(activeCard)
         // console.log(asd1)
-        if(nowShowing == numInList && isShowing ){
+        if(nowShowing == numInList && isShowing && !$(".button_block").hasClass("selected") ){
             isShowing = false;
             button.text("Show less");  
             console.log('Show less', 'nowShowing:' +nowShowing )
@@ -167,18 +173,21 @@ $(document).ready(function(){
            // button.text("Show even more");
             console.log ('Show ')
         }
-        else if(isShowing && activeCard.length > numToShow ){ 
-            button.text("Show even more");
-            console.log ('Show even more', 'nowShowing:' +nowShowing )
-        
-
-        } else if (activeCard.length == numInListFilter && isShowing){
+      else if (isShowing && activeCard.length == nowShowing && $(".button_block").hasClass("selected")){
+            button.text("Show less");  
+            console.log('Show less')
+            isShowing = false;
+            console.log ('less1')  
+            console.log($('.filter_item_img').filter('.active').length)
+            console.log('nowShowing:' +nowShowing)
+        }
+         else if (activeCard.length == numInListFilter && isShowing && $(".button_block").hasClass("selected")){
             button.text("Show less");  
             console.log('Show less')
             isShowing = false;
             console.log ('numInListFilter:' +numInListFilter)
 
-        } else if (asd1.length = 0){
+        } else if ($('.filter_item_img').filter('.active.hidden').length  ){
            
         }
        
