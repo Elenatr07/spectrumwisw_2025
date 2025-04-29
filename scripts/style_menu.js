@@ -7,7 +7,7 @@ var lang_default_footer = $('#drop_footer_lang').text('English');
     $('.toggle_light_right').css('display', 'block');
     $('.dropdown-content').css('display', 'none');
  
-   $('.filter_item_img').slice(0, 6).show();
+ //  $('.filter_item_img').slice(0, 6).show();
     let count = 0;
     var itemsCount = 6,
     itemsMax = $('.filter_item_img').length;
@@ -133,7 +133,7 @@ $(document).ready(function() {
     }
     */
     $('#see_more_txt').text('See more')
-        
+   /*     
     $('.filter_buttons .button_block').on('click', function( ){
         $.scrollTo(`#anchor_filter`, 500);
         let item = $(".img_block_items .filter_item_img");
@@ -158,6 +158,7 @@ $(document).ready(function() {
         }   
       
     })
+        
    
 
                 
@@ -223,7 +224,7 @@ $(document).ready(function() {
     
    
   
-    })
+    })*/
 
 
     
