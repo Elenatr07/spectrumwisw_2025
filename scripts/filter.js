@@ -6,19 +6,21 @@ $(document).ready(function(){
     var numInList = list.length;
     var numInListFilter = list.filter('.active.hidden');
     var isShowing = true;
-    var filterData = $('.hidden.active');
+    
+    var count = 0
+    $('#see_more_txt').text('See more')
     if (numInList > numToShow && !$(".button_block").hasClass("selected")) {
         button.show();
-        console.log('have')
+       
        
     }  else if ($(".button_block").hasClass("selected")) {
         button.hide();
-        console.log('dont have')
+       
     }
     
     if($('.filter_item_img').filter('.active.hidden').length == 0 && $(".button_block").hasClass("selected")) {
         button.hide();
-        console.log ($('.filter_item_img').filter('.active.hidden').length)
+        
     }
     
     list.hide();
@@ -26,8 +28,9 @@ $(document).ready(function(){
     var hasSelected = false
     
     $('.filter_buttons .button_block').on('click', function( ){
+        count = 0;
         $('.filter_item_img ').removeClass('active')
-        $.scrollTo(`#anchor_filter`, 500);
+        $.scrollTo(`#anchor_filter`, 1000);
         let item = $(".img_block_items .filter_item_img");
         let category = $(this).attr("data-filter");
         var items = $('.'+category);
@@ -58,18 +61,13 @@ $(document).ready(function(){
         
             
         }   
-          console.log ($('.filter_item_img').filter('.active.hidden'))  
-        //  console.log ($('.filter_item_img').filter('.active').length)
-        //  console.log ($(".button_block").hasClass("selected"))
-
-          console.log($(".button_block").hasClass("selected"))
+    
           if($('.filter_item_img').filter('.active.hidden').length == 0 && $(".button_block").hasClass("selected")) {
             button.hide();
-            console.log ($('.filter_item_img').filter('.active.hidden').length)
-            console.log($('.filter_item_img').filter('.active.hidden').length)
+          //  console.log ($('.filter_item_img').filter('.active.hidden').length)
+          //  console.log($('.filter_item_img').filter('.active.hidden').length)
         } else if ($('.filter_item_img').filter('.active.hidden').length > 0 && $(".button_block").hasClass("selected") ){
             button.text("Show more");  
-            console.log('Show less22')
             isShowing = true;
             button.show();
         }
@@ -79,9 +77,7 @@ $(document).ready(function(){
       
     })
 
-  
    
-    
     
     
     list.slice(0, numToShow).show();
@@ -89,48 +85,45 @@ $(document).ready(function(){
         var hasClassCard = $('.filter_item_img').hasClass('active');
         var showing = list.filter(':visible').length;
         var asd = list.filter('.active.hidden');
-        var showingAfterFilter = asd.filter(':visible').length
-       // console.log(asd.filter(':visible'))
-        
-        var showingFilter = asd.length
+         
+                
         var activeCard = $('.filter_item_img').filter('.active')
         var activeCardFilter = activeCard.filter(':visible').length
-
+        count++
+            b = (numToShow * count)    
+            href1 = list.eq(b).attr('id')
+            href2 = activeCard.eq(b).attr('id')
+            href3 = activeCard.eq(0).attr('id')
+          //  console.log("href1:" +href1, 'href2:' +href2, 'count:' +count)
         if(!hasClassCard && isShowing && !hasSelected){
-        list.slice(showing - 1, showing + numToShow).fadeIn(100,onFadeComplete);
+            
+            
+            list.slice(showing - 1, showing + numToShow).fadeIn(100,onFadeComplete);
+            $.scrollTo(`#${href1}`, 1000)
         } else if (!hasClassCard && !isShowing && !hasSelected ){
             list.hide();
             list.slice(0, 6).fadeIn(100);
             isShowing = true;
             button.text("Show more");
-            console.log('slice 0 - 6')
+           $.scrollTo(`#anchor_filter`, 1000)
+            count = 0
+           
             
         }
         else if (hasSelected && isShowing && hasClassCard){
                 
             activeCard.slice(activeCardFilter-1, activeCardFilter + numToShow).fadeIn(100,onFadeComplete).removeClass('hidden');
-           console.log('+6', showingAfterFilter, (showingAfterFilter + numToShow))
-         // console.log (activeCard)
-        //  console.log ('activeCardFilter' +activeCardFilter)
+            $.scrollTo(`#${href2}`, 1000)
+         
              
-        } else if (hasSelected && isShowing && showingFilter < numToShow  && hasClassCard ){
-            console.log("hksaljLJ")
-            console.log(asd)
-            onFadeComplete()
-        }
-        else if (hasSelected && showingAfterFilter < asd.length && isShowing){
-            console.log ('less')
-        } else if (hasSelected && !isShowing && hasSelected) {
-            console.log ('what')
-          
-            
+        } 
+        else if (hasSelected && !isShowing && hasClassCard) {
+             count = 0
             list.hide();
-            console.log (activeCard)
-           activeCard.slice(0, 6).fadeIn(100, onFadeComplete);
+            activeCard.slice(0, 6).fadeIn(100, onFadeComplete);
             isShowing = false;
+            $.scrollTo(`#${href3}`, 1000)  
             
-           
-           // isShowing = true;
         }
        
         else {
@@ -138,70 +131,94 @@ $(document).ready(function(){
             asd.slice(0, 6).fadeIn(100);
             isShowing = true;
             button.text("Show more");
-           console.log('end')
+           
         }
             
            
-       
-
-          
-       
-        } 
-      
-      
-       
-    
-    
-    );
+    } );
 
     function onFadeComplete(){
         var nowShowing = list.filter(':visible').length;
         var asd1 = list.filter('.active.hidden');
         var showingAfterFilter1 = asd1.filter(':visible').length
         var activeCard = $('.filter_item_img').filter('.active')
-        
-       // console.log(activeCard)
-        // console.log(asd1)
+
         if(nowShowing == numInList && isShowing && !$(".button_block").hasClass("selected") ){
             isShowing = false;
             button.text("Show less");  
-            console.log('Show less', 'nowShowing:' +nowShowing )
+            count = 0
             
           
         }
-        else if(showingAfterFilter1 == numInList && isShowing){
-           // button.text("Show even more");
-            console.log ('Show ')
-        }
+     
       else if (isShowing && activeCard.length == nowShowing && $(".button_block").hasClass("selected")){
             button.text("Show less");  
-            console.log('Show less')
             isShowing = false;
-            console.log ('less1')  
-            console.log($('.filter_item_img').filter('.active').length)
-            console.log('nowShowing:' +nowShowing)
+           count=0
+          
         }
          else if (activeCard.length == numInListFilter && isShowing && $(".button_block").hasClass("selected")){
             button.text("Show less");  
-            console.log('Show less')
+            
             isShowing = false;
             console.log ('numInListFilter:' +numInListFilter)
+            count=0
 
         } else if ($('.filter_item_img').filter('.active.hidden').length  ){
            
         }
-       
-        
-     
-        
+          
         if(nowShowing == numToShow){
-        //    list.slice(0, 6).fadeIn(100,onFadeComplete);
+        
           button.text("Show more");
           isShowing = true;
-          console.log("isShowing:" +isShowing)
+         
         }  
         
     }
     
     
 })
+
+//Filter
+    /*
+     var list = $(".partners__ul li");
+    var numToShow = 4;
+    var button = $(".partners__button__a");
+    var numInList = list.length;
+    var isShowing = true;
+    list.hide();
+    if (numInList > numToShow) {
+        button.show();
+    }
+    list.slice(0, numToShow).show();
+    button.click(function() {
+        var showing = list.filter(':visible').length;
+        if(isShowing){
+        list.slice(showing - 1, showing + numToShow).fadeIn(100,onFadeComplete);
+        }
+        else{
+        list.slice(showing - numToShow, numInList).fadeOut(100,onFadeComplete);
+        }
+    
+    
+    });
+  
+    function onFadeComplete(){
+    var nowShowing = list.filter(':visible').length;
+   
+    if(nowShowing == numInList && isShowing){
+        isShowing = false;
+        button.text("Show less");  
+    }
+    else if(isShowing){
+        button.text("Show even more");
+    }
+    
+    if(nowShowing == numToShow){
+      button.text("Show more");
+      isShowing = true;
+    }  
+    
+    }
+    */
