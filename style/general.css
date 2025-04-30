@@ -52,6 +52,7 @@ body {
     --social-link-facebook: url(../img/facebook.svg);
     --logo-footer: url(../img/logo_footer.svg);
     --circle: url(../img/circle_light.svg);
+    --box-color: hsla(228, 27%, 76%, 1);
   
 
  
@@ -93,6 +94,8 @@ body {
     --social-link-facebook: url(../img/facebook_for_dark.svg);
     --logo-footer: url(../img/logo_footer_for_dark.svg);
     --circle: url(../img/ring_dark.svg);
+    --box-color: hsla(227, 33%, 31%, 1);
+
   
 
 
@@ -400,6 +403,7 @@ body {
     right: -2px;
     top: -2px;
     min-width: 111px;
+    max-width: 299px;
 }
 .button_block {
     display: block;
@@ -772,9 +776,9 @@ body {
 .filter_block_wrapper{
     display: flex    ;
     max-width: 1920px;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0 auto 115px auto;
-    padding: 0 392px;
+    
 }
 .filter_header{
     font-family: 'Montserrat';
@@ -789,11 +793,11 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 70px;
-    max-width: 455px;
+    width: 455px;
 }
 .filter_block,
 .filter_img{
-    width: 470px;
+    width: 560px;
 }
 .filter_buttons .button_block{
     margin: 0;
@@ -841,6 +845,42 @@ body {
     transform: scale(1.1);
     transition: all 0.5s linear;
 }
+.for_sevices{
+    width: 613px;
+}
+.filter_item_img_s{
+    position: relative;
+    margin: 30px 30px;
+    display: block;
+    width: 333px;
+    height: 250px;
+    border-radius: 30px;
+    background: var(--box-color);
+    padding: 36px 60px 54px 60px;
+
+}
+.filter_item_img_s .img_block_item img{
+    width: fit-content;
+}
+.filter_item_img_s .img_block_item{
+    width: fit-content;
+    display: block;
+}
+.filter_item_img_s p{
+    position: absolute;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 5px;
+    color: hsla(0, 0%, 100%, 1);
+    bottom: 20px;
+    left: 20px;
+}
+.filter_buttons.for_sevices .button_block:nth-child(2) .button_view::before{
+    max-width: 190px;
+}
+
 
 
 @media (min-width: 1000px)  {
