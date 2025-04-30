@@ -3,6 +3,7 @@ $(document).ready(function(){
     var list = $('.filter_item_img')
     var numToShow = 6;
     var button = $("#see_more_button");
+    var buttonText = $('#see_more_txt')
     var numInList = list.length;
     var numInListFilter = list.filter('.active.hidden');
     var isShowing = true;
@@ -67,7 +68,7 @@ $(document).ready(function(){
           //  console.log ($('.filter_item_img').filter('.active.hidden').length)
           //  console.log($('.filter_item_img').filter('.active.hidden').length)
         } else if ($('.filter_item_img').filter('.active.hidden').length > 0 && $(".button_block").hasClass("selected") ){
-            button.text("Show more");  
+            buttonText.text("See more");  
             isShowing = true;
             button.show();
         }
@@ -104,7 +105,7 @@ $(document).ready(function(){
             list.hide();
             list.slice(0, 6).fadeIn(100);
             isShowing = true;
-            button.text("Show more");
+            buttonText.text("See more");
            $.scrollTo(`#anchor_filter`, 1000)
             count = 0
            
@@ -130,7 +131,7 @@ $(document).ready(function(){
             asd.hide();
             asd.slice(0, 6).fadeIn(100);
             isShowing = true;
-            button.text("Show more");
+            buttonText.text("See more");
            
         }
             
@@ -145,20 +146,20 @@ $(document).ready(function(){
 
         if(nowShowing == numInList && isShowing && !$(".button_block").hasClass("selected") ){
             isShowing = false;
-            button.text("Show less");  
+            buttonText.text("See less");  
             count = 0
             
           
         }
      
       else if (isShowing && activeCard.length == nowShowing && $(".button_block").hasClass("selected")){
-            button.text("Show less");  
+            buttonText.text("See less");  
             isShowing = false;
            count=0
           
         }
          else if (activeCard.length == numInListFilter && isShowing && $(".button_block").hasClass("selected")){
-            button.text("Show less");  
+            buttonText.text("See less");  
             
             isShowing = false;
             console.log ('numInListFilter:' +numInListFilter)
@@ -170,7 +171,7 @@ $(document).ready(function(){
           
         if(nowShowing == numToShow){
         
-          button.text("Show more");
+          buttonText.text("See more");
           isShowing = true;
          
         }  
