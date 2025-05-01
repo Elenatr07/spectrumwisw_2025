@@ -849,22 +849,23 @@ body {
     width: 613px;
 }
 .filter_item_img_s{
-    position: relative;
-    margin: 30px 30px;
-    display: block;
     width: 333px;
     height: 250px;
-    border-radius: 30px;
-    background: var(--box-color);
-    padding: 36px 60px 54px 60px;
-
+    position: relative;
+    margin: 30px 30px;
 }
+
 .filter_item_img_s .img_block_item img{
     width: fit-content;
 }
-.filter_item_img_s .img_block_item{
+.front .img_block_item{
     width: fit-content;
     display: block;
+    margin: 37px auto;
+}
+.back {
+    padding: 30px 20px;
+    
 }
 .filter_item_img_s p{
     position: absolute;
@@ -873,12 +874,55 @@ body {
     font-size: 18px;
     line-height: 100%;
     letter-spacing: 5px;
-    color: hsla(0, 0%, 100%, 1);
+    color: var(--text-white);
     bottom: 20px;
     left: 20px;
 }
 .filter_buttons.for_sevices .button_block:nth-child(2) .button_view::before{
     max-width: 190px;
+}
+.front, .back {
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    width: 333px;
+    height: 250px;
+    border-radius: 30px;
+    background: var(--box-color);
+    ;
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+.back .img_block_item{
+    margin: auto;
+}
+.filter_item_img_s:hover .front {
+    transform: rotateY(180deg);
+    transition: all 1s ease-in-out;
+}
+.filter_item_img_s:hover .back {
+    transform: rotateY(360deg);
+    transition: all 1s ease-in-out;
+}
+
+#block_web{
+    justify-content: center;
+}
+
+.back .img_block_item .card_txt{
+    position:inherit;
+     font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: center;
+}
+.back .img_block_item:hover,
+.front .img_block_item:hover{
+    transform: none;
 }
 
 
