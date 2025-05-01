@@ -907,8 +907,11 @@ body {
     transition: all 1s ease-in-out;
 }
 
-#block_web{
+#block_web .img_block_items,
+#graphic .img_block_items,
+#marketing .img_block_items{
     justify-content: center;
+    
 }
 
 .back .img_block_item .card_txt{
