@@ -927,7 +927,133 @@ body {
 .front .img_block_item:hover{
     transform: none;
 }
+.for_solutions{
+    width: 1120px;
+    margin: 0 auto;
+}
+.how_it_works_header .h3_block {
+    text-align: left;
+    margin-top: 61px;
+    margin-right: 10px;
+}
+.filter_block_wrapper_sol {
+    display: flex;
+    max-width: 1920px;
+    justify-content: center;
+    margin: 0 auto 115px auto;
+    flex-direction: column;
+}
+.how_it_works_drop{
+    width: 1180px;
+    margin: 0 auto;
+    display: none;
+    
+}
 
+.how_it_works_drop .front p{
+    letter-spacing: 0;
+}
+.how_it_works_header{
+    display: flex;
+    flex-direction: row;
+}
+.card_item_img {
+    position: relative;
+    width: 450px;
+    margin: 30px 30px;
+    display: block;
+}
+.last_hidden {
+    height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.card_item_img p{
+    position: absolute;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 5px;
+    color: hsla(0, 0%, 100%, 1);
+    bottom: 20px;
+    left: 20px;
+}
+.card_item_img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s linear;
+}
+.form {
+    display: flex;
+    margin: 0 auto;
+    width: 1320px;
+}
+.name {
+    width: 536px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid hsla(218, 26%, 88%, 1)
+}
+.border_active {
+    border: 1px solid transparent;
+    background: linear-gradient(90.43deg, #5456AB 1.85%, #22DCD9 101.19%) border-box;
+
+
+}
+input {
+    width: 533px;
+    height: 48px;
+    background: var(--bg-dark) /* #070726*/;
+    outline: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--text-white) /* #DAE4DD*/;
+    padding-left: 32px;
+    border-radius: 30px;
+    border: none;
+}
+#formmain {
+    width: 537px;
+    margin: 0 auto;
+}
+.title_form{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: var(--text-white);
+
+}
+#border_name,
+#border_email,
+#border_textarea {
+    margin: 16px 0;
+}
+.text_field {
+    width: 533px;
+    height: 250px;
+    border: none;
+    border-radius: 30px;
+    background: var(--bg-dark) /* #070726*/;
+    outline: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--text-white) /* #DAE4DD*/;
+    padding: 14px 32px;
+
+
+}
+.textarea_block{
+    border-radius: 30px;
+    border: 1px solid hsla(218, 26%, 88%, 1);
+}
 
 
 @media (min-width: 1000px)  {

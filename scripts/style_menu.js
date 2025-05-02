@@ -91,7 +91,13 @@ $(document).ready(function() {
         $('#select_russian_footer').css('display', 'none')
     }
 
-
+    $('.how_it_works_header').on('click', function(){
+        $('.how_it_works_drop').slideToggle(1000);
+        $('.how_it_works_header .row_down').toggle();
+        $('.how_it_works_header .row_up').toggle()
+      
+        
+    })
 
     
 })
