@@ -90,11 +90,11 @@
                         <p class="title_form">Tell us how we can help you...</p>
                         <div class="textarea_block" id="border_textarea">
                             <textarea name="text"  id="formtext" cols="30" rows="10" class="text_field"
-                            placeholder="Your message..."></textarea>
+                            placeholder="Your message..." required></textarea>
                             <div class="status"></div>
                         </div>
-                        <button type="button" class="send_button">Send Message
-                            
+                        <button type="button" class="send_button" id="send-form">
+                            Send Message
                         </button>
 
                     </form>
@@ -175,8 +175,9 @@
 
     <script src="scripts/jq_3.3.1.min.js"></script>
     <script  src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+    <script src="scripts/jquery.validate.min.js"></script>
     <script src="scripts/style_menu.js"></script>
-    
+    <script src="scripts/check_form.js"></script>
     <script src="scripts/anime.js"></script>
     <script src="scripts/border.js"></script>
 
