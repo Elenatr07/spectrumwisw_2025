@@ -11,7 +11,10 @@ a {
  ul {
     list-style: none;
  }
-
+ input:-webkit-autofill,
+ input:-webkit-autofill:focus {
+   transition: background-color 0s 600000s, color 0s 600000s !important;
+ }
 html,
 body {
     margin: 0px;
@@ -1000,6 +1003,11 @@ body {
 
 
 }
+.border_error {
+    border: 1px solid transparent;
+    background: linear-gradient(99.94deg, #F73E94 0%, #97238A 33.33%) border-box;
+
+}
 input {
     width: 533px;
     height: 48px;
@@ -1072,12 +1080,31 @@ input {
     margin: 0 auto;
     display: flex;
     font-family: 'Montserrat';
-font-weight: 300;
-font-size: 17px;
-line-height: 100%;
-letter-spacing: 0%;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-top: 44px;
 
 }
+#formname-error,
+#formemail-error,
+#formtext-error{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 17px;
+    leading-trim: Cap height;
+    line-height: 100%;
+    letter-spacing: 0;
+    color:#97238A;
+    display: flex;
+    justify-content: right;
+    margin-top: 3px;
+
+
+}
+
+
 
 
 
