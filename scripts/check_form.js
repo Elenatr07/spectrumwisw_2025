@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-//	$(".phone").mask("(99) 9999?9-9999");
+	//	$(".phone").mask("(99) 9999?9-9999");
 
 
 
@@ -39,9 +39,10 @@ $(document).ready(function () {
 
 });
 function clearform() {
-	document.getElementById("formname").value = ""; //don't forget to set the textbox id
-	document.getElementById("formemail").value = "";
-	document.getElementById("formtext").value = "";
+	$('#formname').val("") 
+	$('#formemail').val("")
+	$('#formtext').val("")
+	
 }
 
 
