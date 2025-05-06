@@ -1,6 +1,14 @@
 
-var lang_default = $('#dropbtn').text('English');
-var lang_default_footer = $('#drop_footer_lang').text('English');
+if ($('#dropbtn').hasClass('rus')){
+    var lang_default = $('#dropbtn').text('Русский');
+    var lang_default_footer = $('#drop_footer_lang').text('Русский');
+} else {
+    var lang_default = $('#dropbtn').text('English');
+    var lang_default_footer = $('#drop_footer_lang').text('English');
+
+}
+
+
     var select_lang = lang_default.text();
     //console.log(select_lang);    
     $('.toggle_dark_left').css('display', 'none');
@@ -18,25 +26,6 @@ var lang_default_footer = $('#drop_footer_lang').text('English');
     total = 0;
     total1 =0
     total2 =0
-
-/*function showNextItems() {
-    console.log('start show card')
-    
-    for (var i = itemsCount; i < (itemsCount + pagination); i++) {
-        $('.filter_item_img:eq(' + i + ')').show();
-       // console.log(i, itemsCount ) 
-         $.scrollTo(`#f${itemsCount+1}`);
-       console.log("itemsCount:" +itemsCount, 'i:'+i) 
-       
-    }
-    itemsCount += pagination;
-      if (itemsCount > itemsMax) {
-       // $('#see_more_button').hide();
-       console.log("itemsCount:" +itemsCount, 'i:'+i) 
-    }
-};*/
-
-//showNextItems();
 
 
  

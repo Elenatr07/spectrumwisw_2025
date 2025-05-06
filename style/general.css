@@ -1103,6 +1103,9 @@ input {
 
 
 }
+.button_view.prog::before{
+    width: 102.1%;
+}
 
 
 
