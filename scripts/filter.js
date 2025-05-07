@@ -9,7 +9,12 @@ $(document).ready(function(){
     var isShowing = true;
     
     var count = 0
-    $('#see_more_txt').text('See more')
+    if($('#dropbtn').hasClass('rus')){
+        $('#see_more_txt').text('Показать Больше')
+    } else {
+        $('#see_more_txt').text('See more')
+    }
+    
     if (numInList > numToShow && !$(".button_block").hasClass("selected")) {
         button.show();
        
@@ -68,7 +73,12 @@ $(document).ready(function(){
           //  console.log ($('.filter_item_img').filter('.active.hidden').length)
           //  console.log($('.filter_item_img').filter('.active.hidden').length)
         } else if ($('.filter_item_img').filter('.active.hidden').length > 0 && $(".button_block").hasClass("selected") ){
-            buttonText.text("See more");  
+            if($('#dropbtn').hasClass('rus')) {
+                buttonText.text("Показать Больше");  
+            } else {
+                buttonText.text("See more");  
+            }
+            
             isShowing = true;
             button.show();
         }
@@ -105,7 +115,12 @@ $(document).ready(function(){
             list.hide();
             list.slice(0, 6).fadeIn(100);
             isShowing = true;
-            buttonText.text("See more");
+            if($('#dropbtn').hasClass('rus')){
+                buttonText.text("Показать Больше");
+            } else {
+                buttonText.text("See more");
+            }
+            
            $.scrollTo(`#anchor_filter`, 1000)
             count = 0
            
@@ -131,7 +146,12 @@ $(document).ready(function(){
             asd.hide();
             asd.slice(0, 6).fadeIn(100);
             isShowing = true;
-            buttonText.text("See more");
+            if($('#dropbtn').hasClass('rus')){
+                buttonText.text("Показать Больше");
+            } else {
+                buttonText.text("See more");
+            }
+            
            
         }
             
@@ -146,20 +166,35 @@ $(document).ready(function(){
 
         if(nowShowing == numInList && isShowing && !$(".button_block").hasClass("selected") ){
             isShowing = false;
-            buttonText.text("See less");  
+            if($('#dropbtn').hasClass('rus')){
+                buttonText.text("Показать меньше");   
+            } else {
+                buttonText.text("See less");  
+            }
+            
             count = 0
             
           
         }
      
       else if (isShowing && activeCard.length == nowShowing && $(".button_block").hasClass("selected")){
+        if($('#dropbtn').hasClass('rus')){
+            buttonText.text("Показать меньше");  
+        } else {
             buttonText.text("See less");  
+        }
+            
             isShowing = false;
            count=0
           
         }
          else if (activeCard.length == numInListFilter && isShowing && $(".button_block").hasClass("selected")){
-            buttonText.text("See less");  
+            if($('#dropbtn').hasClass('rus')){
+                buttonText.text("Показать меньше");  
+            } else {
+                buttonText.text("See less");  
+            }
+            
             
             isShowing = false;
             console.log ('numInListFilter:' +numInListFilter)
@@ -170,8 +205,13 @@ $(document).ready(function(){
         }
           
         if(nowShowing == numToShow){
+            if($('#dropbtn').hasClass('rus')){
+                buttonText.text("Показать Больше");
+            } else {
+               buttonText.text("See more"); 
+            }
         
-          buttonText.text("See more");
+          
           isShowing = true;
          
         }  

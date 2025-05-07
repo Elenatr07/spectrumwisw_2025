@@ -796,11 +796,11 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 70px;
-    width: 455px;
+    width: 470px;
 }
 .filter_block,
 .filter_img{
-    width: 560px;
+    width: 615px;
 }
 .filter_buttons .button_block{
     margin: 0;
@@ -1105,6 +1105,24 @@ input {
 }
 .button_view.prog::before{
     width: 102.1%;
+}
+.button_view.prog2::before{
+    width: 103.2%;
+}
+.button_view.prog3::before {
+    width: 102.9%;
+}
+.button_view.prog4::before {
+    width: 102.2%;
+}
+.button_view.prog5::before {
+    width: 101.6%;
+}
+.filter_buttons.for_sevices .button_block:nth-child(2) .button_view.prog6::before {
+    max-width: 247px;
+}
+.sol3{
+    padding: 17px 18px;
 }
 
 
