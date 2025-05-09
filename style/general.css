@@ -153,6 +153,7 @@ body {
     padding: 37px 38px;
     position: fixed;
     z-index: 3;
+    top: 5px;
 }
 .hamb-line {
     display: block;
@@ -253,7 +254,7 @@ body {
     margin-top: 0;
     position: fixed;
     z-index: 2;
-    max-height: 0;
+   max-height: 0%;
     transition: max-height .5s ease-out;
     top: 0;
     bottom: 0;
@@ -268,6 +269,7 @@ body {
     margin-left: 25px;
     cursor: pointer;
     margin-top: 8px;
+    height: 12px;
 }
 .header_block{
     display: flex;
@@ -284,6 +286,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 
  /*.dropdown {
     position: relative;
@@ -335,8 +338,7 @@ body {
  
 
 .contact_in_menu{
-    display: block;
-    width: 100%;
+   width: fit-content;
 }
 .contact_in_header{
     display: none;
@@ -358,7 +360,8 @@ body {
 
 }
 #contact_in_header,
-.button_view{
+.button_view,
+.contact_in_menu{
     position: relative;
     border: 1px solid transparent;
     height: 36px;
@@ -382,7 +385,8 @@ body {
 
 }
 
-#contact_in_header::before
+#contact_in_header::before,
+#contact_in_menu::before
 {
     background: linear-gradient(92.11deg, #F73E94 5.48%, #97238A 37.96%, #5456AB 70.44%, #22DCD9 102.92%);
     border-radius: 34px;
@@ -687,8 +691,8 @@ body {
     background-position: center;
     background-size: 170px 120px;
     height: 120px;
-    width: 273px;
-    max-width: 273px;
+    width: 233px;
+   /* max-width: px;*/
     display: inline-block;
     cursor: pointer;
 }
@@ -1137,11 +1141,25 @@ input {
 .f1{
     margin: 18px;
 }
+.about_link{
+    display: none;
+    order: 3;
+}
+.adress,
+.email_link,
+.tel{
+    display: none;
+}
+.tel{
+    pointer-events: none;
+    cursor: default;
+}
 
 
 
 
-@media (min-width: 1000px)  {
+
+@media (min-width: 1025px)  {
     .hamb {
         display: none;
     }
@@ -1229,23 +1247,135 @@ input {
 }
 @media(max-width:1200px){
     .link, #dropbtn{
-        margin: 0 15px;
+        margin: 0 13px;
     }
     .header_block {
      margin: 35px 30px 0 30px;
        
     }
-    .link, #dropbtn, #contact_in_header, .button_view {
+    .link, #dropbtn, #contact_in_header {
         font-size: 15px;
     }
     .img_block_item.f1 img {
         width: 300px;
     }
     .slider_img img {
-        height: 80%;
+        height: 100%;
+    
+    }
+    .slider_info {
+        width: 700px;
     }
     .slider_img {
-        width: 360px;
+       height: 238px;
+       margin-top: 20px;
     }
+    .slider_img.nib img {
+        height: 90%;
+    }
+    .h3_slider_info{
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    .footer_wrapper {
+        padding: 57px 85px 30px 45px;
+    }
+    .footer_logo_img {
+        background-size: 130px 92px;
+    }
+    
+    
  
+}
+@media(max-width:1024px){
+    .header_block {
+      justify-content: left;
+    }
+    .header_block {
+        margin: 35px 50px 140px 50px;
+    }
+    .toggle_link{
+        order: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .dropdown.lang_in_header{
+        order: 2;
+        width: 104px;
+        margin: 0 auto;
+       
+    }
+    .about_link {
+        display: block;
+        margin: 0 auto;
+    }
+    .services_link {
+        order: 4;
+        margin: 0 auto;
+    }
+    .project_link{
+        order: 5;
+        margin: 0 auto;
+    }
+    .solutions_link{
+        order: 6;
+        margin: 0 auto;
+    }
+    .contact_in_menu{
+        order: 7;
+        margin: 0 auto;
+    }
+    .adress{
+        display: block;
+        order: 8;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 15px;
+        leading-trim: Cap height;
+        line-height: 25px;
+        letter-spacing: 0;
+        text-align: center;
+
+    }
+    .email_link{
+        display: block;
+        order: 9;
+        margin: 0 auto;
+    }
+    .tel{
+        display: block;
+        order: 10;
+        pointer-events: auto;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+    .menu,
+    .dropbtn{
+        justify-content: center;
+    }
+    .dropdown-content {
+        width: 100%;
+    }
+    #select_russian.link,
+    #select_english.link,
+    #dropbtn{
+        margin: 0;
+    }
+    .row_up
+     {
+        background: var(--lang-row-up) no-repeat center right;
+        padding-right: 28px;
+    }
+    .row_down{
+        background: var(--lang-row-down) no-repeat center right;
+        padding-right: 28px;
+    }
+    .link, #dropbtn{
+        font-size: 18px;
+    }
+    .email_link .li_footer.link,
+    .tel .li_footer.link{
+        font-size: 15px;
+    }
+   
 }
