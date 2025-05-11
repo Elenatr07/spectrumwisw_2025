@@ -1154,6 +1154,9 @@ input {
     pointer-events: none;
     cursor: default;
 }
+.social_links.in_menu {
+    display: none;
+}
 
 
 
@@ -1358,7 +1361,8 @@ input {
     }
     #select_russian.link,
     #select_english.link,
-    #dropbtn{
+    #dropbtn,
+    .link {
         margin: 0;
     }
     .row_up
@@ -1377,5 +1381,11 @@ input {
     .tel .li_footer.link{
         font-size: 15px;
     }
+    .social_links.in_menu {
+        display: flex;
+        margin: 0 auto;
+        order: 11;
+    }
+    
    
 }
