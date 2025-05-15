@@ -52,7 +52,7 @@ body {
     --slider-row-right: url(../img/row_right_black.svg);
     --social-link-instagram: url(../img/instagram.svg);
     --social-link-linkidin: url(../img/linkidin.svg);
-    --social-link-facebook: url(../img/facebook.svg);
+    --social-link-facebook: url(../img/whatsapp.svg);
     --logo-footer: url(../img/logo_footer.svg);
     --circle: url(../img/circle_light.svg);
     --box-color: hsla(228, 27%, 76%, 1);
@@ -94,7 +94,7 @@ body {
     --slider-row-right: url(../img/row_right_white.svg);
     --social-link-instagram: url(../img/instagram_for_dark.svg);
     --social-link-linkidin: url(../img/linkidin_for_dark.svg);
-    --social-link-facebook: url(../img/facebook_for_dark.svg);
+    --social-link-facebook: url(../img/whatsapp_dark.svg);
     --logo-footer: url(../img/logo_footer_for_dark.svg);
     --circle: url(../img/ring_dark.svg);
     --box-color: hsla(227, 33%, 31%, 1);
@@ -382,7 +382,7 @@ body {
     vertical-align: middle;
     cursor: pointer;
     display: block;
-    padding: 6px 28px;
+    padding: 7px 28px;
     margin: 0 25px;
     min-width: 109px;
     
@@ -406,7 +406,7 @@ body {
 
 }
 #contact_in_menu::before{
-    height: 37px;
+    height: 38px;
 }
 #contact_in_header::before{
     height: 38px;
@@ -1308,6 +1308,9 @@ input {
  
 }
 @media(max-width:1024px){
+    .dropdown-content a{
+        text-align: center;
+    }
     .shadow{
         display: block;
     }
