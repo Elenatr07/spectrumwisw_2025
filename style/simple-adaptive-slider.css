@@ -203,4 +203,9 @@
     margin-top: -8px;
   }
 }
+@media(max-width:600px){
+  .itcss__items{
+    margin-top: 0;
+  }
+}
 
