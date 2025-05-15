@@ -1445,6 +1445,8 @@ input {
     .h3_slider_info {
         font-size: 27px;
         margin: 0 auto;
+        text-align: center;
+        line-height: 150%;
     }
     .h4_slider_info{
         margin: 30px auto;
@@ -1470,6 +1472,54 @@ input {
     }
 
  
+}
+@media(max-width:767px){
+    .img_block_item.f1 img {
+        width: 333px;
+    }
+        .img_block_item.f1.f2,
+        .img_block_item.f1.s1 {
+        display: none;
+    }
+    .main_info_wrapper {
+    width: 95%;
+    }
+        #img1 {
+        right: -58px;
+    }
+        .text_block {
+        width: 400px;
+    }
+    #img3 {
+        top: 46px;
+        left: -116px;
+    }
+    .point_out.anime_img3 img,
+    .point_out.anime_img2 img,
+    .point_out.anime_img1 img {
+        width: 90%;
+    }
+    #img2 {
+        right: -114px;
+        top: 216px;
+    }
+    
+}
+@media(max-width:700px){
+     .point_out.anime_img3,
+    .point_out.anime_img2,
+    .point_out.anime_img1 {
+       display: none;
+    }
+    .text_block {
+        width: 500px;
+    }
+    .slider_info {
+         width: fit-content;
+    }
+    .h3_slider_info.s4 {
+        width: 250px;
+    }
 }
 
 
