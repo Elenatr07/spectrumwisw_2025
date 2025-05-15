@@ -187,4 +187,20 @@
     padding: 6px 21px;
 }
 }
+@media(max-width:1001px){
+        .itcss__btn {
+            display: none;
+        }
+        .itcss__wrapper{
+          width: 95%;
+        }
+}
+@media(max-width:950px){
+  .itcss__item{
+    flex-direction: column;
+  }
+  .itcss__indicators{
+    margin-top: -8px;
+  }
+}
 
