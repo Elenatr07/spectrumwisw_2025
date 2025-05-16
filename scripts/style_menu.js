@@ -39,6 +39,11 @@ $(document).ready(function() {
         } else {
            $('#nav_shadow').addClass("shadow")  
         }
+        if($('body').hasClass('scroll_body')) {
+            $('body').removeClass('scroll_body')
+        } else {
+            $('body').addClass('scroll_body')
+        }
        
     });
 
