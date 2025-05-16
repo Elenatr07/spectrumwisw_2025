@@ -1636,7 +1636,7 @@ input {
         font-size: 14px;
     }
 }
-@media(max-height:720px){
+@media(max-height:639px){
     .side-menu:checked~nav {
         bottom: auto;
     }
