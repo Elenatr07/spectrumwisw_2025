@@ -329,6 +329,10 @@ body {
     height: 20px;
   
  }
+ .row_down.r1,
+ .row_up.r1{
+    height: auto;
+ }
  
 
  
@@ -1335,7 +1339,7 @@ input {
     .dropdown.lang_in_header{
         order: 2;
         width: 104px;
-        margin: 0 auto 60px auto;
+        margin: 0 auto 25px auto;
         height: 60px;
        
     }
@@ -1630,6 +1634,11 @@ input {
     }
         .link, #dropbtn, #contact_in_header, .button_view {
         font-size: 14px;
+    }
+}
+@media(max-height:720px){
+    .side-menu:checked~nav {
+        bottom: auto;
     }
 }
 
