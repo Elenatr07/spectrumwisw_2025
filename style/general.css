@@ -147,6 +147,10 @@ body {
  .side-menu {
     display: none;
 }
+.scroll_body{
+    overflow-y: hidden;
+    position:fixed;
+}
 .hamb {
     cursor: pointer;
     right: 0;
@@ -260,6 +264,8 @@ body {
     bottom: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    overflow-y: auto;
+    white-space: nowrap;
  }
 .header_logo{
     background-image: var(--image-logo-light);
