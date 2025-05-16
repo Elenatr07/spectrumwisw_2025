@@ -31,6 +31,19 @@ if ($('#dropbtn').hasClass('rus')){
  
    
 $(document).ready(function() {
+   // localStorage.setItem('theme', 'light');
+    let theme = localStorage.getItem('theme');
+    console.log(theme)
+    if(theme === 'dark'){
+        $('body').addClass('dark');
+        $('.toggle_light_right').css('display', 'none');
+        $('.toggle_dark_left').css('display', 'block')
+
+    } else {
+        $('body').removeClass('dark');
+        $('.toggle_light_right').css('display', 'block');
+        $('.toggle_dark_left').css('display', 'none')
+    }
 
    
     $('#side-menu').on('click', function(){
@@ -48,13 +61,16 @@ $(document).ready(function() {
     });
 
     $('#toggle').on('click', function(){
+        
         $('.toggle_dark_left').toggle();
         $('.toggle_light_right').toggle();
         if($('body').hasClass('dark')){
             $('body').removeClass('dark');
+            localStorage.setItem('theme', 'light');
         } else {
             $('body').addClass('dark');
             $('#nib').attr('src', 'img/nib_for_dark.svg' )
+            localStorage.setItem('theme', 'dark');
         }
 
 
