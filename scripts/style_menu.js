@@ -108,6 +108,14 @@ $(document).ready(function() {
       
         
     })
+    $('#about_link_menu').on('click', function(){
+         $('body').removeClass('scroll_body');
+         $('#nav_shadow').removeClass("shadow");
+         $('#side-menu').prop('checked', false)
+        
+       
+
+    })
 
     
 })
