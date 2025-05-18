@@ -1255,6 +1255,30 @@ input {
         width: 780px;
     }
 }
+@media(max-width:1350px){
+    .front, .back{
+        width: 270px;
+        height: 203px;
+    }
+    .filter_item_img_s .img_block_item img {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    }
+    .filter_item_img_s p{
+        font-size: 15px;
+    }
+    .filter_item_img_s {
+        width: 270px;
+        height: 203px
+    }
+    .filter_item_img_s{
+        margin: 15px;
+    }
+    .back .img_block_item .card_txt{
+        font-size: 15px;
+    }
+}
 @media(max-width:1300px){
     #contact_in_header{
         margin: 0 0 0 25px;
