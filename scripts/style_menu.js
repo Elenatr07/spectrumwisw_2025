@@ -116,6 +116,15 @@ $(document).ready(function() {
        
 
     })
+    $('#link_to_web').on('click', function(){
+         $.scrollTo(`#block_web`, 1000);
+    })
+    $('#link_to_graphic').on('click', function(){
+        $.scrollTo(`#graphic`, 1000)
+    })
+    $('#link_to_marketing').on('click', function(){
+        $.scrollTo(`#marketing`, 1000)
+    })
 
     
 })
