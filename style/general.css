@@ -486,7 +486,9 @@ body {
 }
 #anchor_filter {
   justify-content: center;
+  flex-wrap: wrap;
 }
+
 .img_block_item {
   cursor: pointer;
 }
