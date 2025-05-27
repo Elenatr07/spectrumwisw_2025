@@ -904,7 +904,10 @@ body {
   height: 250px;
   border-radius: 30px;
   background: var(--box-color);
-  padding: 36px 60px;
+ 
+}
+.front{
+    padding: 36px 60px; 
 }
 
 .back {
@@ -1124,7 +1127,7 @@ input {
   width: 102.2%;
 }
 .button_view.prog5::before {
-  width: 101.6%;
+  width: 102.6%;
 }
 .filter_buttons.for_sevices
   .button_block:nth-child(2)
@@ -1207,6 +1210,11 @@ input {
     display: none;
   }
 }
+@media(max-width:1919px){
+    #in_project{
+        padding: 90px 90px;
+    }
+}
 @media (max-width: 1700px) {
   .img_block_item.f1 img {
     width: 333px;
@@ -1236,8 +1244,14 @@ input {
   .back {
     width: 270px;
     height: 203px;
+    
+  }
+  .front{
     padding: 25px 25px;
   }
+  .back {
+    padding: 20px 20px;
+}
   .filter_item_img_s .img_block_item img {
     width: 75%;
     display: block;
@@ -1254,7 +1268,7 @@ input {
     margin: 15px;
   }
   .back .img_block_item .card_txt {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 @media (max-width: 1300px) {
@@ -1292,7 +1306,7 @@ input {
     max-width: 237px;
   }
   .button_view.prog5::before {
-    width: 101.5%;
+    width: 102.9%;
   }
   .button_view.prog3::before {
     width: 102.7%;
@@ -1348,6 +1362,13 @@ input {
     .button_view.prog6::before {
     max-width: 236px;
   }
+      #in_project {
+        padding: 90px 50px;
+    }
+    #anchor_filter .img_block_item img,
+    #anchor_filter .filter_item_img{
+        width: 365px;
+    }
 }
 @media (max-width: 1130px) {
   .filter_header {
@@ -1417,6 +1438,7 @@ input {
     line-height: 25px;
     letter-spacing: 0;
     text-align: center;
+    color: var(--text-white)
   }
   .email_link {
     display: block;
@@ -1562,6 +1584,10 @@ input {
   .for_sevices {
     width: 366px;
   }
+  #fb1,
+  #fb1 .filter_buttons{
+    width: 425px;
+  }
   .filter_img {
     width: 46%;
   }
@@ -1576,6 +1602,21 @@ input {
   .button_view.prog3::before {
     width: 102.8%;
   }
+  #anchor_filter .img_block_item img,
+    #anchor_filter .filter_item_img{
+        width: 333px;
+        
+    }
+   #anchor_filter .filter_item_img{
+    margin: 15px 15px;
+   }
+    .button_view.prog.f17::before {
+    width: 102.4%;
+    }
+    #anchor_filter .filter_item_img p{
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
 }
 @media (max-width: 850px) {
   .img_block_item.f1 img {
@@ -1587,8 +1628,7 @@ input {
     width: 450px;
     height: 338px;
   }
-  .front,
-  .back {
+  .front {
     padding: 60px 60px;
   }
   .filter_item_img_s .img_block_item img {
@@ -1604,6 +1644,9 @@ input {
   .button_view.s7::before {
     width: 102.9%;
   }
+      #anchor_filter .img_block_item img, #anchor_filter .filter_item_img {
+        width: 450px;
+    }
 }
 @media (max-width: 769px) {
   .filter_block_wrapper {
@@ -1635,6 +1678,13 @@ input {
   .filter_block_wrapper {
     margin: 0 auto 90px auto;
   }
+    #fb1 .filter_buttons {
+       width: 80%;
+        margin: 70px auto 0 auto;
+    }
+    #fb1{
+        width: 100%;
+    }
 }
 @media (max-width: 767px) {
   .img_block_item.f1.f2,
@@ -1721,6 +1771,13 @@ input {
         .button_view.s6::before {
         width: 102.2%;
     }
+        #anchor_filter .img_block_item img, #anchor_filter .filter_item_img {
+        width: 365px;
+    
+    }
+    .button_view.prog2::before {
+    width: 103.4%;
+}
 }
 @media (max-width: 550px) {
 }
@@ -1735,6 +1792,12 @@ input {
   .main_info_wrapper {
     width: 90%;
   }
+      #anchor_filter .img_block_item img, #anchor_filter .filter_item_img {
+        width: 333px;
+    }
+        #fb1 .filter_buttons {
+        width: 90%;
+        }
 }
 @media (max-width: 424px) {
   .main_header,
@@ -1831,6 +1894,25 @@ input {
     }
         .button_view.s7::before {
         width: 103.1%;
+    }
+        #anchor_filter .img_block_item img, #anchor_filter .filter_item_img {
+        width: 280px;
+    }
+        #anchor_filter .filter_item_img p {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .button_view.prog5::before{
+            width: 103.4%;
+    }
+        .button_view.prog2::before {
+        width: 103.6%;
+    }
+    .button_view.prog.f17::before {
+        width: 102.6%;
+    }
+        .button_view.prog3::before {
+        width: 103%;
     }
 }
 @media (max-height: 610px) {
