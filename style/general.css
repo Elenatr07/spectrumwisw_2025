@@ -533,7 +533,7 @@ body {
   font-size: 15px;
   line-height: 30px;
   text-align: center;
-  width: 560px;
+  width: 800px;
   margin: 60px auto 60px auto;
   position: relative;
   color: var(--text-white);
@@ -1010,7 +1010,7 @@ body {
 .form {
   display: flex;
   margin: 0 auto;
-  max-width: 1320px;
+  max-width: 1150px;
   justify-content: space-around;
 }
 .name {
@@ -1046,6 +1046,7 @@ input {
 #formmain {
   width: 537px;
   margin: 0 0 0 auto;
+  order: 2;
 }
 .title_form {
   font-family: "Montserrat";
@@ -1176,8 +1177,12 @@ input {
 .img_block_item.f1.s1 {
   display: none;
 }
-.prog8::before{
-width: 101.6%;
+.prog8::before {
+  width: 101.6%;
+}
+.img_form {
+  display: flex;
+  margin: auto 0;
 }
 
 @media (min-width: 1025px) {
@@ -1228,6 +1233,9 @@ width: 101.6%;
   #block_solution .img_block_items {
     flex-wrap: wrap;
   }
+  .text_block {
+    width: 560px;
+  }
 }
 @media (max-width: 1919px) {
   #in_project,
@@ -1272,6 +1280,9 @@ width: 101.6%;
   }
   .back .img_block_item .card_txt {
     font-size: 14px;
+  }
+  .form {
+    justify-content: space-between;
   }
 }
 @media (max-width: 1300px) {
@@ -1414,6 +1425,20 @@ width: 101.6%;
   .filter_block.for_solutions {
     width: 100%;
   }
+  #formmain {
+    width: 434px;
+  }
+
+  input,
+  .textarea_block {
+    width: 429px;
+  }
+  .name {
+    width: 433px;
+  }
+  .text_field {
+    width: 426px;
+  }
 }
 @media (max-width: 1024px) {
   .dropdown-content a {
@@ -1523,6 +1548,13 @@ width: 101.6%;
   }
   footer {
     display: none;
+  }
+  .img_form img {
+    width: 90%;
+    order: 1;
+  }
+  .in_contacts {
+    justify-content: space-between;
   }
 }
 @media (max-width: 950px) {
@@ -1660,6 +1692,34 @@ width: 101.6%;
     font-size: 16px;
     letter-spacing: 3px;
   }
+  .form {
+    flex-direction: column;
+  }
+  .img_form {
+    order: 2;
+    margin-top: 30px;
+  }
+  #formmain {
+    order: 1;
+  }
+  .img_form img {
+    width: fit-content;
+    margin: 30px auto 0 auto;
+  }
+  #formmain {
+    margin: auto;
+    width: 537px;
+  }
+  .name {
+    width: 536px;
+  }
+  input,
+  .textarea_block {
+    width: 533px;
+  }
+  .text_field {
+    width: 529px;
+  }
 }
 @media (max-width: 850px) {
   .img_block_item.f1 img {
@@ -1704,8 +1764,15 @@ width: 101.6%;
   #anchor_filter .filter_item_img {
     width: 450px;
   }
+  .in_contacts .filter_img {
+    width: 41%;
+  }
 }
 @media (max-width: 769px) {
+  .in_contacts .filter_img {
+    margin: 100px auto 0 auto;
+    width: 60%;
+  }
   .filter_block_wrapper {
     flex-direction: column;
   }
@@ -1806,10 +1873,26 @@ width: 101.6%;
   .how_it_works_drop .filter_item_img_s .img_block_item img {
     width: 100%;
   }
-      .how_it_works_drop .back .img_block_item .card_txt,
-      .how_it_works_drop .filter_item_img_s p {
-        font-size: 18px;
-    }
+  .how_it_works_drop .back .img_block_item .card_txt,
+  .how_it_works_drop .filter_item_img_s p {
+    font-size: 18px;
+  }
+  #formmain {
+    width: 324px;
+  }
+  .name {
+    width: 323px;
+  }
+  input,
+  .textarea_block{
+    width: 320px;
+  }
+  .text_field{
+    width: 316px;
+  }
+      .img_form img {
+        width: 68%;
+      }
 }
 @media (max-width: 600px) {
   .main_img {
@@ -1836,14 +1919,15 @@ width: 101.6%;
   #block_web .filter_item_img_s:last-child .img_block_item img {
     width: 85%;
   }
-  
+
   .img_block_items {
     margin: 0 auto 30px auto;
   }
   .back .img_block_item .card_txt {
     font-size: 16px;
   }
-  #block_solution, .second_block {
+  #block_solution,
+  .second_block {
     padding: 75px 25px;
   }
   .filter_item_img_s {
@@ -1881,7 +1965,7 @@ width: 101.6%;
   #fb1 .filter_buttons {
     width: 90%;
   }
-  .card_item_img p{
+  .card_item_img p {
     font-size: 16px;
     letter-spacing: 2px;
   }
@@ -1906,9 +1990,10 @@ width: 101.6%;
   .h3_block {
     margin-bottom: 30px;
   }
-  .how_it_works_header .row_down, .how_it_works_header .row_up {
+  .how_it_works_header .row_down,
+  .how_it_works_header .row_up {
     margin-bottom: -30px;
-}
+  }
   .slider_img {
     height: 294px;
   }
@@ -1924,9 +2009,15 @@ width: 101.6%;
   .email_link {
     margin: 20px auto;
   }
-  .for_solutions .main_header_p {
-        letter-spacing: 4px;
-    }
+  .for_solutions .main_header_p
+   {
+    letter-spacing: 4px;
+  }
+  .in_contacts .main_header_p{
+    
+    letter-spacing: 6px;
+  
+  }
 }
 @media (max-width: 389px) {
   .main_header,
@@ -1939,7 +2030,6 @@ width: 101.6%;
   .header_block {
     margin: 35px 20px 85px 20px;
   }
-   
 }
 @media (max-width: 374px) {
   .main_header,
@@ -2005,17 +2095,20 @@ width: 101.6%;
   .img_block_item img {
     width: 280px;
   }
-      .how_it_works_drop .front, .how_it_works_drop .back, .how_it_works_drop .filter_item_img_s{
-        width: 280px;
-        height: 210px;
-      }
+  .how_it_works_drop .front,
+  .how_it_works_drop .back,
+  .how_it_works_drop .filter_item_img_s {
+    width: 280px;
+    height: 210px;
+  }
   #anchor_filter .filter_item_img p {
     font-size: 14px;
     letter-spacing: 2px;
   }
-      .how_it_works_drop .back .img_block_item .card_txt, .how_it_works_drop .filter_item_img_s p {
-        font-size: 13px;
-      }
+  .how_it_works_drop .back .img_block_item .card_txt,
+  .how_it_works_drop .filter_item_img_s p {
+    font-size: 13px;
+  }
   .button_view.prog5::before {
     width: 103.4%;
   }
@@ -2030,21 +2123,38 @@ width: 101.6%;
   }
   .prog8::before {
     width: 101.7%;
-}
-    .how_it_works_drop .filter_item_img_s .img_block_item img {
-        width: 75%;
+  }
+  .how_it_works_drop .filter_item_img_s .img_block_item img {
+    width: 75%;
+  }
+  .how_it_works_header .h3_block {
+    margin-right: 5px;
+  }
+  .how_it_works_header .h3_block {
+    font-size: 16px;
+    letter-spacing: 6px;
+  }
+  .for_solutions .main_header_p {
+    font-size: 45px;
+  }
+    .in_contacts .main_header_p{
+    
+    letter-spacing: 4px;
+  
+  }
+      #formmain {
+        width: 280px;
     }
-    .how_it_works_header .h3_block{
-        margin-right: 5px;
+    .name{
+      width: 279px;
     }
-    .how_it_works_header .h3_block{
-        font-size: 16px;
-        letter-spacing: 6px;
+    input,
+    .textarea_block{
+      width: 276px;
     }
-    .for_solutions .main_header_p {
-        font-size: 45px;
+    .text_field{
+      width: 272px;
     }
-   
 }
 @media (max-height: 610px) {
   .side-menu:checked ~ nav {
