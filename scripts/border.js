@@ -116,8 +116,13 @@ $(document).ready(function(){
         if ($('#formtext').hasClass('error')) {
             $('#border_textarea').addClass('border_error').addClass('checked')
         }
+        if($('.text_field ').hasClass('error')){
+        $('.text_field').css('border', 'none')
+    }
    
     })
+    
+    
     
     
 })
