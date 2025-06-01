@@ -26,8 +26,11 @@ if ($('#dropbtn').hasClass('rus')){
     total = 0;
     total1 =0
     total2 =0
-
-
+$('.close').on('click', function(){
+    $('.result').css('display', 'none');
+     $('#nav_shadow').removeClass("shadow");  
+		   $('.shadow').css('display', 'none')
+})
  
    
 $(document).ready(function() {
