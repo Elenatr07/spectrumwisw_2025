@@ -91,11 +91,11 @@
                     <form action="sender.php" method="post" id="formmain">
                         <p class="title_form">What’s your name?</p>
                         <div class="name" id="border_name">
-                            <input type="text"  class="input"  name="name" placeholder="Name" required id="formname">
+                            <input type="text"  class="input" autocomplete="off"  name="name" placeholder="Name" required id="formname">
                         </div>
                         <p class="title_form">Your Email</p>
                         <div class="name" id="border_email">
-                                <input type="email" class="input" name="email" placeholder="Email" required id="formemail">
+                                <input type="email" class="input" autocomplete="off" name="email" placeholder="Email" required id="formemail">
                         </div>
                                 
                         <p class="title_form">Tell us how we can help you...</p>
@@ -104,7 +104,7 @@
                             placeholder="Your message..." required></textarea>
                             <div class="status"></div>
                         </div>
-                        <button type="button" class="send_button" id="send-form" onClick="setTimeout('clearform()', 2000)">
+                        <button type="button" class="send_button" disabled id="send-form"  onClick="setTimeout('clearform()', 2000)">  
                             Send Message
                         </button>
 
@@ -197,7 +197,7 @@
     <script src="scripts/style_menu.js"></script>
     <script src="scripts/check_form.js"></script>
     <script src="scripts/anime.js"></script>
-    <script src="scripts/border.js"></script>
+  
 
     
 
