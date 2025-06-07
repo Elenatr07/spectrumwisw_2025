@@ -28,6 +28,9 @@ button {
 textarea{
   outline: none;
 }
+body{
+  position: relative;
+}
 html,
 body {
   margin: 0px;
@@ -520,8 +523,11 @@ body {
   cursor: pointer;
 }
 .img_block_item:hover {
-  transform: scale(1.1);
+  transform: scale(0.95);
   transition: all 0.5s linear;
+}
+.filter_item_img .img_block_item:hover{
+  transform: none;
 }
 .link:hover,
 #dropbtn:hover {
@@ -883,7 +889,7 @@ body {
   transition: 17s ease-in-out;
 }
 .filter_item_img:hover {
-  transform: scale(1.1);
+  transform: scale(0.95);
   transition: all 0.5s linear;
 }
 .for_sevices {
@@ -1024,7 +1030,7 @@ body {
   left: 20px;
 }
 .card_item_img:hover {
-  transform: scale(1.1);
+  transform: scale(0.95);
   transition: all 0.5s linear;
 }
 .form {
@@ -1262,6 +1268,53 @@ margin: 45px 0;
 .result div {
   margin: 30px;
 }
+.pop_1{
+  display: none;
+  width: 100vw;
+  background-color: var(--bg-dark);
+  position: absolute;
+      z-index: 12;
+  
+      height: fit-content;
+      overflow-y:scroll;
+          top: 100px;
+      border-radius: 30px 30px;
+}
+#close_pop{
+  top: 40px;
+    right: 40px;
+}
+.block_pop .pop_img_items{
+  display: flex;
+  flex-direction: column;
+      margin: 0 auto;
+}
+.block_pop .pop_img_items img {
+  width: 83%;
+  margin: 30px auto;
+}
+.block_pop h3{
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 47px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: var(--text-white);
+      width: 83%;
+    margin: 98px auto 11px auto;
+
+}
+.block_pop p{
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0;
+  width: 83%;
+  margin: 0 auto 84px auto;
+
+}
+
 
 @media (min-width: 1025px) {
   .hamb {
@@ -1960,6 +2013,17 @@ margin: 45px 0;
   #anchor_filter .filter_item_img {
     width: 365px;
   }
+  .block_pop h3{
+    margin: 59px auto 11px auto;
+    font-size: 38px;
+  }
+  .block_pop p{
+    margin: 0 auto 14px auto;
+    font-size: 20px;
+  }
+  .block_pop .pop_img_items img {
+     margin: 20px auto;
+}
 }
 
 @media (max-width: 500px) {
