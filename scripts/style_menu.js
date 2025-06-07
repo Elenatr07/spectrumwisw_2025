@@ -32,6 +32,8 @@ $('#close_pop').on('click', function(){
         'z-index': '1'
     })
     $("#nav_shadow").removeClass("shadow");
+     $("#in_project").css('display', 'block');
+     $('html, body').css('height', 'fit-content')
     
   })
 
@@ -116,11 +118,19 @@ $(document).ready(function () {
   $("#link_to_marketing").on("click", function () {
     $.scrollTo(`#marketing`, 1000);
   });
+   $(".pop").each(function(){
+    $(this).on('click', function(){
+        console.log($(this).attr('id'))
+    })
+    
+
+   })
 
   $("#f2").on("click", function () {
     $(".pop_1").css("display", "block");
     $("#nav_shadow").addClass("shadow");
- 
+    $("#in_project").css('display', 'none');
+    $('html, body').css('height', '100%')
     $('.shadow').css({
         'display': 'block',
         'z-index': '10'
