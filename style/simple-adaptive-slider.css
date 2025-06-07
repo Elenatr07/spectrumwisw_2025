@@ -200,12 +200,22 @@
     flex-direction: column;
   }
   .itcss__indicators{
-    margin-top: -8px;
+    margin-top: 25px;
   }
 }
 @media(max-width:600px){
   .itcss__items{
     margin-top: 0;
   }
+}
+@media(max-width:500px){
+      .itcss__indicators {
+        margin-top: 20px;
+    }
+}
+@media(max-width:386px){
+      .itcss__indicators {
+        margin-top: 12px;
+    }
 }
 
