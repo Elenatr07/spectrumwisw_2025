@@ -1243,7 +1243,7 @@ margin: 45px 0;
   position: absolute;
   transition: all 0.2s ease-out;
   width: 100%;
-  background: #0d0000;
+  background: var(--text-white);
   transform: matrix(1, 0, 0, -1, 0, 0);
   border-radius: 10px;
 
@@ -1278,7 +1278,7 @@ margin: 45px 0;
       height: fit-content;
       overflow-y:scroll;
           top: 100px;
-      border-radius: 30px 30px;
+      border-radius: 30px 30px 0 0;
 }
 #close_pop{
   top: 40px;
@@ -1312,6 +1312,7 @@ margin: 45px 0;
   letter-spacing: 0;
   width: 83%;
   margin: 0 auto 84px auto;
+  color: var(--text-white);
 
 }
 

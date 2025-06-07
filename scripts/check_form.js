@@ -82,7 +82,7 @@ $(document).ready(function () {
       }
     });
   });
-  $("input, textarea").on("input", function () {
+  $("input[type='text'], input[type='tel'], input[type='email'], textarea").on("input", function () {
     if ((!$(this).hasClass("error") && $(this).valid()) || $(this).valid()) {
       $(this).css({
         border: "1px solid transparent",
