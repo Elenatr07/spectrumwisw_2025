@@ -26,16 +26,15 @@ $("#close_result").on("click", function () {
   $("#nav_shadow").removeClass("shadow");
   $(".shadow").css("display", "none");
 });
-$('#close_pop').on('click', function(){
-    $('.block_pop').css('display', 'none');
-    $('.shadow').css({
-        'z-index': '1'
-    })
-    $("#nav_shadow").removeClass("shadow");
-     $("#in_project").css('display', 'block');
-     $('html, body').css('height', 'fit-content')
-    
-  })
+$("#close_pop").on("click", function () {
+  $(".block_pop").css("display", "none");
+  $(".shadow").css({
+    "z-index": "1",
+  });
+  $("#nav_shadow").removeClass("shadow");
+  $("#in_project").css("display", "block");
+  $("html, body").css("height", "fit-content");
+});
 
 $(document).ready(function () {
   // localStorage.setItem('theme', 'light');
@@ -118,24 +117,34 @@ $(document).ready(function () {
   $("#link_to_marketing").on("click", function () {
     $.scrollTo(`#marketing`, 1000);
   });
-   $(".pop").each(function(){
-    $(this).on('click', function(){
-        console.log($(this).attr('id'))
-    })
-    
+  $(".pop").each(function () {
+    $(this).on("click", function () {
+      popId = $(this).attr("id");
+      console.log(popId);
+ $(`.pop_1.block_pop.${popId}`).css("display", "block");
+        console.log(popId)
+        $("#nav_shadow").addClass("shadow");
+        $("#in_project").css("display", "none");
+        $("html, body").css("height", "100%");
+        $(".shadow").css({
+          display: "block",
+          "z-index": "10",
+        });
+        $.scrollTo(`#pop${popId}`, 1000);
 
-   })
-
+   
+    });
+  });
+    /*
   $("#f2").on("click", function () {
     $(".pop_1").css("display", "block");
     $("#nav_shadow").addClass("shadow");
-    $("#in_project").css('display', 'none');
-    $('html, body').css('height', '100%')
-    $('.shadow').css({
-        'display': 'block',
-        'z-index': '10'
-    })
-    $.scrollTo(`#pop_1`, 1000);
-  });
-  
+    $("#in_project").css("display", "none");
+    $("html, body").css("height", "100%");
+    $(".shadow").css({
+      display: "block",
+      "z-index": "10",
+    });
+    $.scrollTo(`#popf2`, 1000);
+  });*/
 });
