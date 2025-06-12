@@ -1,0 +1,917 @@
+body {
+    margin: 0;
+    align-items: center;
+ }
+ 
+ .container {
+    width: 100%;
+    height: 100%;
+    background: rgba(9, 5, 4, 1);
+    margin:  auto;
+  
+ }
+ .main_container {
+    background-image: url(../img/background.svg);
+    background-repeat: no-repeat;
+    background-size: 1519px 2733px;
+    max-width: 1519px;
+    min-height: 2733px;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    margin:  auto;
+ }
+
+ .main_container_about {
+   background-image: url(../img/back_about.svg);
+   background-repeat: no-repeat;
+   background-size: 1519px 3287px;
+   max-width: 1920px;
+   
+   padding: 0;
+   margin: 0 auto;
+   background-size: cover;
+   
+   
+ }
+
+ 
+ .main_info {
+    
+    max-width: 1440px; 
+    height: 964px;
+    margin: 0 auto;
+   
+ }
+
+ .main_info_about {
+   background-image: url(../img/img_about.svg);
+   background-repeat: no-repeat;
+   max-width: 1920px;
+   min-height: 960px;
+  
+   background-size: cover;
+ }
+ .main_info_services {
+   background-image: url(../img/img_services.svg);
+   background-repeat: no-repeat;
+   max-width: 1920px;
+   min-height: 1256px;
+  
+   background-size: cover;
+ }
+ .main_info_contacts {
+   background-image: url(../img/img_contacts.svg);
+   background-repeat: no-repeat;
+   max-width: 1920px;
+   min-height: 995px;
+   background-size: 1519px 995px;
+   background-size: cover;
+ }
+ .social_block {
+    width: 125px;
+    display: flex;
+    justify-content: space-around;
+    top: 70px;
+    position: relative;
+ }
+ .social img {
+    width: 25px;
+    height: 25px;
+ }
+ .social img:hover {
+    width: 23px;
+    height: 23px;
+ }
+ 
+ .slogan {
+    font-size: 70px;
+    font-family: 'Josefin Slab', serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: linear-gradient(100.96deg, #E9D6A5 -9.88%, #D97F2C 88.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: 574px;
+    height: 210px;
+    margin-left: 115px;
+    margin-top: 116px;
+ }
+ 
+ .type_text {
+    color: rgba(236, 218, 177, 1);
+    font-size: 16px;
+    font-family: 'Josefin Sans', serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 24px;
+ }
+ 
+ .massage_types {
+    margin-left: 115px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .button_appointment {
+    color: #1D0F06;
+    font-size: 18px;
+    font-family: 'Josefin Slab';
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 228px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(217, 127, 44, 1);
+    text-align: center;
+    padding: 11px 0;
+    cursor: pointer;
+    
+ }
+ 
+ .button_appointment:hover {
+    border: 2px solid rgba(217, 127, 44, 1);
+    background: rgba(9, 5, 4, 1);
+    color:rgba(217, 127, 44, 1) ;
+ }
+ 
+ .appointment {
+    display: flex;
+    margin-left: 115px;
+    margin-top: 86px;
+    width: 398px;
+    justify-content: space-between;
+ }
+ 
+ .button_services, .button_contacts {
+    color: rgba(236, 218, 177, 1);
+    font-size: 18px;
+    font-family: 'Josefin Slab';
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 1px solid #ECDAB1;
+    background: rgba(217, 127, 44, 0.00);
+    text-align: center;
+    padding: 11px 0;
+    cursor: pointer;
+ }
+ .button_services {
+   width: 145px;
+ }
+
+ 
+ .button_services:hover {
+    border: 1px solid rgba(217, 127, 44, 1);
+    color: rgba(217, 127, 44, 1);
+ }
+ 
+ 
+ .for_slider {
+    display: flex;
+    width: 918px;
+    flex-direction: column;
+    flex-shrink: 0;
+    font-size: 60px;
+    font-family: 'Josefin Slab';
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 auto;
+ }
+ 
+ .block_about_us {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    height: 537px;
+  
+  }
+  .block_about_us_img {
+    width: 550px;
+    height: 537px;
+    background-image: url(../img/hands.svg);
+    background-repeat: no-repeat;
+    background-size: 550px 537px;
+    order: 1;
+  }
+  
+  .header_about_us {
+    font-family: 'Josefin Slab';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: linear-gradient(91.63deg, #D97F2C -7.38%, #E9D5A4 99.56%, #E9D6A5 99.57%);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     Width: 378px;
+     Height:192px;
+     
+  
+  }
+  .header_about {
+   font-family: 'Josefin Slab';
+   font-size: 60px;
+   font-weight: 600;
+   line-height: 60px;
+   letter-spacing: 0em;
+   text-align: left;
+   background: linear-gradient(91.36deg, #D97F2C -7.38%, #E9D5A4 99.56%, #E9D6A5 99.57%);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 159px ;
+    margin-bottom: 75px;
+    padding: 0 200px;
+   
+  }
+  article {
+   padding: 0 200px;
+  }
+  
+  .about_us_content {
+    margin-left: 145px;
+    order: 2;
+  }
+
+  .about_content {
+   max-width: 1920px;
+   height: 100%;
+   
+  }
+
+  .about_block {
+   margin: 78px auto 120px auto;
+  }
+  
+  .about_us_text {
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(236, 218, 177, 1);
+    max-width: 370px;
+    margin-bottom: 54px;
+   
+    
+  
+  }
+  .about_text {
+   color: #ECDAB1;
+   font-family: 'Josefin Slab';
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 300;
+   line-height: 150%; /* 36px */
+   margin: 30px auto 30px auto;
+  }
+  .button_about_us {
+    color: #1D0F06;
+    font-size: 18px;
+    font-family: 'Josefin Slab';
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 121px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(217, 127, 44, 1);
+    text-align: center;
+    padding: 11px 0;
+    cursor: pointer;
+    display: block;
+    
+ }
+ .button_about_us:hover {
+    border: 2px solid rgba(217, 127, 44, 1);
+    background: rgba(9, 5, 4, 1);
+    color:rgba(217, 127, 44, 1) ;
+ }
+
+ 
+
+ 
+ .footer {
+    margin-top: 113px;
+    background-color: rgba(9, 5, 4, 1);
+   
+ }
+
+ .footer_block {
+   max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 153px 0 91px;
+ }
+
+ .footer_title{
+    font-family: 'Josefin Slab';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(233, 214, 165, 1);
+    margin-bottom: 25px;
+ }
+
+ .footer_text {
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(236, 218, 177, 1);
+    margin-bottom: 33px;
+
+ }
+ .footer_adress {
+    font-family: 'Josefin Slab';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(236, 218, 177, 1);
+    margin-bottom: 33px;
+
+ }
+ .footer_phone {
+    font-family: 'Josefin Slab';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.link_phone {
+   color: rgba(217, 127, 44, 1);
+}
+
+.footer_link {
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(236, 218, 177, 1);
+    margin-bottom: 5px;
+}
+.footer_link:hover {
+   background: linear-gradient(75deg,rgba(217, 127, 44, 1),rgba(233, 214, 165, 1));
+      -webkit-background-clip: text;
+      font-weight: 400;
+      -webkit-text-fill-color: transparent;
+      font-size: 17px;
+}
+.footer_about, .footer_contacts{
+    width: 250px;
+    margin: 0 auto;
+}
+.footer_navigation {
+    width: 103px;
+    margin: 0 auto;
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+}
+
+.policy_text {
+    color: #C69C54;
+    font-size: 10px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.policy {
+    display: flex;
+    width: 112px;
+    justify-content: space-between;
+    margin-left: 199px;
+    order: 1;
+  
+}
+.copyright {
+    color: #C69C54;
+    font-size: 10px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin-left: 199px;
+    margin-top: 0;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+.policy_and_social {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.social_media {
+    margin: 0 12px;
+}
+.social_media_block {
+    margin-right: 205px;
+    order: 2;
+}
+
+.social_media img:hover {
+   width: 23px;
+   height: 23px;
+}
+.call {
+   pointer-events: none;
+    cursor: default;
+}
+
+@media(max-width:1300px) {
+   .header_about {
+      padding: 0 100px;
+   }
+   article {
+      padding: 0 100px;
+  }
+  .main_info_about {
+   background-image: url(../img/back_about1300.svg);
+  }
+  .main_info_services {
+   background-image: url(../img/img_services1300.svg);
+  }
+}
+@media(max-width:1200px) {
+   .main_info_about {
+      background-image: url(../img/back_about1200.svg);
+      background-size: 1200px 960px;
+   }
+ 
+}
+
+
+
+@media(max-width: 1100px) {
+   .social_block {
+      display: none;
+   }
+   .main_container {
+      background-image: url(../img/background_middle.svg);
+      background-size: 1100px 826px;
+      
+      
+   }
+   .main_info_services {
+      background-image: url(../img/img_services1100.svg);
+      background-size: 1100px 795px;
+     }
+   .block_about_us_img {
+      background-image: url(../img/hands_small.svg);
+      background-size: 390px 380px;
+   }
+   .about_us_content {
+      margin-left: 0;
+   }
+   .slogan {
+      margin-left: 75px;
+      margin-right: 75px;
+   }
+   .massage_types {
+      margin-left: 75px;
+   }
+   .appointment {
+      margin-left: 75px;
+   }
+   .contact_block {
+      margin-left: auto;
+   }
+}
+
+@media(max-width:1000px) {
+   .main_container {
+      background-image: url(../img/background_middle1.svg);
+      
+   }
+   .main_info_about {
+      background-image: url(../img/back_about1000.svg);
+      background-size: 1000px 646px;
+      min-height: 660px;
+      background-position: 0 5rem;
+   }
+   .slogan {
+      margin-top: 716px;
+      width: 574px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .header_about {
+      margin-top: 120px;
+   }
+   
+   .slogan_about {
+      margin-top: 116px;
+      margin-left: 100px;
+   }
+   .main_info {
+      height: 1480px;
+   }
+   .header_slider  {
+      width: 574px;
+      height: 230px;
+   }
+   .block_about_us_img {
+      max-width: 450px;
+   }
+   .massage_types {
+      margin-left: auto;
+      margin-right: auto;
+      width: 574px;
+   }
+   .appointment {
+      width: 574px;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+   }
+   .about_block {
+      margin-right: 100px;
+      margin-left: 100px;
+   }
+  
+   .button_appointment {
+      margin-bottom: 42px;
+   }
+   .footer_block {
+      margin: 0 auto;
+   }
+   .main_info_contacts {
+      background-image: url(../img/img_contacts1000.svg);
+   }
+ 
+}
+@media(max-width:900px) {
+   .main_info_services {
+      background-image: url(../img/img_services900.svg);
+      background-size: 900px 800px;
+     }
+     .call {
+      pointer-events: auto;
+    cursor: pointer;
+     }
+}
+@media(max-width: 860px) {
+   .block_about_us_img {
+     max-width: 400px;
+   }
+   .main_info_about {
+      background-image: url(../img/back_about860.svg);
+      background-size: 860px 608px;
+      min-height: 660px;
+   }
+}
+@media(max-width:800px) {
+   .block_about_us {
+      flex-direction: column;
+      height: 600px;
+      
+   }
+   .about_us_content {
+      order: 1;
+      margin: 0 auto;
+   }
+   .block_about_us_img {
+      order: 2;
+      top: -280px;
+      position: relative;
+      margin-bottom: -280px;
+     
+   }
+   .header_about_us {
+      width: 574px;
+      margin: 0 auto;
+   }
+   .about_us_text {
+      max-width: 250px;
+      margin-left: 350px;
+   }
+   .button_about_us {
+      margin-left: 350px;
+   }
+   .footer {
+      margin-top: 0;
+   }
+   .policy {
+      margin-left: 0px;
+   }
+   .social_media_block {
+      margin-right: 20px;
+   }
+   .copyright {
+     width: 550px;
+     margin: 0 auto;
+   }
+   .footer_block {
+      flex-wrap: wrap;
+   }
+   .footer_about{
+      width: 550px;
+   }
+   .footer_navigation {
+      width: 200px;
+   }
+   .footer_contacts {
+      margin-right: 0;
+   }
+   .policy_and_social{
+      width: 550px;
+      margin: 0 auto;
+   }
+   .main_info_contacts {
+      background-image: url(../img/img_contacts800.svg);
+      background-size: 800px 585px;
+   }
+   .main_info_contacts {
+      min-height: 695px;
+   }
+   
+ 
+}
+@media(max-width:750px) {
+   .main_info_about {
+      background-image: url(../img/back_about750.svg);
+      background-size: 750px 560px;
+      min-height: 600px;
+      
+   }
+   .slogan_about {
+      margin-top: 70px;
+      margin-left: 75px;
+   }
+   .header_about {
+      line-height: normal;
+      font-size: 50px;
+      padding: 0 50px;
+   }
+   article {
+      padding: 0 50px;
+   }
+   .about_block {
+      margin-right: 50px;
+      margin-left: 50px;
+   }
+}
+@media(max-width: 700px) {
+   .main_container {
+      background-image: url(../img/background700.svg);
+      background-size: 700px 839px;
+   } 
+   .block_about_us_img {
+      top: -270px;
+      margin-bottom: -380px;
+
+   }
+   .block_about_us_img {
+      background-size: 320px 311px;
+   }
+   .slogan_about {
+      width: 300px;
+   }
+   .main_info_services {
+      background-image: url(../img/img_services700.svg);
+      background-size: 700px 750px;
+     }
+  
+}
+@media(max-width: 600px) {
+    .slogan {
+      width: 314px;
+      height: 270px;
+      font-size: 60px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .slogan_about {
+      margin-left: 50px;
+      width: 240px;
+   }
+   .massage_types {
+      width: 314px;
+   }
+   .appointment {
+      width: 314px;
+   }
+   .header_slider {
+      width: 314px;
+      height: 260px;
+      font-size: 44px;
+      line-height: normal;
+   }
+   .header_about_us {
+      width: 314px;
+      font-size: 36px;
+      line-height: normal;
+   }
+   .about_us_text {
+      margin-left: 0;
+   }
+   .button_about_us {
+      margin-left: 0;
+   }
+   .block_about_us_img {
+      top: 0;
+      background-size: 390px 380px;
+      
+   }
+   .block_about_us {
+      height: 850px;
+   }
+   .footer_about {
+      width: 350px;
+   }
+   .footer_contacts {
+      width: 350px;
+      margin: 0 auto;
+   }
+   .footer_navigation {
+      display: none;
+   }
+   .policy_and_social {
+      flex-direction: column;
+      width: 300px;
+     
+   }
+   .copyright {
+      width: 300px;
+      text-align: center;
+   }
+   .policy {
+      order: 2;
+      margin: 0 auto;
+   }
+   .social_media_block {
+      order: 1;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      margin-top: 57px;
+      margin-bottom: 57px;
+   }
+   .header_slider {
+      margin: 75px auto 55px auto;
+}
+.main_info_services {
+   background-image: url(../img/img_services600.svg);
+   background-size: 600px 650px;
+   min-height: 760px;
+  }
+  .main_info_contacts {
+   background-image: url(../img/img_contacts600.svg);
+   background-size: 600px 495px;
+}
+.main_info_contacts {
+   min-height: 550px;
+}
+}
+@media(max-width: 500px) {
+   .main_container {
+      background-image: url(../img/background500.svg);
+      background-size: 500px 839px;
+   } 
+   .block_about_us_img {
+      max-width: 370px;
+      background-size:370px 360px;
+   }
+   .about_text {
+      font-size: 18px;
+   }
+   .main_info_about {
+      background-image: url(../img/back_about500.svg);
+      background-size: 500px 431px;
+      background-position: 0 6rem;
+   }
+   .slogan_about {
+     margin-top: 80px;
+      font-size: 48px;
+      width: 180px;
+      
+   }
+   .header_about {
+      margin-top: 0;
+   }
+   .main_info_services {
+      background-image: url(../img/img_services500.svg);
+      background-size: 500px 670px;
+     }
+  
+}
+ 
+@media(max-width: 390px) {
+   .main_container {
+      background-image: url(../img/background_small.svg);
+      background-size: 390px 500px;
+   }
+   .footer_about {
+      width: 250px;
+   }
+   .footer_contacts {
+      width: 250px;
+   }
+   .slogan {
+      margin-top: 416px;
+     margin-left: 20px;
+      margin-right: 20px;
+      
+   }
+   .slogan_about {
+      margin-top: 50px;
+      
+   }
+   
+   .main_info {
+      height: 1180px;
+   }
+   .main_info_about {
+      background-image: url(../img/back_about400.svg);
+      background-size: 400px 195px;
+      background-position: 0 11rem;
+      min-height: 500px;
+   }
+   .header_about {
+      font-size: 44px;
+      
+   }
+   .main_info_services {
+      background-image: url(../img/img_services400.svg);
+      background-size: 400px 610px;
+     }
+     .social_media_block {
+      width: 280px;
+     }
+}
+
+@media(max-width:370px) {
+   .block_about_us_img {
+      max-width: 350px;
+      background-size:350px 341px;
+   }
+   .main_info_services {
+      min-height: 700px;
+   }
+}
+
+@media(max-width:350px) {
+   .block_about_us_img {
+      max-width: 300px;
+      background-size:300px 292px;
+   }
+   .slogan {
+      margin-top: 416px;
+      font-size: 48px;
+      width: 280px;
+   }
+   .slogan_about {
+      margin-top: 50px;
+   }
+   .massage_types  {
+      width: 280px;
+   }
+   .appointment {
+      width: 280px;
+   }
+   .main_info {
+      height: 1234px;
+   }
+   .header_slider {
+      width: 280px;
+   }
+   .header_about_us {
+      width: 280px;
+   }
+   .header_about {
+      width: 280px;
+      font-size: 34px;
+   }
+   .about_block {
+      margin-right: 35px;
+      margin-left: 35px;
+}
+}
+  

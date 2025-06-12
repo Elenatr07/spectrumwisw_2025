@@ -1,0 +1,433 @@
+.shadow {
+   background-color: rgba(217, 217, 217, 0.2);
+   opacity: 1;
+   z-index: 1;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   display: block;
+   
+   
+}
+
+
+
+/* Header */
+.header_page {
+   display: flex;
+   justify-content:space-around;
+   padding: 0 77px 0 77px;
+   
+  
+}
+
+.header_logo {
+   width: 90px;
+   display: flex;
+   justify-content: flex-start;
+   background-image: url(../img/logo.svg);
+   background-repeat: no-repeat;
+   background-size: 90px 67px ;
+   height: 67px;
+   top: 35px;
+   position: relative;
+   
+   
+ }
+
+
+/*menu */
+
+.link_text {
+   font-family: 'Josefin Slab', serif;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 18px;
+   letter-spacing: 0em;
+   text-align: left;
+   margin-right: 11px;
+   margin-left: 11px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-top: 46px;
+   color: rgba(233, 214, 165, 1);
+   ;
+
+}
+
+.link:hover {
+      background: linear-gradient(75deg,rgba(217, 127, 44, 1),rgba(233, 214, 165, 1));
+      -webkit-background-clip: text;
+      font-weight: 400;
+      -webkit-text-fill-color: transparent;
+      
+}
+
+
+
+
+
+
+/* Nav menu */
+.nav {
+
+   background: rgba(0, 0, 0, 1);
+   overflow: hidden;
+   right: 0;
+   width: 264px;
+   /*height: 845px;*/
+   margin-top: 0;
+   position: fixed;
+   z-index: 2;
+   max-height: 0;
+   transition: max-height .5s ease-out;
+   top: 0;
+   bottom: 0;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   opacity: 0.85;
+   
+}
+.social_block_nav {
+   display: block; 
+   width: 125px;
+   display: flex;
+   justify-content: space-around;
+   top: 70px;
+   position: relative;
+   margin: 0 auto;
+}
+
+
+
+.menu {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   margin-top: 140px;
+   padding: 0;
+
+}
+
+a {
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+
+/* Menu Icon */
+.hamb {
+   cursor: pointer;
+   right: 0;
+   padding: 57px 38px;
+   position: fixed;
+   z-index: 3;
+
+}
+
+/* Style label tag */
+
+.hamb-line {
+
+   display: block;
+   height: 5px;
+   position: relative;
+   width: 35px;
+   background: rgba(186, 146, 79, 1);
+   transform: matrix(1, 0, 0, -1, 0, 0);
+   border-radius: 10px;
+}
+
+/* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after {
+
+   content: '';
+   display: block;
+   height: 100%;
+   position: absolute;
+   transition: all .2s ease-out;
+   width: 100%;
+   background: rgba(186, 146, 79, 1);
+   transform: matrix(1, 0, 0, -1, 0, 0);
+   border-radius: 10px;
+}
+
+.hamb-line::before {
+   top: 10px;
+}
+
+.hamb-line::after {
+   top: -11px;
+}
+
+.type {
+   display: flex;
+}
+.side-menu {
+   display: none;
+
+}
+
+/* Toggle menu icon */
+.side-menu:checked~nav {
+   max-height: 100%;
+}
+
+.side-menu:checked~.hamb .hamb-line {
+   background: transparent;
+}
+
+.side-menu:checked~.hamb .hamb-line::before {
+   transform: rotate(-45deg);
+   top: 0;
+}
+
+.side-menu:checked~.hamb .hamb-line::after {
+   transform: rotate(45deg);
+   top: 0;
+}
+
+#id_link_dropdown {
+   order: 3;
+}
+
+#id_link_projects {
+   order: 4;
+}
+
+#id_link_services {
+   order: 5;
+}
+#id_link_designs_to_by {
+   order: 6;
+}
+
+.link_lang {
+   order: 2;
+   color: var(--text-white)/* #FAF4F4*/;
+}
+
+
+#toggle {
+   order:1;
+}
+
+#dropbtn {
+   cursor: pointer;
+   display: flex;
+   
+}
+
+.dropdown {
+   width: 160px;
+   display: none;
+   
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+   display: none;
+   position: absolute;
+   width: 140px;
+}
+
+
+
+#dropbtn::after {
+   background: var(--lang-row-down) no-repeat scroll center center;
+   content: "";
+   height: 4px;
+   top: 15px;
+   width: 10px;
+   padding-left: 47px;
+   
+}
+
+.dropdown-content a:first-child
+{
+ width: 77px;
+ height: 22px;
+}
+
+.dropdown-content a:last-child
+{
+ width: 120px;
+ height: 22px;
+ margin-top: 15px;
+ color: var(--text-white)/* #FAF4F4*/;
+ margin-left: -1px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+   color: black;
+   text-decoration: none;
+   display: block;
+}
+
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+.dropdown:hover #dropbtn::after {
+   background: var(--lang-row-up) no-repeat scroll center center;
+}
+
+
+
+
+
+/* Responsiveness */
+@media (min-width: 1100px)  {
+   .nav {
+      max-height: 100px;
+      float: right;
+      max-width: 971px;
+      width: 100%;
+      right: 0;
+      height: 100px;
+      position: relative;
+      z-index: 99999;
+      display: flex;
+      justify-content: space-around;
+      background: none;
+      opacity: 1;
+   }
+   .social_block_nav {
+      display: none;
+   }
+   .link_logo {
+      display: none;
+   }
+
+  .nav_shadow {
+      display: none;
+   }
+
+   .menu li {
+      float: left;
+   }
+
+   .flag_ru_big {
+      display: none;
+   }
+
+  
+   .dropdown {
+      display: inline;
+   }
+
+   
+   .hamb {
+      display: none;
+   }
+
+   .menu {
+      display: flex;
+      padding: 0px;
+      height: 100%;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 25px;
+      
+
+   }
+
+   .menu_link_contact {
+      display: none;
+   }
+
+  .link_lang {
+   display: none;
+  }
+
+   .link {
+      margin-top: 15px;
+   }
+
+   .link_contact {
+      position: relative;
+   }
+
+   .lighting {
+      position: relative;
+      background-image: var(--image-lighting);
+      background-repeat: no-repeat;
+      margin-left: 23px;
+      background-size: 23px 25px;
+      background-position: center 0;
+      top: 4px;
+   }
+
+   #id_link_dropdown {
+      order: 1;
+   }
+
+   #id_link_projects {
+      order: 2;
+   }
+
+   #id_link_services {
+      order: 3;
+   }
+   #id_link_designs_to_by {
+      order: 4;
+   }
+
+  .link_link {
+   display: block;
+  }
+
+   #toggle {
+      order:5;
+      width: 23px;
+      height: 25px;
+   }
+
+  
+}
+
+@media screen and (min-width: 1100px) and (max-width:1360px) {
+   .nav {
+      width: 700px;
+   }
+}
+@media(max-width:1100px) {
+   .header_page {
+     justify-content: flex-start;
+}
+
+}
+@media(max-width:700px) {
+   .header_page {
+      padding: 0 50px 0 50px;
+   }
+   .header_logo {
+      top:25px;
+   }
+    .hamb {
+   right: 40px;
+   padding: 57px 0px;
+   }
+}
+
+@media(max-width:400px) {
+   .header_page {
+      padding:0 20px 0 20px;
+   }
+}
+
+
+
+    
+
+

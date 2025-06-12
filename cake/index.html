@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_menu.css">
+    <link rel="stylesheet" href="css/style_general.css">
+    <link rel="stylesheet" href="css/jqcart.css">
+    <link rel="stylesheet" href="css/modal_cart.css">
+    <link rel="stylesheet" href="buyme/buy_me.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Josefin+Sans:wght@300&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;1,500&family=Lemonada:wght@400;500;600;700&family=Manrope:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=swap" rel="stylesheet">
+
+    <title>Bakery & More</title>
+</head>
+<body>
+    <div class="buy_me_now"> <a href="buy_me.html" class="link_buy">Buy Me Now</a> </div> <!--only for but_me_now-->
+    <div id="nav_shadow"></div>
+    <div class="main_container">
+        <div class="header_block">
+           <header class="header_page">
+            <div class="header_logo">Bakery & More
+             <!--<img src="img/logo_light.svg" alt="" class="logo" id="logo">--> 
+      
+            </div>
+      
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu" id="menu_opener"><span class="hamb-line"></span></label>
+            <!-- Menu -->
+            <nav class="nav">
+              <ul class="menu">
+                <li class="header_logo in_menu"><a href="index.html">Bakery & More</a></li>
+                <li ><a href="cakes.html" class="link">Cakes</a> </li>
+                <li ><a href="filling.html" class="link">Fillings</a> </li>
+                <li ><a href="decorations.html" class="link">Decorations</a> </li>
+                <li ><a href="promotions.html" class="link">Promotions</a> </li>
+                <li ><a href="contacts.html" class="link">Contacts</a> </li>
+                </ul>
+                <div class="contacts">
+                    <a href="tel:+44789523301" class="link_phone">+44 7895 23301</a>
+                    <a href=""><img src="img/instagram.svg" alt=""></a>
+                    <a href=""><img src="img/facebook.svg" alt=""></a>
+                 </div>
+            </nav>
+        
+           
+          </header> 
+          <div class="label-place"></div><!-- Элемент, где будет расположен ярлык корзины -->
+          <div class="main_slogan">
+            <h1>Exclusive cakes to order</h1>
+            <p>More than a thousand customers satisfied with our work</p>
+            <a href="contacts.html" class="button_about">Request Consultation</a>
+          </div>
+ 
+        </div>
+        <div class="cake_block">
+            <div class="cake_block_wrapper">
+                <div class="img_cake">
+                    <img src="img/cake1.svg" alt="">
+                    <img src="img/cake2.svg" alt="">
+                    <img src="img/cake3.svg" alt="">
+                </div>
+                <div class="info_cake">
+                    <h3>Cakes made to order with the finest ingredients and signature toppings from our pastry chefs</h3>
+                    <p>Any solemn event is accompanied by sweet treats - a cake, desserts, candy bars. The Bakery & More team has prepared for you a huge number of cakes, cupcakes, candy bars to order in London. In addition to the original design, we guarantee the excellent taste of the cake you like to order. On our website you can choose a ready-made cake design, or use the application form to order a cake according to your own sketch.</p>
+                </div>
+            </div>
+            <a href="cakes.html" class="button_view_all">View All Cakes</a>
+            <h2>Why Choose Us?</h2>
+            <div class="choose_us">
+                <img src="img/1.svg" alt="">
+                <div>
+                    <h3>Always Fresh Ingredients</h3>
+                    <p>Our cakes will delight you not only with the design, but also with the taste of the fillings! In addition to those presented in the catalog, you can order a cake according to your sketch.</p>
+                </div>
+                <img src="img/2.svg" alt="">
+                <div>
+                    <h3>Quick Delivery</h3>
+                    <p>We process orders quickly and try to fulfill them as quickly as possible. You can pick up the order yourself or we will deliver it by courier.</p>
+                </div>
+                <img src="img/3.svg" alt="">
+                <div>
+                    <h3>Talented Confectioners</h3>
+                    <p>We have sculptors, decorators, bakers, chocolatiers in our staff - that's why we can fulfill any of your ideas!</p>
+                </div>
+            </div>
+        </div>
+        <div class="upload_block">
+            <div class="contacts_form">
+                <div class="contacts_block_img">
+                    <img src="img/cake4.svg" alt=""> 
+              
+        
+                </div>      
+                <div class="form">
+                    <h2 class="form_title">Create your own unique cake</h2>
+                    <p class="form_text">If you would like a custom designed cake, please upload it using the contact form. We will calculate the cost and contact you.</p>
+                        <form method="post" id="feedback-form" enctype="multipart/form-data"> 
+                             <div class="name">
+                                <input type="text" class="input" id="nameFF" name="nameFF" placeholder="clear" required>
+                                <label class="text-field__label" for="nameFF">Your name</label>
+                            </div>
+                            <div class="name">
+                                <input type="phone" class="input" name="contactFF" placeholder="clear" required id="contactFF">
+                                
+                                <label class="text-field__label" for="contactFF">Your phone number</label>
+                            </div>
+                            <div class="input-file-row" >
+                                <label class="input-file">
+                                    <input type="file" onchange="validateForSize(this,10,5000);"  name="fileFF[]" multiple  id ="fileFF" class="file" required>
+                                     <span class="input-file-btn">Upload Files</span>  
+                                   
+                            </label>
+                                <label id="file_list" for="messageFF"></label>
+                                <div class="input-file-list" name="messageFF" id="messageFF"></div>
+                            </div>
+                            <div class="name">
+                                <input type="text" class="input" name="textFF" placeholder="clear" required id="textFF">
+                                
+                                <label class="text-field__label" for="textFF">Your comment on the order</label>
+                            </div>
+                            
+                                          
+                     
+                            <button type="submit" name="upload" class="input-file-btn" onClick="setTimeout('clearform()', 6000 );" id="submitFF">
+                                Send Application 
+                           </button>
+                      
+   
+                        </form>
+                        <div class="center" id="iddiv"></div>
+                        <div class="succes"></div>
+                    </div>
+            </div>
+        </div>
+        <div class="follow_us">
+            <h2>Follow Us on <span>Instagram</span> </h2>
+            <p>On Instagram, we share the process of our work, photos of finished cakes and our happy customers. Send us a direct message to order a cake.</p>
+            <div class="img_wrapper">
+                <div class="img_wrapper_block">
+                    <a href="#"><img src="img/cake5.svg" alt="" class="img1"></a>
+                    <a href=""><img src="img/cake6.svg" alt="" class="img2"></a>
+                </div>
+                <div class="img_wrapper_block">
+                    <a href=""><img src="img/cake7.svg" alt="" class="img3"></a>
+                    <a href=""><img src="img/cake8.svg" alt="" class="img4"></a>
+                </div>
+               
+            </div>
+        </div>
+        <footer>
+            <div class="footer_wrapper">
+                <div class="link for_footer">© 2023 Bakery & More</div>
+                <ul class="menu menu_footer">
+                    
+                    <li ><a href="cakes.html" class="link footer">Cakes</a> </li>
+                    <li ><a href="filling.html" class="link footer">Fillings</a> </li>
+                    <li ><a href="decorations.html" class="link footer">Decorations</a> </li>
+                    <li ><a href="promotions.html" class="link footer">Promotions</a> </li>
+                    <li ><a href="contacts.html" class="link footer">Contacts</a> </li>
+                </ul>
+                    <div class="contacts contacts_footer">
+                        <a href="tel:+44789523301" class="link_phone phone_footer">+44 7895 23301</a>
+                        <a href=""><img src="img/instagram.svg" alt=""></a>
+                        <a href=""><img src="img/facebook.svg" alt=""></a>
+                     </div>
+            </div>
+     
+                
+
+        
+
+        </footer>
+        
+        
+    </div>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="scryps/jqcart.js"></script>
+    <script>
+        $(function(){
+            'use strict';	
+            // инициализация плагина
+            $.jqCart({
+                    buttons: '.add_item',
+                    handler: './php/handler.php',
+                    cartLabel: '.label-place',
+                    visibleLabel: true,
+                    openByAdding: true,
+                    currency: '£'
+            });	
+            // Пример с дополнительными методами
+            $('#open').click(function(){
+                $.jqCart('openCart'); // открыть корзину
+            });
+        
+        });
+        </script>
+    <script src="scryps/cart.js"></script>
+
+    <script src="scryps/send.js"></script>
+   <script src="scryps/style_menu.js"></script> 
+
+
+
+
+
+
+   
+    
+
+   
+</body>
+</html>

@@ -1,0 +1,188 @@
+.smoke-base {
+ position         : absolute;
+ left             : 0%;
+ top              : 0%;
+ width            : 100%;
+ height           : 100%;
+ background-color : rgba(0,0,0,.4);
+ display          : table;
+ z-index          : 1001;
+}
+
+.smoke-dialog_wrapper {
+ position       : relative;
+ vertical-align : middle;
+ display        : table-cell;
+}
+
+.smoke-dialog {
+ 
+ margin           : 0 auto;
+ padding          : 40px;
+ color            : #202020;
+ border           : 1px solid #B6B6B6;
+ border-radius    : 28px;
+ background-color : #f3f3f3;
+ font-family      : Arial;
+ font-size        : 18px;
+ font-weight      : normal;
+ text-align       : center;
+ line-height: 24px;
+ width:900px;
+
+}
+
+.smoke-dialog-buttons {
+ vertical-align : middle;
+    margin-top: 10px;
+}
+.smoke-dialog-text {
+  color: #000;
+  font-family: 'Nunito Sans';
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.smoke-dialog-buttons-ok, .smoke-dialog-buttons-cancel {
+    margin: 10px 7px;
+    padding: 8px 24px;
+    border: 0;
+    border-radius: 30px;
+    outline: 0;
+    color: white;
+    background: #E25F6A;
+    font-family: 'Nunito Sans';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    vertical-align: baseline;
+    display: inline-block;
+    cursor: pointer;
+    width: 130px;
+}
+.smoke-dialog-buttons-ok:hover, .smoke-dialog-buttons-cancel:hover {
+  box-shadow:0 0 20px rgba(226, 95, 106, 1);
+        transform: scale(0.95);
+        border: 1px solid #FFF;
+}
+.smoke-dialog-buttons-ok:focus, .smoke-dialog-buttons-cancel:focus {
+  outline: none;
+}
+
+.smoke-prompt {
+ margin-top : 15px;
+ text-align : center;
+}
+
+.smoke-prompt-input {
+ -moz-box-sizing  : border-box;
+ box-sizing       : border-box;
+ width            : 75%;
+ margin           : 0;
+ padding          : 11.2px;
+ border           : 1.4px solid #aaa;
+ outline          : none;
+ font-family      : arial;
+ font-size        : 22.4px;
+ background-color : white;
+ display          : inline-block;
+}
+
+.smoke-dialog-buttons-cancel {
+ background-color : rgba(0, 0, 0, .40);
+}
+@media(max-width:1850px) {
+  .smoke-dialog-text,
+  .smoke-dialog-buttons-ok, 
+  .smoke-dialog-buttons-cancel {
+    font-size: 25px;
+  }
+
+}
+
+@media(max-width:1600px) {
+  .smoke-dialog-text,
+  .smoke-dialog-buttons-ok, 
+  .smoke-dialog-buttons-cancel {
+    font-size: 22px;
+  }
+
+}
+@media(max-width:1550px) {
+  .smoke-dialog-text,
+  .smoke-dialog-buttons-ok, 
+  .smoke-dialog-buttons-cancel {
+    font-size: 21px;
+  }
+
+
+}
+
+@media(max-width:1200px) {
+  .smoke-dialog-text, .smoke-dialog-buttons-ok, .smoke-dialog-buttons-cancel {
+    font-size: 19px;
+}
+  .smoke-dialog {
+    width: 536px;
+  }
+}
+@media(max-width:800px) {
+  .smoke-dialog {
+    width: 482px;
+}
+}
+@media(max-width:650px) {
+  .smoke-dialog {
+    width: 400px;
+    padding: 35px;
+  }
+  .smoke-dialog-text, .smoke-dialog-buttons-ok, .smoke-dialog-buttons-cancel {
+    font-size: 18px;
+  }
+
+}
+@media(max-width:500px) {
+  .smoke-dialog {
+    width: 360px;
+    padding: 30px;
+  }
+  .smoke-dialog-text, .smoke-dialog-buttons-ok, .smoke-dialog-buttons-cancel {
+    font-size: 17px;
+  }
+
+}
+@media(max-width:426px) {
+  .smoke-dialog {
+    width: 330px;
+    padding: 28px;
+  }
+  .smoke-dialog-text, .smoke-dialog-buttons-ok, .smoke-dialog-buttons-cancel {
+    font-size: 16px;
+  }
+
+}
+@media(max-width:390px) {
+ 
+  .smoke-dialog-text, .smoke-dialog-buttons-ok, .smoke-dialog-buttons-cancel {
+    font-size: 15px;
+  }
+  .smoke-dialog {
+    width: 290px;
+    padding: 20px;
+}
+
+}
+@media(max-width:374px) {
+ 
+  .smoke-dialog-text, .smoke-dialog-buttons-ok, .smoke-dialog-buttons-cancel {
+    font-size: 14px;
+  }
+  .smoke-dialog {
+    width: 275px;
+    padding: 18px;
+}
+
+}

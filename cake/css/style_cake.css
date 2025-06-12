@@ -1,0 +1,263 @@
+ .cake {
+   
+    background: #1C0C09;
+    background-image: none;
+    height: 120px;
+}
+.cake_section {
+    background: #E1DDDA;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+.jqcart-cart-label {
+    margin-top: 0;
+  
+}
+a.type:active, /* активная/посещенная ссылка */
+a.type:hover,  /* при наведении */
+a.type,
+a.header_logo {
+  text-decoration: none;
+ 
+}
+
+.type {
+ color: #1C0C09;
+font-family: 'Lemonada';
+font-size: 40px;
+font-style: normal;
+font-weight: 380;
+line-height: normal;
+cursor: pointer;
+}
+.type:hover{
+    
+    color: #E25F6A;
+    transform: scale(0.95);
+}
+.active {
+    color: #E25F6A;
+    font-family: "Lemonada";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 380;
+    line-height: normal;
+}
+.filter_option {
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    margin-bottom: 200px;
+    flex-wrap: wrap;
+    
+}
+.type span {
+    color: #1C0C09;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cake_block_filter {
+    margin-bottom: 120px;
+    text-align: center;
+}
+.filling_modal_title {
+    color: #E25F6A;
+    font-family: 'Lemonada';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 380;
+    line-height: normal;
+    margin-top: 130px;
+}
+#modal3 .filling_modal_title {
+    margin-top: 60px;
+}
+.filling_price {
+    color: #1C0C09;
+    font-family: 'Lemonada';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 380;
+    line-height: normal;
+}
+.filling_type {
+    color: #1C0C09;
+    font-family: 'Lemonada';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+.filling_text {
+    color: #000;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    width: 500px;
+    margin-top: 100px;
+}
+.note {
+    color: #000;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
+.filling_item {
+  /*  text-align: center;*/
+    color: #000;
+    font-family: 'Nunito Sans';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 15px;
+}
+.filling_item span {
+  color:  rgba(164, 162, 162, 1);
+  margin-left: 50px;
+}
+.for_decor {
+    margin-top: 50px;
+}
+.filter_cake {
+    width: 90%;
+    margin: 0 auto;
+}
+@media(min-width:1440px) and (max-width:1900px) {
+    .type {
+        font-size: 32px;
+    }
+}
+@media(max-width:1440px) {
+    .type {
+        font-size: 30px;
+    }
+    .filling_item {
+        font-size: 25px;
+    }
+}
+@media(max-width:1300px) {
+    .filling_modal {
+        margin-left: 20px;
+    }
+}
+@media(max-width:1200px) {
+    .filling_modal_title {
+        margin-top: 99px;
+    }
+}
+@media(max-width:1100px) {
+    .cake {
+        height: 83px;
+    }
+}
+@media(max-width:1000px) {
+    .filter_cake {
+        margin-top: 30px;
+    }
+    .filter_option {
+        margin-bottom: 132px;
+    }
+    .filling_text {
+        margin-top: 44px;
+    }
+    .filling_modal_title {
+        margin-top: 65px;
+    }
+    .filling_modal {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:950px) {
+    .cake_block_filter {
+        margin-bottom: 60px;
+    }
+}
+@media(max-width:800px) {
+    .type {
+        font-size: 28px;
+    }
+    .filling_item {
+        font-size: 24px;
+    }
+   
+}
+@media(max-width:700px) {
+    .type {
+        font-size: 26px;
+    }
+    .filling_item {
+        font-size: 22px;
+    }
+    .for_filter {
+        margin: 0 40px 0px 40px;
+    }
+    .for_decor {
+        font-size: 16px;
+    }
+    .filling_text {
+        width: 400px;
+    }
+    .note {
+        width:400px;
+    }
+}
+@media(max-width:550px) {
+    .filling_modal {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media(max-width:500px) {
+    .type {
+        font-size: 24px;
+    }
+    .filling_item {
+        font-size: 20px;
+    }
+    .for_filter {
+        margin: 0 20px 0px 20px;
+    }
+    .btn img {
+       width: 300px;
+        height: 300px;
+    }
+    .filling_text, .note {
+        width: 350px;
+    }
+
+    
+}
+@media(max-width:400px) {
+    .filling_text, .note {
+        width: 300px;
+    }
+    .filling_modal_title {
+        margin-top: 40px;
+    }
+    .filling_text {
+        margin-top: 24px;
+    }
+    .modal-header .close {
+        margin: -3rem -3rem -3rem auto;
+    }
+}
+@media(max-width:378px) {
+    .filling_item {
+        font-size: 18px;
+    }
+    .type {
+        font-size: 22px;
+    }
+    .btn img {
+        width: 260px;
+        height: 260px;
+    }
+}
+

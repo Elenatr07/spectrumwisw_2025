@@ -1,0 +1,81 @@
+a {
+    text-decoration: none;
+}
+.buy_me_now {
+   
+    top: 162px;
+   
+    position: fixed;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+    width: 150px;
+       margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+    display: inline-block;
+    z-index: 1;
+    
+    
+    
+
+
+}
+.link_buy {
+    color: rgba(3, 3, 3, 1);
+    display: block;
+    padding: 9px 9px;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 21px;
+    
+    height: 42px;
+    border-radius: 45px;
+    background: white;
+    border: 2px solid transparent;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    
+    
+    /* margin: 0 auto; */
+}
+.link_buy::before {
+    background: linear-gradient(92.11deg, #f73e94 5.48%, #97238a 37.96%, #5456ab 70.44%, #22dcd9 102.92%);
+    border-radius: 34px;
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: calc(107% - 4px);
+    height: 44px;
+    right: -3px;
+    top: -3px;
+}
+.link_buy:hover::before {
+    background: linear-gradient(75deg, rgba(34, 220, 217, 1), rgba(247, 62, 148, 1) );
+ }
+
+
+ 
+@media(max-width:1000px) {
+    .buy_me_now {
+         top: 106px;
+    }
+}
+
+
+
+
+
+
+

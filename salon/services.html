@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_menu.css">
+    <link rel="stylesheet" href="css/style_slider.css">
+    <link rel="stylesheet" href="css/style_main.css">
+    <link rel="stylesheet" href="css/style_services.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <link rel="stylesheet" href="css/buy_me.css"> <!--only for buy_me_now-->
+   
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Oswald:wght@200;500;700&display=swap"
+    rel="stylesheet"> <!--only for buy_me_now-->
+    <title>Zenharmony</title>
+</head>
+<body>
+   
+<div class="buy_me_now"> <a href="buy_me.html" class="link_buy">Buy Me Now</a> </div><!--only fo but_me_now-->
+    <div id="nav_shadow"></div>
+    <div class="container">
+        <div class="main_container_about">
+        
+         <div class="main_info_services">
+             <!-- Navigation bar -->
+            <header class="header_page">
+              <a class="header_logo" href="index.html">
+          <!--<img src="img/logo_light.svg" alt="" class="logo" id="logo">--> 
+  
+              </a>
+  
+          <!-- Hamburger icon -->
+              <input class="side-menu" type="checkbox" id="side-menu" />
+              <label class="hamb" for="side-menu" id="menu_opener"><span class="hamb-line"></span></label>
+          <!-- Menu -->
+              <nav class="nav">
+                  <ul class="menu">
+                    <li class="link_logo"><a href="index.html" class="link_text"><img src="img/logo.svg" alt=""></a></li>
+                      <li class="link"><a href="about.html" class="link_text">About Us</a></li>
+                      <li class="link" id="#"><a href="#" class="link_text">Our Services</a> </li>
+                      <li class="link"><a href="contacts.html" class="link_text">Contact Us</a></li>
+                      <div class="social_block_nav">
+                        <div class="social"><img src="img/instagram.svg" alt=""></div>
+                        <div class="social"><img src="img/twitter.svg" alt=""></div>
+                        <div class="social"><img src="img/facebook.svg" alt=""></div>
+                    </div>
+                    </ul>
+              
+              </nav>
+              <div class="social_block">
+                <div class="social"><img src="img/instagram.svg" alt=""></div>
+                <div class="social"><img src="img/twitter.svg" alt=""></div>
+                <div class="social"><img src="img/facebook.svg" alt=""></div>
+            </div>
+            </header>
+            <h3 class="slogan slogan_services">Our Services</h3>
+        </div>
+        <div class="services_block">
+            <div class="button">
+                <button class="load_btn_price"onclick="see_price()" id="load_btn_price">Couple Massage</button>
+           
+            </div>
+            <div class="manual">
+                <div class="step">
+                   <table>
+                        <tr class="normal">
+                            <td class="service_item">
+                                45 minutes massage 
+                            </td>
+                            <td class="service_price">
+                                100£
+                            </td>
+                            <td class="service_item note">
+                                60 minutes massage 
+                            </td>
+                            <td class="service_price note">
+                                130£
+                            </td>
+                        </tr>
+                        <tr class="normal for_mobile">
+                            <td class="service_item">
+                                60 minutes massage 
+                            </td>
+                            <td class="service_price">
+                                130£
+                            </td>
+                        </tr>
+                        <tr class="normal">
+                            <td class="service_item">
+                                90 minutes massage 
+                            </td>
+                            <td class="service_price">
+                                190£
+                            </td>
+                            <td class="service_item note">
+                                2 hours massage 
+                            </td>
+                            <td class="service_price note">
+                                220£
+                            </td>
+                        </tr>
+                        <tr class="normal for_mobile">
+                            <td class="service_item">
+                                2 hours massage 
+                            </td>
+                            <td class="service_price">
+                                220£
+                            </td>
+                        </tr>
+                   </table>
+                   <h3 class="title_service_item">Time to get away and make it magical together..</h3>
+                   <div class="info_service">
+                        <div class="info_service_item">
+                            <img src="img/banding.svg" alt="">
+                            <h3 class="info_service_item_title">Bonding and Connection</h3>
+                            <p class="info_service_item_text">A couple's massage allows you and your partner to escape the distractions of everyday life and focus on each other. It provides an opportunity to reconnect, deepen your bond, and share a tranquil experience together.</p>
+                        </div>
+                        <div class="info_service_item">
+                            <img src="img/shared.svg" alt="">
+                            <h3 class="info_service_item_title">Shared Relaxation</h3>
+                            <p class="info_service_item_text">Massage is renowned for its ability to induce relaxation and reduce stress. The soothing ambiance, gentle touch, and calming environment contribute to a shared state of tranquility, allowing you to let go of tension and worries together.</p>
+                        </div>
+                        <div class="info_service_item">
+                            <img src="img/romance.svg" alt="">
+                            <h3 class="info_service_item_title">Enhancing Romance</h3>
+                            <p class="info_service_item_text">A couple's massage can be a romantic and intimate experience. It allows you to create a memorable and sensual experience that can rekindle the spark in your relationship and create lasting memories.</p>
+                        </div>
+                    </div>
+                    <div class="appointment service">
+                        <a href="#modal" data-modal="#modal" class="button_appointment mainButton">Make an Appointment</a>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="button">
+                <button class="load_btn_price"onclick="see_price_1()" id="load_btn_price_1">Full Body Massage</button>
+       
+            </div>
+            <div class="manual">
+                <div class="step_1">
+                     <table>
+                        <tr>
+                            <td class="service_item">
+                                30 minutes massage 
+                             </td>
+                            <td class="service_price">
+                                35£
+                            </td>
+                            <td class="service_item note">
+                                45 minutes massage 
+                            </td>
+                            <td class="service_price note">
+                                50£
+                            </td>
+                        </tr>
+                        <tr class="normal for_mobile">
+                            <td class="service_item">
+                                45 minutes massage 
+                            </td>
+                            <td class="service_price">
+                                50£
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service_item">
+                                60 minutes massage  
+                            </td>
+                             <td class="service_price">
+                                90£
+                            </td>
+                            <td class="service_item note">
+                                90 minutes massage 
+                            </td>
+                            <td class="service_price note">
+                                90£
+                            </td>
+                        </tr>
+                        <tr class="normal for_mobile">
+                            <td class="service_item">
+                                90 minutes massage 
+                            </td>
+                            <td class="service_price">
+                                90£
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service_item">
+                                2 hours massage 
+                            </td>
+                            <td class="service_price">
+                                100£
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    <h3 class="title_service_item">Full body massage of your choice</h3>
+                   <div class="info_service">
+                        <div class="info_service_item">
+                            <img src="img/muscle.svg" alt="">
+                            <h3 class="info_service_item_title">Muscle Relaxation</h3>
+                            <p class="info_service_item_text">A full body massage targets muscles throughout the entire body. It can improve flexibility, enhance range of motion, and restore balance to the musculoskeletal system.</p>
+                        </div>
+                        <div class="info_service_item">
+                            <img src="img/circulation.svg" alt="">
+                            <h3 class="info_service_item_title">Improved Circulation</h3>
+                            <p class="info_service_item_text">The massage strokes used in a full body massage help stimulate blood flow and enhance circulation throughout the body. This increased circulation delivers oxygen and nutrients to the muscles and organs, promoting their optimal functioning.</p>
+                        </div>
+                        <div class="info_service_item">
+                            <img src="img/immune.svg" alt="">
+                            <h3 class="info_service_item_title">Immune System Boost</h3>
+                            <p class="info_service_item_text">Regular full body massages have been associated with a strengthened immune system. It helps to regulate stress hormones and support the body's natural defense mechanisms, making it more resilient against illnesses and infections.</p>
+                        </div>
+                   </div>
+                   <div class="appointment service">
+                    <a href="#modal" data-modal="#modal" class="button_appointment mainButton">Make an Appointment</a>
+                   
+                  </div>
+                </div>
+           
+            </div>
+            <div class="button">
+                <button class="load_btn_price"onclick="see_price_2()" id="load_btn_price_2">Thai Combination Massage</button>
+           
+            </div>
+            <div class="manual">
+                    <div class="step_2">
+                         <table>
+                            <tr>
+                                <td class="service_item">
+                                    30 minutes massage 
+                                 </td>
+                                <td class="service_price">
+                                    35£
+                                </td>
+                                <td class="service_item note">
+                                    45 minutes massage 
+                                </td>
+                                <td class="service_price note">
+                                    50£
+                                </td>
+                            </tr>
+                            <tr class="normal for_mobile">
+                                <td class="service_item">
+                                    45 minutes massage 
+                                </td>
+                                <td class="service_price">
+                                    50£
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="service_item">
+                                    60 minutes massage  
+                                </td>
+                                 <td class="service_price">
+                                    70£
+                                </td>
+                                <td class="service_item note">
+                                    90 minutes massage 
+                                </td>
+                                <td class="service_price note">
+                                    90£
+                                </td>
+                            </tr>
+                            <tr class="normal for_mobile">
+                                <td class="service_item">
+                                    90 minutes massage 
+                                </td>
+                                <td class="service_price">
+                                    90£
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="service_item">
+                                    2 hours massage 
+                                </td>
+                                <td class="service_price">
+                                    110£
+                                </td>
+                            </tr>
+                        </table>
+                        <h3 class="title_service_item">At our spa we combine these techniques with natural oils.</h3>
+                       <div class="info_service">
+                            <div class="info_service_item">
+                                <img src="img/muscle.svg" alt="">
+                                <h3 class="info_service_item_title">Enhanced Energy Flow</h3>
+                                <p class="info_service_item_text">Thai Combination Massage incorporates elements of Thai energy line work, known as Sen lines. This can help rebalance the body's energy, promoting vitality, and leaving you feeling revitalized.</p>
+                            </div>
+                            <div class="info_service_item">
+                                <img src="img/circulation.svg" alt="">
+                                <h3 class="info_service_item_title">Body and Mind Balance</h3>
+                                <p class="info_service_item_text">Thai Combination Massage incorporates elements of mindfulness and deep breathing. The practitioner encourages you to focus on the present moment and connect with your body, promoting harmony between the body and mind.</p>
+                            </div>
+                            <div class="info_service_item">
+                                <img src="img/immune.svg" alt="">
+                                <h3 class="info_service_item_title">Nervous System Relax</h3>
+                                <p class="info_service_item_text">The combination of gentle and rhythmic movements in Thai Combination Massage has a soothing effect on the nervous system. It can help reduce anxiety, promote relaxation, and improve sleep quality.</p>
+                            </div>
+                       </div>
+                       <div class="appointment service">
+                        <a href="#modal" data-modal="#modal" class="button_appointment mainButton">Make an Appointment</a>
+                       
+                      </div>
+                    </div>
+               
+            </div>
+            <div class="button">
+                <button class="load_btn_price"onclick="see_price_3()" id="load_btn_price_3">Deep Tissue Massage</button>
+           
+            </div>
+            <div class="manual">
+                    <div class="step_3">
+                         <table>
+                            <tr>
+                                <td class="service_item">
+                                    30 minutes massage 
+                                 </td>
+                                <td class="service_price">
+                                    35£
+                                </td>
+                                <td class="service_item note">
+                                    45 minutes massage 
+                                </td>
+                                <td class="service_price note">
+                                    50£
+                                </td>
+                            </tr>
+                            <tr class="normal for_mobile">
+                                <td class="service_item">
+                                    45 minutes massage 
+                                </td>
+                                <td class="service_price">
+                                    50£
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="service_item">
+                                    60 minutes massage  
+                                </td>
+                                 <td class="service_price">
+                                    70£
+                                </td>
+                                <td class="service_item note">
+                                    90 minutes massage 
+                                </td>
+                                <td class="service_price note">
+                                    90£
+                                </td>
+                            </tr>
+                            <tr class="normal for_mobile">
+                                <td class="service_item">
+                                    90 minutes massage 
+                                </td>
+                                <td class="service_price">
+                                    90£
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="service_item">
+                                    2 hours massage 
+                                </td>
+                                <td class="service_price">
+                                    110£
+                                </td>
+                            </tr>
+                        </table>
+                        <h3 class="title_service_item">Self care is the best form of therapy.</h3>
+                       <div class="info_service">
+                            <div class="info_service_item">
+                                <img src="img/muscle.svg" alt="">
+                                <h3 class="info_service_item_title">Injury Rehabilitation</h3>
+                                <p class="info_service_item_text">Deep tissue massage can be beneficial for individuals recovering from sports injuries or other musculoskeletal conditions. It helps to break down scar tissue and adhesions, improving flexibility, and restoring range of motion.</p>
+                            </div>
+                            <div class="info_service_item">
+                                <img src="img/circulation.svg" alt="">
+                                <h3 class="info_service_item_title">Improved Posture</h3>
+                                <p class="info_service_item_text">Prolonged periods of poor posture or repetitive movements can cause imbalances and tension in the muscles. Deep tissue massage can help address these issues by releasing tight muscles and realigning the body.</p>
+                            </div>
+                            <div class="info_service_item">
+                                <img src="img/immune.svg" alt="">
+                                <h3 class="info_service_item_title">Lowered Blood Pressure</h3>
+                                <p class="info_service_item_text">Deep tissue massage has been associated with a decrease in blood pressure levels. By promoting relaxation, reducing muscle tension, and improving circulation, this massage technique can contribute to a healthier cardiovascular system.</p>
+                            </div>
+                       </div>
+                       <div class="appointment service">
+                        <a href="#modal" data-modal="#modal" class="button_appointment mainButton">Make an Appointment</a>
+                       
+                      </div>
+                    </div>
+               
+            </div>
+            <div class="button">
+                <button class="load_btn_price"onclick="see_price_4()" id="load_btn_price_4">Aromatherapy Massage</button>
+           
+            </div>
+            <div class="manual">
+                    <div class="step_4">
+                         <table>
+                            <tr>
+                                <td class="service_item">
+                                    30 minutes massage 
+                                 </td>
+                                <td class="service_price">
+                                    35£
+                                </td>
+                                <td class="service_item note">
+                                    45 minutes massage 
+                                </td>
+                                <td class="service_price note">
+                                    50£
+                                </td>
+                            </tr>
+                            <tr class="normal for_mobile">
+                                <td class="service_item">
+                                    45 minutes massage 
+                                </td>
+                                <td class="service_price">
+                                    50£
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="service_item">
+                                    60 minutes massage  
+                                </td>
+                                 <td class="service_price">
+                                    70£
+                                </td>
+                                <td class="service_item note">
+                                    90 minutes massage 
+                                </td>
+                                <td class="service_price note">
+                                    90£
+                                </td>
+                            </tr>
+                            <tr class="normal for_mobile">
+                                <td class="service_item">
+                                    90 minutes massage 
+                                </td>
+                                <td class="service_price">
+                                    90£
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="service_item">
+                                    2 hours massage 
+                                </td>
+                                <td class="service_price">
+                                    110£
+                                </td>
+                            </tr>
+                        </table>
+                        <h3 class="title_service_item">Massage is not just a luxury. It's a way to a healthier, happier life</h3>
+                       <div class="info_service">
+                            <div class="info_service_item">
+                                <img src="img/mood.svg" alt="">
+                                <h3 class="info_service_item_title">Mood Enhancement</h3>
+                                <p class="info_service_item_text">Essential oils have the power to affect our emotions and mood. During an aromatherapy massage, the inhalation of these oils stimulates the olfactory system, helping to uplift the mood and create a sense of emotional balance.</p>
+                            </div>
+                            <div class="info_service_item">
+                                <img src="img/skin.svg" alt="">
+                                <h3 class="info_service_item_title">Skin Nourishment</h3>
+                                <p class="info_service_item_text">Many essential oils used in aromatherapy massage have hydrating and nourishing properties for the skin. When applied topically, these oils can moisturize, soften, and revitalize the skin.</p>
+                            </div>
+                            <div class="info_service_item">
+                                <img src="img/holistic.svg" alt="">
+                                <h3 class="info_service_item_title">Holistic Healing</h3>
+                                <p class="info_service_item_text">Aromatherapy massage combines the benefits of touch, scent, and therapeutic properties of essential oils to provide a holistic healing experience. It addresses not only the physical aspects but also the emotional and mental well-being.</p>
+                            </div>
+                       </div>
+                       <div class="appointment service">
+                        <a href="#modal" data-modal="#modal" class="button_appointment mainButton">Make an Appointment</a>
+                       
+                      </div>
+                    </div>
+               
+            </div>
+            <div class="button">
+                <button class="load_btn_price"onclick="see_price_5()" id="load_btn_price_5">Hot Stone Massage</button>
+           
+            </div>
+            <div class="manual">
+                    <div class="step_5">
+                         <table>
+                            <tr>
+                                <td class="service_item">
+                                    45 minutes massage 
+                                 </td>
+                                <td class="service_price">
+                                    65£
+                                </td>
+                                <td class="service_item note">
+                                    60 minutes massage 
+                                </td>
+                                <td class="service_price note">
+                                    75£
+                                </td>
+                            </tr>
+                            <tr class="normal for_mobile">
+                                <td class="service_item">
+                                    60 minutes massage 
+                                </td>
+                                <td class="service_price">
+                                    75£
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="service_item">
+                                    90 minutes massage  
+                                </td>
+                                 <td class="service_price">
+                                    95£
+                                </td>
+                                <td class="service_item note">
+                                    2 hours massage 
+                                </td>
+                                <td class="service_price note">
+                                    125£
+                                </td>
+                            </tr>
+                            <tr class="normal for_mobile">
+                                <td class="service_item">
+                                    2 hours massage 
+                                </td>
+                                <td class="service_price">
+                                    125£
+                                </td>
+                            </tr>
+                            
+                        </table>
+                        <h3 class="title_service_item">Combination of hot stone and deep tissue massage</h3>
+                       <div class="info_service">
+                            <div class="info_service_item">
+                                <img src="img/joint.svg" alt="">
+                                <h3 class="info_service_item_title">Increased Joint Flexibility</h3>
+                                <p class="info_service_item_text">The combination of heat and gentle stretching during a hot stone massage can improve joint flexibility and range of motion. This can be particularly beneficial for individuals with joint stiffness or conditions such as arthritis.</p>
+                            </div>
+                            <div class="info_service_item">
+                                <img src="img/detox.svg" alt="">
+                                <h3 class="info_service_item_title">Detoxificationt</h3>
+                                <p class="info_service_item_text">The increased blood flow and improved circulation stimulated by hot stone massage can aid in the detoxification process. It can support the body's natural detoxification mechanisms and contribute to overall well-being.</p>
+                            </div>
+                            <div class="info_service_item">
+                                <img src="img/circulation.svg" alt="">
+                                <h3 class="info_service_item_title">Improved Circulation</h3>
+                                <p class="info_service_item_text">The heat from the stones dilates the blood vessels, increasing blood flow throughout the body. This enhanced circulation delivers oxygen and nutrients to the muscles and organs while aiding in the removal of toxins and metabolic waste.</p>
+                            </div>
+                       </div>
+                       <div class="appointment service">
+                        <a href="#modal" data-modal="#modal" class="button_appointment mainButton">Make an Appointment</a>
+                       
+                      </div>
+                    </div>
+               
+            </div>
+        </div>
+        
+             
+      <footer class="footer">
+        <div class="footer_block">
+          <div class="footer_about">
+            <h3 class="footer_title">About Zenharmony</h3>
+            <p class="footer_text">beautiful relaxing retreat centre with exceptional services where all the treatments are tailor made to suit your conditions.</p>
+            <p class="footer_adress">5th Floor 24 Wigmore Street London W1U 1PJ</p>
+            <p class="footer_adress">Monday - Friday 10.30 am - 7 pm </p>
+          </div>
+         
+          <div class="footer_contacts">
+            <h3 class="footer_title">Contact Us</h3>
+            <p class="footer_text">feel free to book an appointment or contact us with a call</p>
+            <p class="footer_phone call"><a href="tel:+02073895774" class="link_phone">02073895774</a>
+            <p class="footer_adress">contact@zenharmony.com</p>
+          </div>
+          <div class="footer_navigation">
+            <h3 class="footer_title">Quick Links</h3>
+            <a href="about.html" class="footer_link">About Us</a>
+            <a href="#" class="footer_link">Our Services</a>
+             <a href="contacts.html" class="footer_link">Contact Us</a>
+          </div>
+        </div>
+            <div class="policy_and_social">
+                 <div class="policy">
+                    <p class="policy_text">Privacy Policy</p>
+                    <p class="policy_text">Cookies</p>
+                    
+                 </div>
+                  <div class="social_media_block">
+                    <a class="social_media" href="#" target="_blank"><img src="img/instagram_footer.svg" alt=""></a>
+                    <a class="social_media" href="#" target="_blank"><img src="img/linkedin_footer.svg" alt=""></a>
+                    <a class="social_media" href="#" target="_blank"><img src="img/facebook_footer.svg" alt=""></a>
+                  </div>
+            </div>
+         <p class="copyright">© 2023 Zenharmony. All right reserved..</p>
+        
+        
+      </footer>
+    </div>
+        
+      
+      
+    </div>
+ <!-- Modal -->
+ <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+    <div class="remodalBorder">
+
+      <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+      <form id="form">
+        <h2 id="modal1Title">choose the desired date and our consultant will contact you</h2>
+        <fieldset>
+          <legend>For person</legend>
+          <input type="text" class="putName" name="name" placeholder="What’s your name?" required>
+          <input name="phone" type="tel" class="putPhone" placeholder="Enter your phone" required>
+          <input type="email" name="email" placeholder="Enter your email" class="putEmail" required>
+        </fieldset>
+        <fieldset>
+          <legend>Appointment request</legend>
+          <input type="datetime-local" name="date" id="local_date" class="putDate" min="2023-08-01T10:30" max="2024-12-30T18:30" required>
+          <label for="choice" class="legend_text">Services</label>
+          <select name="you_choice" id="choice" class="putChoice">
+            <option value="Couple Massage">Couple Massage</option>
+            <option value="Full Body Massage">Full Body Massage</option>
+            <option value="Thai Combination Massage">Thai Combination Massage</option>
+            <option value="Deep Tissue Massage">Deep Tissue Massage</option>
+            <option value="Aromatherapy Massage">Aromatherapy Massage</option>
+            <option value="Hot Stone Massage">Hot Stone Massage</option>
+           
+          </select>
+          <p class="legend_text">Confirmation requested by</p>
+          <div class="inline">
+            <label>
+              <input type="radio" name="confirmation" value="email" checked class="radio">
+              Email
+            </label>
+            <label>
+              <input type="radio" name="confirmation" value="phone" class="radio">
+              Phone call
+            </label>
+          </div>
+       </fieldset>
+                
+        <input type="submit" name="submit" class="button_services" value="Send">
+        <input type="hidden" name="formData" value="Order">
+ 
+        </form>
+    </div>
+  </div>
+</div>
+  
+
+      
+
+
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="scrypts/remodal.js"></script>
+  <script src="scrypts/modal.js"></script>
+  <script src="scrypts/style_menu.js"></script>
+  <script src="scrypts/see_more.js"></script>
+  <script>
+ window.addEventListener('load', () => {
+  var now = new Date();
+  now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+
+  /* remove second/millisecond if needed - credit ref. https://stackoverflow.com/questions/24468518/html5-input-datetime-local-default-value-of-today-and-current-time#comment112871765_60884408 */
+  now.setMilliseconds(null)
+  now.setSeconds(null)
+
+  document.getElementById('local_date').value = now.toISOString().slice(0, -1);
+});
+  </script>
+    
+</body>
+</html>
