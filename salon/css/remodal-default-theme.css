@@ -1,0 +1,496 @@
+.remodal-bg.remodal-is-opening,
+.remodal-bg.remodal-is-opened {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.remodal-overlay {
+  background: rgba(43, 46, 56, 0.9);
+}
+
+.remodal-overlay.remodal-is-opening,
+.remodal-overlay.remodal-is-closing {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.remodal-overlay.remodal-is-opening {
+  -webkit-animation: remodal-overlay-opening-keyframes 0.3s;
+  animation: remodal-overlay-opening-keyframes 0.3s;
+}
+
+.remodal-overlay.remodal-is-closing {
+  -webkit-animation: remodal-overlay-closing-keyframes 0.3s;
+  animation: remodal-overlay-closing-keyframes 0.3s;
+}
+
+.remodal-wrapper {
+  padding: 10px;
+}
+
+.remodalBorder {
+ 
+  background: rgba(217, 217, 217, 0.00);
+  margin: 35px;
+}
+.remodal {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 99.2%;
+  padding: .8%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  color: rgba(3, 3, 3, 1);
+  background: rgba(3, 3, 3, 1);
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+
+}
+
+
+.remodal.remodal-is-opening,
+.remodal.remodal-is-closing {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.remodal.remodal-is-opening {
+  -webkit-animation: remodal-opening-keyframes 0.3s;
+  animation: remodal-opening-keyframes 0.3s;
+}
+
+.remodal.remodal-is-closing {
+  -webkit-animation: remodal-closing-keyframes 0.3s;
+  animation: remodal-closing-keyframes 0.3s;
+}
+
+.remodal,
+.remodal-wrapper:after {
+  vertical-align: middle;
+}
+
+.remodal-close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: block;
+  overflow: visible;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  text-decoration: none;
+  color: rgba(236, 218, 177, 1);
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.remodal-close:hover,
+.remodal-close:focus {
+  color: #2b2e38;
+}
+
+.remodal-close:before {
+  font-size: 25px;
+  line-height: 35px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: block;
+  width: 35px;
+  content: "\00d7";
+  text-align: center;
+}
+
+
+.remodal-confirm,
+.remodal-cancel {
+  font: inherit;
+  display: inline-block;
+  overflow: visible;
+  min-width: 110px;
+  margin: 0;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+
+  border: 0;
+  outline: 0;
+}
+
+.remodal-confirm {
+  color: #fff;
+  background: #81c784;
+}
+
+.remodal-confirm:hover,
+.remodal-confirm:focus {
+  background: #66bb6a;
+}
+
+legend {
+  color: #E9D6A5;
+  font-family: 'Josefin Slab';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.remodal-cancel {
+  color: #fff;
+  background: #e57373;
+}
+
+.remodal-cancel:hover,
+.remodal-cancel:focus {
+  background: #ef5350;
+}
+
+.remodal-confirm::-moz-focus-inner,
+.remodal-cancel::-moz-focus-inner,
+.remodal-close::-moz-focus-inner {
+  padding: 0;
+
+  border: 0;
+}
+
+@-webkit-keyframes remodal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+@keyframes remodal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes remodal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+
+    opacity: 0;
+  }
+}
+
+@keyframes remodal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.home{
+  width: 500px;
+  margin:0 auto;
+  background: #f1f1f1;
+  border-radius: 5px;
+  padding: 50px;
+}
+.home p{
+  text-align: center;
+}
+
+
+
+.success, .fail{
+  color: #fff;
+}
+
+#modal1Title{
+  font-family: Josefin Slab;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: linear-gradient(134deg, #D97F2C 0%, #E9D5A4 99.99%, #E9D6A5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.putName, .putPhone, .putEmail, .putDate, .putTime, .putChoice{
+  width: 300px;
+  padding: 0 15px;
+  height: 40px;
+  background: #fff;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  border:none;
+  outline: none;
+  font-family: 'Josefin Slab';
+}
+option {
+  width: 300px;
+}
+
+.btn{
+  width: 242px;
+  height: 42px;
+  background: #e57373;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  border:none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: #C94141;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+label {
+  color: #E9D6A5;
+  font-family: 'Josefin Slab';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.legend_text {
+  color: #E9D6A5;
+  font-family: 'Josefin Slab';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+input {
+ color: rgba(3, 3, 3, 1);
+}
+input[type='radio']:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+ 
+  position: relative;
+  background-color: white;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+ 
+  position: relative;
+  background-color: rgba(198, 156, 84, 1);
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+select, option {
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;  
+  color: rgba(3, 3, 3, 1);
+  font-family: 'Josefin Slab';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+}
+
+select:not([multiple]) {
+  padding-right: 1.2em;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0.85em) 0.4em;
+  background-size: 25px 25px;
+  background-image: url("../img/row_down.svg");
+  
+ 
+}
+
+
+.success, .fail {
+  color: #E9D6A5;
+  font-family: 'Josefin Slab';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* скроет иконку стрелки в IE */
+select::-ms-expand {
+  display: none;
+}
+#form {
+  color: #E9D6A5;
+  font-family: 'Josefin Slab';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+::-webkit-input-placeholder {color:rgba(198, 156, 84, 1);}
+::-moz-placeholder          {color:rgba(198, 156, 84, 1)}/* Firefox 19+ */
+:-moz-placeholder           {color:rgba(198, 156, 84, 1);}/* Firefox 18- */
+:-ms-input-placeholder      {color:rgba(198, 156, 84, 1);}
+@media only screen and (min-width: 440px) {
+  .remodal {
+    max-width: 420px;
+  }
+}
+
+
+@media (max-width: 439px) {
+  .remodal {
+    max-width: 100%;
+  }
+  .putName, .putPhone, .putEmail{
+    width: 90%;
+    height: 80px;
+    font-size: 20px;
+  }
+
+  .putDate, .putChoice {
+    width: 90%;
+    height: 80px;
+  }
+  .btn{
+    width: 96%;
+    height: 82px;
+    font-size: 22px;
+  }
+  #modal1Title{
+    font-size: 24px;
+  }
+  .legend_text {
+    width: 90%;
+  }
+  .inline {
+    width: 90%;
+  }
+ legend {
+  font-size: 20px;
+
+ }
+ select:not([multiple]) {
+  padding-right: 1em;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0.85em) 1.9em;
+  background-size: 18px 18px;
+  
+}
+}
+
+@media(max-width: 360px) {
+  .putName, .putPhone, .putEmail, select {
+    font-size: 16px;
+  }
+}
+
+
+
+
+.lt-ie9 .remodal-overlay {
+  background: #2b2e38;
+}
+
+.lt-ie9 .remodal {
+  width: 420px;
+}
+
+

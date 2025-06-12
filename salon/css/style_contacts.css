@@ -1,0 +1,202 @@
+.form_title {
+    font-family: 'Josefin Slab';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    background: linear-gradient(91.63deg, #D97F2C -7.38%, #E9D5A4 99.56%, #E9D6A5 99.57%);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     text-align: center;
+     margin-bottom: 0;
+     margin-top: 0;
+  }
+  .field_contacts {
+    border: none;
+    padding: 41px 67px 0 67px;
+  }
+  .form_contacts {
+    margin-top: 200px;
+    max-width: 75%;
+    
+    border: 1px solid rgba(236, 218, 177, 1);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .input_title {
+    font-family: 'Josefin Slab';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(233, 214, 165, 1);
+    width: 100%;
+    margin-bottom: 9px;
+    margin-top: 60px;
+ 
+  }
+  .putName_for_contacts, .putEmail_for_contacts {
+    max-width: 946px;
+    width: 100%;
+    height: 50px;
+    font-family: 'Josefin Slab';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: rgba(3, 3, 3, 1);
+    border: 1px solid rgba(236, 218, 177, 1);
+    padding: 8px 12px;
+    color: rgba(233, 213, 164, 1);
+    
+
+
+  }
+  .putName_for_contacts::-webkit-input-placeholder, .putEmail_for_contacts::-webkit-input-placeholder {
+    color:rgba(255, 255, 255, 1);
+
+   }
+   
+
+  .text_field {
+    max-width: 946px;
+    width: 100%;
+    height: 180px;
+    font-family: 'Josefin Slab';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: rgba(3, 3, 3, 1);
+    border: 1px solid rgba(236, 218, 177, 1);
+    padding: 8px 12px;
+    color: rgba(233, 213, 164, 1);
+
+  }
+  .text_field::-webkit-input-placeholder {
+    color:rgba(255, 255, 255, 1);
+  }
+  .button_for_contacts {
+    color: rgba(236, 218, 177, 1);
+    font-size: 18px;
+    font-family: 'Josefin Slab';
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 1px solid #ECDAB1;
+    background: rgba(217, 127, 44, 0.00);
+    text-align: center;
+    padding: 11px 0;
+    cursor: pointer;
+    width: 153px;
+    display: block;
+    margin: 60px auto 60px auto;
+}
+.button_contacts {
+    width: 218px;
+    margin: 0 auto;
+  }
+  .contact_block {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title_contacts_item {
+    font-family: 'Josefin Slab';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: linear-gradient(134deg, #D97F2C 0%, #E9D5A4 99.99%, #E9D6A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 733px;
+    margin: 72px auto;
+    text-align: center;
+  }
+ 
+  .contact_info_text span {
+    font-family: 'Josefin Slab';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+   
+    color: rgba(236, 218, 177, 1);
+ 
+ 
+  }
+  .contact_info_text {
+    font-family: 'Josefin Slab';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color: rgba(236, 218, 177, 1); 
+    text-align: center;
+ 
+  }
+  .contact_title {
+    width: 100%;
+   
+    
+  }
+@media(max-width:1000px) {
+    .form_contacts {
+        margin-top: 130px;
+    }
+    .appoint_for_contacts {
+        margin: 0 auto 42px auto;
+    }
+    .contact_block {
+        flex-direction: row;
+    }
+
+}
+@media(max-width:700px) {
+    .field_contacts {
+        padding: 41px 20px 0 20px;
+    }
+}
+@media(max-width:600px) {
+    .contact_block {
+        flex-direction: column;
+        width: 280px;
+    }
+    .contact_title {
+        padding: 0 20px 0 20px;
+    }
+}
+
+@media(max-width:500px) {
+    .input_title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+    .form_title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    }
+    .putName_for_contacts, .putEmail_for_contacts, .text_field {
+        font-size: 18px;
+       
+        
+    }
+}
+@media (max-width:360px) {
+    .putName_for_contacts, .putEmail_for_contacts, .text_field {
+        font-size: 16px;
+       
+        
+    }
+}
