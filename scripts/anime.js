@@ -42,7 +42,12 @@ $(document).ready(function(){
         "img/a8_3.png",
         "img/a9.png",
         "img/a10.png",
-        "img/a11.png"
+        "img/a11.png",
+        "img/a12.png",
+        "img/a13.png",
+        "img/a13.png",
+        "img/a13.png",
+
 
     ]
     counter = 0;
