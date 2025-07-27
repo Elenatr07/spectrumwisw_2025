@@ -493,9 +493,10 @@ body {
 .main_img {
   /*background: var(--circle);*/
   background-repeat: no-repeat;
-  height: 540px;
+  
   background-position: center center;
   margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .second_block_wrapper {
@@ -2067,6 +2068,11 @@ margin: 50px auto;
   .main_header_p_down{
     letter-spacing: 2px;
   }
+  #anime_main_rus,
+  #anime_main{
+    width: 80%;
+  }
+
 }
 @media (max-width: 700px) {
   .point_out.anime_img3,
@@ -2122,10 +2128,7 @@ margin: 50px auto;
   }
 }
 @media (max-width: 600px) {
-  .main_img {
-    background-size: 100%;
-    height: 484px;
-  }
+ 
    .text_block_down{
       width: 400px;
     }
@@ -2229,10 +2232,7 @@ margin: 50px auto;
   .main_header_p {
     margin: 44px auto 0 auto;
   }
-  .main_img {
-    background-size: 125%;
-    height: 484px;
-  }
+
   .main_info_wrapper {
     width: 100%;
   }
@@ -2323,9 +2323,7 @@ margin: 50px auto;
   .main_header_p {
     font-size: 48px;
   }
-  .main_img {
-    height: 390px;
-  }
+
   .img_block_item.f1 img {
     width: 280px;
   }
