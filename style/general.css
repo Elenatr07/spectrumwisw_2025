@@ -218,6 +218,7 @@ body {
   transform: rotate(45deg);
   top: 0;
 }
+
 #toggle {
   order: 1;
   width: 56px;
@@ -311,7 +312,7 @@ body {
   display: none;
   position: relative;
   width: 140px;
-  margin-top: 18px;
+  margin-top: 5px;
   top: 0px;
 }
 
@@ -346,8 +347,7 @@ body {
   display: block;
   width: 77px;
   height: 22px;
-  margin-bottom: 15px;
-  margin-top: 15px;
+
 }
 
 .contact_in_menu {
@@ -466,7 +466,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 47px;
-  line-height: 100%;
+  line-height: 50px;
   text-transform: uppercase;
   color: var(--text-white);
 }
@@ -512,7 +512,6 @@ body {
   letter-spacing: 8px;
   text-align: center;
   color: var(--text-white);
-  margin-bottom: 60px;
 }
 .second_block {
   padding: 90px 195px;
@@ -567,16 +566,20 @@ body {
 .third_block_wrapper {
   width: 100%;
 }
-.text_block {
+.text_block,
+.text_block_down {
   font-family: "Montserrat";
   font-weight: 300;
-  font-size: 15px;
+  
   line-height: 30px;
   text-align: center;
   width: 800px;
   margin: 60px auto 60px auto;
   position: relative;
   color: var(--text-white);
+}
+.text_block{
+  font-size: 15px;
 }
 .point_out {
   position: absolute;
@@ -791,7 +794,7 @@ body {
   display: block;
   position: relative;
   width: 140px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 #drop_footer_lang {
   margin: 0 7px 0 0;
@@ -993,7 +996,6 @@ body {
 }
 .how_it_works_header .h3_block {
   text-align: left;
-  margin-top: 61px;
   margin-right: 10px;
 }
 .filter_block_wrapper_sol {
@@ -1015,6 +1017,7 @@ body {
 .how_it_works_header {
   display: flex;
   flex-direction: row;
+  margin-top: 60px;
 }
 .card_item_img {
   position: relative;
@@ -1376,22 +1379,24 @@ input {
 }
 .header_text{
   font-family: 'Montserrat';
-font-weight: 400;
+font-weight: 300;
 font-size: 20px;
 line-height: 169%;
 letter-spacing: 0px;
 text-align: center;
 margin-top: 40px;
+color: var(--text-white);
 
 }
 .main_header_down{
   font-family: 'Montserrat';
 font-weight: 300;
 font-size: 40px;
-line-height: 100%;
+line-height: 50px;
 letter-spacing: 0px;
 text-transform: uppercase;
 text-align: center;
+color: var(--text-white);
 
 }
 .main_header_p_down{
@@ -1412,14 +1417,9 @@ text-transform: uppercase;
 
 }
 .text_block_down{
-  font-family: 'Montserrat';
-font-weight: 400;
-font-size: 20px;
-line-height: 169%;
-letter-spacing: 0px;
-text-align: center;
+ font-size: 18px;
 width: 638px;
-margin: 50px auto;
+margin: 45px auto;
 
 }
 
@@ -1728,6 +1728,7 @@ margin: 50px auto;
   }
   .dropdown-content {
     width: 100%;
+    margin-top: 20px;
   }
 
   .dropbtn {
@@ -1772,18 +1773,18 @@ margin: 50px auto;
   text-align: center;
   margin: 40px auto;
   }
-  .main_header_down,
-  .main_header_p_down{
-    font-size: 38px;
-  }
-  .text_block_down{
-    font-size: 18px;
-  }
+
 }
 @media (max-width: 950px) {
   .main_header,
   .filter_header {
     font-size: 43px;
+  }
+  .header_text{
+    font-size: 18px;
+  }
+  .text_block_down{
+    font-size: 16px;
   }
   .main_header_p {
     font-size: 55px;
@@ -2090,10 +2091,10 @@ margin: 50px auto;
     width: 250px;
   }
     .main_header, .header_text {
-    width: 466px
+    width: 90%;
     }
     .text_block_down{
-      width: 500px;
+      width: 95%;
     }
 }
 @media (max-width: 639px) {
@@ -2129,9 +2130,7 @@ margin: 50px auto;
 }
 @media (max-width: 600px) {
  
-   .text_block_down{
-      width: 400px;
-    }
+
 
   .img_block_item.f1 img {
     width: 333px;
@@ -2188,6 +2187,10 @@ margin: 50px auto;
     letter-spacing: 3px;
     left: 26px;
   }
+  .h3_block{
+    margin-bottom: 40px;
+  }
+ 
 }
 
 @media (max-width: 500px) {
@@ -2213,9 +2216,7 @@ margin: 50px auto;
     font-size: 16px;
     letter-spacing: 2px;
   }
-    .main_header, .header_text {
-    width: 430px;
-    }
+  
   
 }
 @media (max-width: 424px) {
@@ -2284,9 +2285,7 @@ margin: 50px auto;
     letter-spacing: 2px;
     left: 25px;
   }
-    .text_block_down {
-    width: 330px;
-  }
+  
 }
 @media (max-width: 389px) {
   .main_header,
@@ -2414,9 +2413,7 @@ margin: 50px auto;
   .click_on {
     width: 50px;
   }
-    .text_block_down {
-    width: 329px;
-  }
+  
 }
 @media (max-width:340px){
     .text_block_down {
