@@ -1349,17 +1349,10 @@ input {
   color: #000000;
 }
 .popf7_img {
-  border: 1px solid transparent;
-  background: linear-gradient(
-    92.11deg,
-    #f73e94 5.48%,
-    #97238a 37.96%,
-    #5456ab 70.44%,
-    #22dcd9 102.92%
-  );
 
-  border-radius: 10px;
-  box-shadow: 0 0 0 150px var(--bg-dark) inset;
+
+  border-radius: 30px;
+
 }
 .img_mode img{
   width: 80%;
