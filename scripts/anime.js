@@ -116,6 +116,7 @@ $(document).ready(function(){
 setInterval(function(){
     if ($("#dropbtn").hasClass("rus")){
         $('#nib_rus').attr('src', '../' + imgesSlide2[counter2++]) 
+        $("#anime_slider3_rus").attr('src', '../' +imgesSlide3[counter3++])
     } else (
         $('#nib').attr('src', imgesSlide2[counter2++]),
         $("#anime_slider3").attr('src', imgesSlide3[counter3++])

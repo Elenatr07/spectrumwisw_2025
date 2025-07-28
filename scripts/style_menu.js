@@ -102,14 +102,21 @@ $(document).ready(function () {
     $("#select_russian_footer").css("display", "none");
   }
 
-  $(".how_it_works_header").on("click", function () {
-    $(".how_it_works_drop").slideToggle(1000);
-    $(".how_it_works_header .row_down").toggle();
-    $(".how_it_works_header .row_up").toggle();
-  });
+  $(".how_it_works_header").each(function(){
+    $(this).on('click', function(){
+      how = $(this).attr('id');
+      
+       $('.how_it_works_drop.'+how).slideToggle(1000);
+  
+       $(".how_it_works_header .row_down."+how).toggle();
+        $(".how_it_works_header .row_up."+how).toggle();
+    })
+  })
+;
+
   $("#about_link_menu").on("click", function () {
     $("body").removeClass("scroll_body");
-    $("#nav_shadow").removeClass("shadow");
+    $("#nav_shadow").removeClass("shadow"); 
     $("#side-menu").prop("checked", false);
   });
   $("#link_to_web").on("click", function () {
