@@ -89,11 +89,66 @@ $(document).ready(function(){
         "img/j6.png",
         "img/j7.png",
     ]
+    let imgesSlide5 = [
+        "img/s1.png",
+        "img/s2.png",
+        "img/s3.png",
+        "img/s4.png",
+        "img/s5.png",
+        "img/s6.png",
+        "img/s7.png",
+        "img/s8.png",
+        "img/s9.png",
+        "img/s10.png",
+        "img/s11.png",
+        "img/s12.png",
+        "img/s13.png",
+        "img/s14.png",
+        "img/s15.png"
+    ]
+    let imgesSlide4 = [
+        "img/pj1.png",
+        "img/pj2.png",
+        "img/pj3.png",
+        "img/pj4.png",
+        "img/pj5.png",
+        "img/pj6.png",
+        "img/pj7.png",
+        "img/pj8.png",
+        "img/pj9.png",
+        "img/pj10.png",
+        "img/pj11.png",
+        "img/pj12.png",
+        "img/pj13.png",
+        "img/pj14.png",
+        "img/pj15.png",
+    ]
+    let imgesSlide6 = [
+        "img/cc1.png",
+        "img/cc2.png",
+        "img/cc3.png",
+        "img/cc4.png",
+        "img/cc5.png",
+        "img/cc6.png",
+        "img/cc7.png",
+        "img/cc8.png",
+        "img/cc9.png",
+        "img/cc10.png",
+        "img/cc11.png",
+        "img/cc12.png",
+        "img/cc13.png",
+        "img/cc14.png",
+        "img/cc15.png",
+     
+    ]
 
     counter = 0;
     counter1 = 0;
     counter2 = 0;
-    counter3 = 0
+    counter3 = 0;
+    counter4 = 0;
+    counter5 = 0;
+    counter6 = 0;
     setInterval(function() {
         if ($("#dropbtn").hasClass("rus")){
             $('#anime_main_rus').attr('src', '../'+ imgs[counter++]);
@@ -117,17 +172,50 @@ setInterval(function(){
     if ($("#dropbtn").hasClass("rus")){
         $('#nib_rus').attr('src', '../' + imgesSlide2[counter2++]) 
         $("#anime_slider3_rus").attr('src', '../' +imgesSlide3[counter3++])
-    } else (
+    } else {
         $('#nib').attr('src', imgesSlide2[counter2++]),
         $("#anime_slider3").attr('src', imgesSlide3[counter3++])
-    );
+    };
      if(counter2 == imgesSlide2.length) {
         counter2 = 0;
     }
      if(counter3 == imgesSlide3.length) {
         counter3 = 0;
     }
-}, 400)
+}, 400);
+
+setInterval(function(){
+    if($("#dropbtn").hasClass("rus")){
+        $('#anime_prog_rus').attr('src', '../'+ imgesSlide4[counter4++]);
+        $('#anime_serv_rus').attr('src', '../' + imgesSlide5[counter5++])
+    } else {
+       
+         $('#anime_prog').attr('src', imgesSlide4[counter4++]);
+     
+             $('#anime_serv').attr('src', imgesSlide5[counter5++])
+        
+    }
+    if(counter4 == imgesSlide4.length) {
+        counter4 = 0;
+    }
+      if(counter5 == imgesSlide5.length) {
+        counter5 = 0;
+    }
+}, 300)
+
+setInterval(function(){
+    if($("#dropbtn").hasClass("rus")){
+        $('#anime_cont_rus').attr('src', '../'+imgesSlide6[counter6++])
+    } else {
+       $('#anime_cont').attr('src', imgesSlide6[counter6++]) 
+    }
+      
+      if(counter6 == imgesSlide6.length) {
+        counter6 = 0;
+    }
+
+}, 300)
+
     
 })
     

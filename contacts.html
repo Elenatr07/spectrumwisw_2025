@@ -77,7 +77,7 @@
                   
                        
                     </div>
-                    <div class="filter_img"><img src="img/men3.svg" alt=""></div>
+                    <div class="filter_img"><img id="anime_cont" src="" alt=""></div>
                     
                     
                 </div>
@@ -88,7 +88,7 @@
             <div class="second_block" > 
                 <h3 class="h3_block">Contact Form</h3>  
                 <div class="form">
-                    <div class="img_form"><img src="img/men4.svg" alt=""></div>
+                    <div class="img_form"><img  src="img/imgCont.png" alt=""></div>
                     <form action="sender.php" method="post" id="formmain">
                         <p class="title_form">What’s your name?</p>
                         <div class="name" id="border_name">
@@ -98,7 +98,26 @@
                         <div class="name" id="border_email">
                                 <input type="email" class="input" autocomplete="off" name="email" placeholder="Email" required id="formemail">
                         </div>
-                                
+                        <p class="title_form">Your Phone Number (Optional)</p>
+                         <div class="name" id="border_email">
+                                <input type="phone" class="input" autocomplete="off" name="phone" placeholder="Phone"  id="formphone">
+                        </div>
+                         <p class="title_form">Service You Interested In...</p> 
+                         <div class="name" id="border_select">
+                            <input class="input select" type='text' autocomplete="off" name="services" id="formservice" placeholder="Select" readonly>
+                            
+                                 
+                         </div>
+                         <div class="select_list">
+                                <ul>
+                                    <li class="select_list_item">All-in-One Business Starter</li>
+                                    <li class="select_list_item">Web Design & Development</li>
+                                    <li class="select_list_item">Graphic Design</li>
+                                    <li class="select_list_item">Marketing</li>
+                                    <li class="select_list_item">Fast Solutions</li>
+                                </ul>
+                            </div>
+                    
                         <p class="title_form">Tell us how we can help you...</p>
                         <div class="textarea_block" id="border_textarea">
                             <textarea name="text"  id="formtext" cols="30" rows="10" class="text_field"
@@ -197,7 +216,7 @@
     <script src="scripts/jquery.validate.min.js"></script>
     <script src="scripts/style_menu.js"></script>
     <script src="scripts/check_form.js"></script>
-   <!-- <script src="scripts/anime.js"></script>-->
+    <script src="scripts/anime.js"></script>
   
 
     
