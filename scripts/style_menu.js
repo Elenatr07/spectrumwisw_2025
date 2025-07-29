@@ -111,8 +111,11 @@ $(document).ready(function () {
        $(".how_it_works_header .row_down."+how).toggle();
         $(".how_it_works_header .row_up."+how).toggle();
     })
-  })
-;
+
+
+
+
+  });
 
   $("#about_link_menu").on("click", function () {
     $("body").removeClass("scroll_body");
@@ -180,4 +183,19 @@ $(document).ready(function () {
         "z-index": "10",
       });
   }
+
+  $('#formservice').on('click', function(){
+    $('.select_list').toggle();
+
+  })
+  $('.select_list_item').each(function(){
+    $(this).on('click', function(){
+       text = $(this).html().replace('&amp;','&');
+        $("#formservice").val(text);
+        $('.select_list').css('display', 'none')
+    
+    })
+   
+  })
+
 });
