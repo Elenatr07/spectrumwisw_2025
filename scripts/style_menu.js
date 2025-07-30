@@ -184,15 +184,42 @@ $(document).ready(function () {
       });
   }
 
-  $('#formservice').on('click', function(){
-    $('.select_list').toggle();
+  $('.input_wrapper').on('click', function(){
+    $('.select_list').toggle(); 
+    $('#formservice').css(
+      {
+        border: "1px solid transparent",
+          background:
+            "linear-gradient(90.43deg, #5456ab 1.85%, #22dcd9 101.19%)",
+          "box-shadow": "0 0 0 150px var(--bg-dark) inset",
+          "background-origin": "border-box",
+      }
+      
+    ) 
+       
+
+  if($('.input_wrapper').hasClass('urlDown')){
+         $('.input_wrapper').removeClass('urlDown')
+     $('.input_wrapper').addClass('urlUp')
+    } else {
+           $('.input_wrapper').removeClass('urlUp')
+     $('.input_wrapper').addClass('urlDown')
+    }
 
   })
+
   $('.select_list_item').each(function(){
     $(this).on('click', function(){
        text = $(this).html().replace('&amp;','&');
+      
         $("#formservice").val(text);
-        $('.select_list').css('display', 'none')
+        $("#formservice").addClass('valid');
+        $('.select_list').css('display', 'none');
+        $('.input_wrapper').addClass('urlDown');
+         $('.input_wrapper').removeClass('urlUp')
+        
+       
+
     
     })
    
