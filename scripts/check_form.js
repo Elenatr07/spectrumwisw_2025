@@ -62,7 +62,7 @@ $(document).ready(function () {
         });
         $(this).removeClass("border_active");
 
-        // console.log("has error");
+         console.log("has error");
       }
     });
   });
@@ -101,7 +101,8 @@ $(document).ready(function () {
       console.log("error");
     }
   });
-  $("input[type='text'], input[type='tel'], input[type='email'], textarea").on(
+  $("input[type='text'], input[type='tel'], input[type='email'], textarea, #formservice").each(function(){
+    $(this).on(
     "keyup",
     function () {
       // console.log(this);
@@ -110,22 +111,33 @@ $(document).ready(function () {
         $("input[type='tel']").val() != "" &&
         $("input[type='email']").val() != "" &&
         $("textarea").val() != "" &&
-        $(this).valid()
+        $("#formservice").val() !="" &&
+                $(this).valid() 
+               
       ) {
         $("#send-form").removeAttr("disabled");
-		$('.send_button').css('opacity', '1')
-    
+		    $('.send_button').css('opacity', '1')
+     console.log($("#formservice").val())
       } else {
     
 
         $("#send-form").prop("disabled", "true");
+        
       }
     }
   );
+  })
 });
 
 function clearform() {
   $("#formname").val("");
   $("#formemail").val("");
-  $("#formtext").val("");
+  $('#formtext').val("");
+  $('#formservice').val("");
+  $('#formphone').val("");
+  $("input, textarea").css({
+        border: '1px solid hsla(218, 26%, 88%, 1)',
+        background: 'var(--bg-dark)',
+  })
+  $("#formservice").removeClass('valid')
 }
