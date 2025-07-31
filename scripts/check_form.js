@@ -65,8 +65,9 @@ $(document).ready(function () {
          console.log("has error");
       }
     });
-  });
-  $("input, textarea").each(function () {
+  }); 
+ 
+ /* $("input, textarea").each(function () {
     $(this).on("click", function () {
       $(this).focus();
       if ($(this).is(":focus")) {
@@ -81,11 +82,11 @@ $(document).ready(function () {
         //  $('#border_name').removeClass('border_error')
       }
     });
-  });
+  });*/
 
-  $("input[type='text'], input[type='tel'], input[type='email'], textarea").on("input", function () {
-    console.log($("#formservice").val())
-    if ((!$(this).hasClass("error") && $(this).valid()) || $(this).valid()) {
+  $("input[type='text'], input[type='tel'], input[type='email'], textarea").on("input  keyup", function () {
+ 
+    if ((!$(this).hasClass("error") && $(this).valid()  ) || $(this).valid()) {
       $(this).css({
         border: "1px solid transparent",
         background:
@@ -103,29 +104,44 @@ $(document).ready(function () {
       console.log("error");
     }
   });
-  $("#formname, input[type='email'], textarea, .input_wrapper").each(function(){
-    $(this).on(
-    "keyup",
-    function () {
-      // console.log(this);
-      if (
-      ($("#formname").val() != ""   &&
-        $("input[type='email']").val() != "" &&
-        $("textarea").val() != ""   &&
-        $("#formservice").val() != "") 
-               
-      ) {
-        $("#send-form").removeAttr("disabled");
-		    $('.send_button').css('opacity', '1')
- 
-      } else {
-       $("#send-form").prop("disabled", "true");
-        
+   $("input[type='text'], input[type='tel'], input[type='email'], textarea").on('click', function(){
+      if(!$(this).hasClass('error')) {
+            $(this).css({
+        border: "1px solid transparent",
+        background:
+          "linear-gradient(90.43deg, #5456ab 1.85%, #22dcd9 101.19% )",
+        "box-shadow": "0 0 0 150px var(--bg-dark) inset",
+        "background-origin": "border-box",
+      });
       }
-    }
-  );
-  })
-});
+   })
+      $("input[type='text'], input[type='tel'], input[type='email'], textarea ").on('blur', function(){
+      if(!$(this).hasClass('error') && $(this).val() =='') {
+            $(this).css({
+        border: "1px solid hsla(218, 26%, 88%, 1)",
+        background: "var(--bg-dark)"
+
+      });
+      }
+   })
+
+ 
+$('form').on('change keyup paste click', function(){
+  if(($("#formname").val() != '' && ($("#formname").valid())) &&
+      ($("#formemail").val() != '' && ($('#formemail').valid())) &&
+      ($("#formservice").val() != '' && ($("#formservice").valid())) &&
+      ($("#formtext").val() != '' && ($("#formtext").valid())))
+      {
+
+ $("#send-form").removeAttr("disabled");
+		    $('.send_button').css('opacity', '1')
+      }
+ 
+})
+})
+    
+    
+  
 
 function clearform() {
   $("#formname").val("");
@@ -137,5 +153,5 @@ function clearform() {
         border: '1px solid hsla(218, 26%, 88%, 1)',
         background: 'var(--bg-dark)',
   })
-  $("#formservice").removeClass('valid')
+
 }
