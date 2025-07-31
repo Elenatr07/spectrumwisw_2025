@@ -213,7 +213,8 @@ $(document).ready(function () {
        text = $(this).html().replace('&amp;','&');
       
         $("#formservice").val(text);
-        $("#formservice").addClass('valid');
+       $("#formservice").addClass('valid');
+      //console.log($("#formservice").val())
         $('.select_list').css('display', 'none');
         $('.input_wrapper').addClass('urlDown');
          $('.input_wrapper').removeClass('urlUp')
@@ -224,5 +225,5 @@ $(document).ready(function () {
     })
    
   })
-
+//console.log( $("#formservice").valid());
 });

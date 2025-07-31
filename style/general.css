@@ -1144,12 +1144,12 @@ input {
     height: 100%;
 }
 .urlDown {
-  background-image: url("../img/VectorDown.svg");
+  background-image: var(--lang-row-down);
     background-repeat: no-repeat;
     background-position: calc(100% - 32px) center;
 }
 .urlUp {
-   background-image: url("../img/VectorUp.svg");
+   background-image: var(--lang-row-up);
     background-repeat: no-repeat;
     background-position: calc(100% - 32px) center;
 }
