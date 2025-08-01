@@ -1614,7 +1614,6 @@ margin: 45px auto;
   }
  
   .filter_img {
-    width: 35%;
     display: flex;
   }
  
@@ -1766,6 +1765,7 @@ margin: 45px auto;
 @media (max-width: 1100px) {
   .filter_img img {
     width: 100%;
+    height: 85%;
   }
   .filter_block {
     width: 67%;
@@ -2055,9 +2055,7 @@ margin: 45px auto;
   #fb1 .filter_buttons {
     width: 425px;
   }
-  .filter_img {
-    width: 46%;
-  }
+
   .back .img_block_item .card_txt {
     font-size: 18px;
   }
@@ -2105,6 +2103,15 @@ margin: 45px auto;
   }
   .block_pop .pop_img_items div{
     width: 84%;
+  }
+  .block_pop h3{
+    font-size: 40px;
+  }
+  .block_pop p {
+    font-size: 21px;
+  }
+  .filter_img img{
+    height: 75%;
   }
 }
 @media (max-width: 850px) {
@@ -2160,6 +2167,17 @@ margin: 45px auto;
      {
     width: 450px;
   }
+      .block_pop h3
+
+      {
+        font-size: 37px;
+    }
+    .block_pop p {
+        font-size: 19px;
+    }
+    .filter_img img{
+      height: 60%;
+    }
   
 }
 @media (max-width: 769px) {
@@ -2379,12 +2397,12 @@ margin: 45px auto;
     width: 365px;
   }
   .block_pop h3 {
-    margin: 59px auto 11px auto;
-    font-size: 38px;
+    
+    font-size: 36px;
   }
   .block_pop p {
     margin: 0 auto 14px auto;
-    font-size: 20px;
+    font-size: 18px;
   }
   .block_pop .pop_img_items div img {
     margin: 20px auto;
@@ -2437,6 +2455,12 @@ margin: 45px auto;
   .how2_text, .how2_text_header {
         font-size: 15px;
     }
+        .block_pop h3{
+          font-size: 28px;
+        }
+        .block_pop p {
+          font-size: 16px;
+        }
   
   
 }
@@ -2633,9 +2657,7 @@ margin: 45px auto;
   .title_form {
     font-size: 16px;
   }
-  .block_pop h3 {
-    font-size: 34px;
-  }
+
   .block_pop .pop_img_items div p {
     bottom: 31px;
     font-size: 13px;
