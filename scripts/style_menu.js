@@ -208,9 +208,11 @@ $(document).ready(function () {
     }
 
   })
-  $('.input_wrapper').on('blur', function(){
-    if($(".select_list_item")
-  })
+ /* $('.input_wrapper').on('blur', function(){
+
+        $('.select_list').css('display', 'none');
+    
+  })*/
 
      $('.select_list_item').each(function(){
     $(this).on('click', function(){
