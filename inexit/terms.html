@@ -1,0 +1,246 @@
+<?php
+require_once "recaptchalib.php";
+ 
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/buy_me.css"> <!--only for buy_me_now-->
+    <link rel="stylesheet" href="style/form_buy_me.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Oswald:wght@200;500;700&display=swap"
+      rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="buy_container">
+        <div class="buy_header">
+            <a class="back" href="buy_me.html">
+                Back
+        </a>
+        <a href="https://spectrumwise.tech" class="buy_logo"></a>
+        </div>
+        <div class="buy_central_block">
+        
+        <h1 class="terms_and_conditions">terms & conditions </h1>
+      
+    </div>
+    <div class="chapter_block1">
+        <div class="block_terms_and_conditions">
+             <div class="chapter_content">
+                <div class="chapter_content_text">
+                    <p class="terms_text">The following Terms and Conditions of Service apply to all products and services provided by SpectrumWise Ltd 
+                        (hereinafter referred to as ‘the Company’) and in the event of any dispute are governed by the laws of England.
+                    </p>
+                    <p class="terms_text" >All work is carried out by the Company on the understanding that the client has agreed to our terms and conditions.</p>
+                    
+                         <ol class="terms_item">
+                            <div class="terms_chapter">CHARGES & BILLING</div>
+                            <li >All estimated prices quoted, whether written or verbal, are for the listed and mentioned services only. 
+                            Any additional services required to complete a project will be quoted for in advance and charged accordingly. Deliveries and 
+                            couriers are additional. 
+                            </li>
+                            <li>
+                                All estimates are based on expected or agreed design time and include two sets of authors corrections where alterations are called for 
+                                by the Customer, or if additional changes are required by Customer. 
+                            </li>
+                            <li>
+                                All charges & prices for services carried out by the Company are subject to VAT (where applicable) at the prevalent rate.
+                            </li>
+                            <li>
+                                A signed purchase order (preferably with a PO number and project value) will need to be raised for the full quoted and agreed amount 
+                                before work can commence. 
+                            </li>
+                            <li>
+                                Where there is a change to the agreed brief, the Company will inform the Customer in advance of any extra costs likely to be incurred.
+                            </li>
+                            <li>
+                                Charges for design work do not cover the release of our copyright design source files, included but not restricted to indd, psd, AI, 
+                                png or other source files or raw code. Should the Client require these files for transfer to an in-house or other designer or design 
+                                agency, they will be subject to a separate quotation or ‘buy-out’ charge. 
+                            </li>
+                            <li>
+                                All work is billed either monthly or on completion of project stage, or the relevant hourly charge as previously agreed. 
+                            </li>
+                            <li>
+                                For all new Customers, payment for the full or part amount + VAT may be requested in advance of commencement, as agreed between parties. 
+                                For any subsequent invoiced work, the Company must receive full payment not later than 30 days after the date of Invoice. 
+                                The Company reserves the right to make a surcharge of 2% per month interest to accounts that are not paid by this time. 
+                                Customer credit screening may affect any subsequent credit agreement. 
+                            </li>
+                            <li>
+                                Once a Customer has agreed to the Company’s current Terms and Conditions on a credit account , the Company may invoice in project stages, 
+                                upon stage completion unless where exceptional terms have been agreed with the client. 
+                            </li>
+                            <li>
+                                The Company reserves the right to invoice for any disbursements for part works carried out including third party costs incurred on a 
+                                project should the project be unable to be completed for any reason or has been delayed/put on hold by the Customer for a period of 
+                                4 weeks or more then stage invoicing will occur. 
+                            </li>
+                            <li>
+                                Disbursements on behalf of any client may result in a request for payment in advance from the Customer. 
+                            </li>
+                            <li>
+                                The Company reserves the right to request final payment be made prior to the handing over of final creative or digital files. 
+                            </li>
+                            <li>
+                                Unless full payment has been made on the Customer’s account and all project costs have been cleared, we reserve the right to withhold future 
+                                supply of goods and, in the case of web services, this may include recalling services including the hosting of websites. 
+                            </li>
+                            <li>
+                                If at any point during the design or development cycle a client wishes to cancel, they may do so but will be invoiced an amount that the 
+                                Company judges to be proportional to the amount of work completed on the commission and further compensatory charges for booked design time or 
+                                printing press time or any other supply costs accruing.
+                            </li>
+                            <div class="terms_chapter">PROJECT WORK </div>
+                            <li>
+                                All projects are planned to an agreed schedule. Non-adherence to this schedule by the Customer may result in compromising final delivery deadlines. 
+                                If this is likely to occur, the Company will advise the 
+                                Customer as soon as this becomes evident and suggest an alternative solution where feasible. This may incur additional costs. 
+                            </li>
+                            <li>
+                                Any indication given by the Company of a design project’s duration is to be considered by the customer to be an estimation. The Company cannot be 
+                                held responsible for any project over-runs, whatever the cause. 
+                            </li>
+                            <li>
+                                The Company shall always take commercially reasonable steps to meet the Customer’s request. Where this is not possible, an alternative, 
+                                (possible less-favourable) solution may be provided. 
+                            </li>
+                            <li>
+                                The Company reserves the right to commission freelance support or outsource any job if it is felt it is in the best interests of the Customer. 
+                                Any outsourced job remains the property/responsibility of the Company and such services are deemed to be carried out ‘indirectly’ by the Company. 
+                            </li>
+                            <li>
+                                Once final proofs/materials have been signed off, the Company cannot be held responsible financially or otherwise for any errors relating to print, 
+                                programming or any end product. 
+                            </li>
+                            <li>
+                                Whilst every effort will be made to achieve agreed delivery dates, the Company cannot accept liability or be held financially responsible for any 
+                                targets or deadlines being missed for delivery of any work which is outside of the Company’s control. 
+                            </li>
+                            <li>
+                                As part of larger projects which involve 3rd parties commissioned directly by the Customer, the Company will not be held responsible in any way for 
+                                services not carried out/managed directly or indirectly by the Company.
+                            </li>
+                            <div class="terms_chapter">COPYRIGHT & IP </div>
+                            <li>
+                                The Company does not provide any inellectual rights for the design templates sold as ready designs.
+                            </li>
+                            <li>
+                                The Company cannot guarantee the Customer exclusivity of any marketing concept, strategy, design or other intellectual property provided. Therefore, 
+                                the Company will not accept liability for any alleged claim from the Client or any Third Party as the result of unintentional similarity in part or 
+                                whole of a Third Party’s copyright protected or registered trademark or brand, identity, strapline, colour usage, image style and content, product or otherwise. 
+                            </li>
+                            <li>
+                                It remains the Customer’s responsibility to seek copyright protection if desired for any creative/intellectual property provided to the Customer by the Company. 
+                            </li>
+                            <li>
+                                By supplying images, text, or any other data to the Company, the Customer grants the Company permission to use this material freely in the pursuit of the design. 
+                            </li>
+                            <li>
+                                All creative work produced (including words, pictures, ideas, visuals and illustrations) and devised during a project(s), creative, digital, software files and
+                                 related correspondence remain the property – physically, intellectually and in copyright, of the Company unless specifically released in writing and after all 
+                                 release costs have been settled. 
+                            </li>
+                            <li>
+                                If a choice of designs is presented as part of the creative process, only the chosen design is deemed to be given by us as fulfilling the contract. 
+                                All other designs remain the property of the Company, unless specifically agreed in writing. 
+                            </li>
+                            <li>
+                                Should the Company agree to provide design concepts as part of a pitch (whether free of charge or subject to a pitch fee), the design (which includes the design idea) 
+                                remains the property of the Company until such time it is purchased by the Client. 
+                            </li>
+                            <li>
+                                The Client has the right to reject the Company’s designs but the Company will pursue damages should the Client utilise the design concept (or the core design idea). 
+                            </li>
+                            <li>
+                                The Customer agrees to fully indemnify and hold the Company free from harm in any and all claims resulting from the Customer in not having obtained all the required 
+                                copyright, and/or any other necessary permissions.
+                            </li>
+                            <div class="terms_chapter">MATERIALS </div>
+                            <li>
+                                It is the responsibility of the Customer that all materials (including, but not limited to images, diagrams, logos, videos, data, as well as intellectual property 
+                                in other media) supplied to the Company by the client will have the relevant copyrights, licenses and permissions for use in the commissioned project. 
+                                The Company will not accept responsibility/liability for infringements caused by any wrongly supplied materials. 
+                            </li>
+                            <li>
+                                In good faith, the Company shall hold any supplied files, originals and materials for a period of up to 12 months. Resumption of works on an ‘open’ project would be 
+                                completed according to the original schedule of costs so long as the project specification remained unaltered
+                            </li>
+                            <li>
+                                Whilst taking every care to protect all media and correspondence supplied, the Company cannot accept liability or be held responsible financially or otherwise for any loss. 
+                                Disputes will not be entered into.
+                            </li>
+                            <div class="terms_chapter">DATA PROTECTION </div>
+                            <li>
+                                In accordance with GDPR, should the Customer wish for the Company to handle/process any of their customer data or to provide systems to process personal data (eg web-based databases), 
+                                it is the Customer’s legal responsibility to ensure the processes requested of us are data-compliant and to have a written contract in place with us to carry out such processes. 
+                                Furthermore, it is the Customer’s responsibility to ensure they have obtained consent from the individuals for the personal data they pass over to us for processing.
+                            </li>
+                            <div class="terms_chapter">DISPUTE & LIABILITY </div>
+                            <li>
+                                The Company shall be under no liability if it should be unable to carry out any provision of the contract for any reason beyond it’s control including (without limiting the foregoing), 
+                                Act of God, Legislation, War, Act of terrorism, Fire, Flood, Drought, Failure of power supply, Lock out, Strike by employee’s in contemplation of furtherance of dispute or inability 
+                                to procure materials required for the performance of the contract. During the continuance of such a contingency the Customer may, by written notice, elect to terminate the contract 
+                                and pay for work done and materials used, but subject thereto, shall otherwise accept delivery when available. 
+                            </li>
+                            <li>
+                                The Customer agreed that the Company shall hold no responsibility for any amendments made by any third party after the artwork has been supplied by the Company to the Customer.
+                            </li>
+                            <li>
+                                In the event of any bona fide dispute or difference arising between the parties in connection with the Contract (excluding any dispute relating to non-payment of the Charges, 
+                                for whatever reason), the parties shall attempt to resolve such dispute or difference in good faith or by mediation. It is the responsibility of the Customer to inform the Company 
+                                immediately of any issue that may lead to a dispute (including but not limited to quality, service, cost, deadline), without such information, no disputes will be entered into. 
+                            </li>
+                            <li>
+                                Advice of any loss, quality or damage issues must be reported to the Company within five clear working days of delivery and receipt (whether be printed or digital) and any claim in 
+                                respect thereof must be made in writing to the Company within 3 working days thereafter. The Company shall not be liable in respect of any claim unless the aforementioned requirements have been complied with. 
+                            </li>
+
+                            <li>
+                                Any discrepancies relating to any invoice must be reported to the Company within 1 calendar month from the date of issue. The Company reserves the right to dismiss any claims and will not be held liable in 
+                                respect of any claim should the aforementioned requirement not be adhered to.
+                            </li>
+                            <div class="terms_chapter">CREDIT & MARKETING </div>
+                            <li>
+                                The Company reserves the right to the addition of our Company credit on printed or digital projects unless instructed otherwise by the Customer and, to the use for self-promotion any work carried out for the Customer. 
+                            </li>
+
+                            <li>
+                                The Company reserves the right to use both initial creative concepts and final approved design work for the purposes of the Company’s marketing activities (both online and offline) unless otherwise requested/agreed 
+                                with the Customer. 42. Terms and Conditions may be changed at any time without prior notice.
+                            </li>
+
+                        </ol>
+                </div>  
+                    
+                        
+                   
+                    
+            </div>
+               
+                    
+        </div>
+    </div>
+        
+
+    
+   
+        <footer>
+            <a class="footer_logo" href="https://spectrumwise.tech"></a>
+            <a class="terms" href="">Terms & Conditions </a>
+            <div class="footer_social">
+                <a class="instagram" href="https://www.instagram.com/spectrumwise_official/" target="_blank"></a>
+                <a class="linkedin" href="https://www.linkedin.com/company/spectrumwise-ltd/" target="_blank"></a>
+                <a class="facebook" href="https://www.facebook.com/profile.php?id=100092286157954" target="_blank"></a>
+            </div>
+        </footer>
+    </div>
+    
+   
+   
+    
+    
+</body>
+</html>
