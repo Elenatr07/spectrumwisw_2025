@@ -1,0 +1,85 @@
+a {
+    text-decoration: none;
+}
+.buy_me_now {
+   
+    top: 162px;
+   
+    position: fixed;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width: 1440px;
+    width: 100%;
+       margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding: 0 77px;
+    text-align: end;
+    display: inline-block;
+    z-index: 1;
+    
+    
+    
+
+
+}
+.link_buy {
+    color: rgba(3, 3, 3, 1);
+
+    padding: 9px 20px;
+    width: 150px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 21px;
+    
+    height: 42px;
+    border-radius: 45px;
+    background: white;
+    border: 2px solid transparent;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    
+    
+    /* margin: 0 auto; */
+}
+.link_buy::before {
+    background: linear-gradient(75deg, rgba(247, 62, 148, 1), rgba(34, 220, 217, 1));
+    border-radius: 34px;
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: 154px;
+    height: 45px;
+    right: -4px;
+    top: -3px;
+}
+.link_buy:hover::before {
+    background: linear-gradient(75deg, rgba(34, 220, 217, 1), rgba(247, 62, 148, 1) );
+ }
+ 
+
+
+
+
+
+
+ @media(max-width:600px) {
+    .buy_me_now {
+        padding: 0 20px;
+    }
+ }
+
+ @media(max-width:350px) {
+    .buy_me_now {
+        top: 262px;
+        text-align: center;
+    }
+ }
