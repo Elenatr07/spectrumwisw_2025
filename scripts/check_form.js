@@ -114,6 +114,15 @@ $(document).ready(function () {
         "background-origin": "border-box",
       });
       }
+      if($(".select_list").css('display') == 'block'){
+        $(".select_list").toggle();
+        $("#formservice").css({
+           border: "1px solid hsla(218, 26%, 88%, 1)",
+        background: "var(--bg-dark)"
+        })
+           $('.input_wrapper').addClass('urlDown');
+         $('.input_wrapper').removeClass('urlUp')
+      }
    })
       $("input[type='text'], input[type='tel'], input[type='email'], textarea ").on('blur', function(){
       if(!$(this).hasClass('error') && $(this).val() =='') {

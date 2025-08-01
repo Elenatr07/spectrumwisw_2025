@@ -102,7 +102,7 @@
                          <div class="name" id="border_email">
                                 <input type="tel" class="input" autocomplete="off" name="phone" placeholder="Phone"  id="formphone">
                         </div>
-                         <p class="title_form">Service You Interested In...</p> 
+                         <p class="title_form">Select Service</p> 
                          <div class="name" id="border_select">
                            <div class="input_wrapper urlDown" tabindex="0"></div>
                                 <input class="input select" type='text' autocomplete="off" name="services" id="formservice" placeholder="Select" readonly>
@@ -121,12 +121,14 @@
                                 </ul>
                             </div>
                     
-                        <p class="title_form">Tell us how we can help you...</p>
+                        <p class="title_form">Additional Information</p>
                         <div class="textarea_block" id="border_textarea">
                             <textarea name="text"  id="formtext" cols="30" rows="10" class="text_field"
                             placeholder="Your message..." required></textarea>
                             <div class="status"> </div>
                         </div>
+                           <!-- вывод капчи из файла captcha.php -->
+                        <?php require ("captcha.php"); ?>
                         <button type="button" class="send_button" disabled id="send-form"  onClick="setTimeout('clearform()', 2000)">  
                             Send Message
                         </button>
