@@ -7,7 +7,7 @@
     {
     $num[$i] = mt_rand(1,9);
     
-    echo "<img src='img/captcha/num$num[$i].png' border='0' align='bottom' vspace='5px' width='45px' heigth='45px'>";
+    echo "<img src='../img/captcha/num$num[$i].png' border='0' align='bottom' vspace='5px' width='45px' heigth='45px'>";
    
     $i++;
     }

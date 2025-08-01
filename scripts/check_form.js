@@ -67,22 +67,6 @@ $(document).ready(function () {
     });
   }); 
  
- /* $("input, textarea").each(function () {
-    $(this).on("click", function () {
-      $(this).focus();
-      if ($(this).is(":focus")) {
-        $(this).css({
-          border: "1px solid transparent",
-          background:
-            "linear-gradient(90.43deg, #5456ab 1.85%, #22dcd9 101.19%)",
-          "box-shadow": "0 0 0 150px var(--bg-dark) inset",
-          "background-origin": "border-box",
-        });
-
-        //  $('#border_name').removeClass('border_error')
-      }
-    });
-  });*/
 
   $("input[type='text'], input[type='tel'], input[type='email'], textarea").on("input  keyup", function () {
  
@@ -133,13 +117,21 @@ $(document).ready(function () {
       });
       }
    })
+   $(".input_captcha").on('input', function(){
+      if($(".captcha_field").val() === $(".input_captcha").val()){
+    console.log('captcha ok')
+  } else {
+    console.log('captcha faile')
+  }
+   })
 
  
 $('form').on('change keyup paste click', function(){
   if(($("#formname").val() != '' && ($("#formname").valid())) &&
       ($("#formemail").val() != '' && ($('#formemail').valid())) &&
       ($("#formservice").val() != '' && ($("#formservice").valid())) &&
-      ($("#formtext").val() != '' && ($("#formtext").valid())))
+      ($("#formtext").val() != '' && ($("#formtext").valid())) &&
+       $(".captcha_field").val() === $(".input_captcha").val()) 
       {
 
  $("#send-form").removeAttr("disabled");
@@ -158,6 +150,7 @@ function clearform() {
   $('#formtext').val("");
   $('#formservice').val("");
   $('#formphone').val("");
+  $('.input_captcha').val("");
   $("input, textarea").css({
         border: '1px solid hsla(218, 26%, 88%, 1)',
         background: 'var(--bg-dark)',

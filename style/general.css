@@ -1257,7 +1257,8 @@ input {
 }
 #formname-error,
 #formemail-error,
-#formtext-error {
+#formtext-error,
+#captcha_validation-error {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
@@ -1405,7 +1406,7 @@ input {
   flex-direction: column;
   margin: 0 auto;
   position: relative;
-  width: 83%;
+  width: 64%;
 }
 .block_pop .pop_img_items div img {
   width: 100%;
@@ -1517,6 +1518,26 @@ margin: 45px auto;
   justify-content: space-between;
   margin: 0 auto 30px auto;
   width: 100%
+}
+.captcha_field{
+  visibility: hidden;
+  display: none;
+}
+.enter_captcha{
+      margin: 20px 0;
+}
+.captcha_img{
+  text-align: left;
+  margin-bottom: 15px
+}
+.input_captcha{
+  font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--text-white) /* #DAE4DD*/;
+    letter-spacing: 1px;
 }
 
 
@@ -2082,6 +2103,9 @@ margin: 45px auto;
    .main_header_p_down {
     font-size: 36px;
   }
+  .block_pop .pop_img_items div{
+    width: 84%;
+  }
 }
 @media (max-width: 850px) {
   .img_block_item.f1 img {
@@ -2513,6 +2537,11 @@ margin: 45px auto;
     }
         .how2_text, .how2_text_header {
         font-size: 13px;
+    }
+    #formname-error, 
+    #formemail-error, 
+    #formtext-error {
+      font-size: 12px;
     }
    
     
