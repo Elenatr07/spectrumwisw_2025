@@ -1,8 +1,12 @@
 if ($("#dropbtn").hasClass("rus")) {
   var lang_default = $("#dropbtn").text("Русский");
+  localStorage.setItem('lang', 'rus');
+
   var lang_default_footer = $("#drop_footer_lang").text("Русский");
 } else {
   var lang_default = $("#dropbtn").text("English");
+  localStorage.setItem('lang', 'eng');
+  localStorage.removeItem('rus');
   var lang_default_footer = $("#drop_footer_lang").text("English");
 }
 
@@ -214,7 +218,7 @@ $(document).ready(function () {
     
   })*/
 
-     $('.select_list_item').each(function(){
+  $('.select_list_item').each(function(){
     $(this).on('click', function(){
        text = $(this).html().replace('&amp;','&');
       
@@ -231,8 +235,13 @@ $(document).ready(function () {
    
   })
 
+   
 
- 
-
-//console.log( $("#formservice").valid());
+  //console.log( $("#formservice").valid());
 });
+
+function scrollToBlock(elem){
+  var href = $(elem).attr('href')
+  $.scrollTo(href, 1000)
+ 
+}
