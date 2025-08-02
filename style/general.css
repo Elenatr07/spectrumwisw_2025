@@ -1539,6 +1539,10 @@ margin: 45px auto;
     color: var(--text-white) /* #DAE4DD*/;
     letter-spacing: 1px;
 }
+.card_item_img p.as2{
+  color: rgba(0, 0, 0, 1);
+
+}
 
 
 @media (min-width: 1025px) {
@@ -1919,8 +1923,8 @@ margin: 45px auto;
 }
 .card_item_img p,
 .filter_item_img p{
-  font-size: 16px;
-  letter-spacing: 4px;
+  font-size: 15px;
+  letter-spacing: 3px;
 }
 
 }
