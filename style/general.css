@@ -2039,9 +2039,7 @@ margin: 45px auto;
   .filter_item_img_s .img_block_item img {
     width: 100%;
   }
-  .how_it_works_drop .filter_item_img_s .img_block_item img {
-    width: 75%;
-  }
+  
   .img_block_item.f1 img {
     width: 333px;
   }
@@ -2178,6 +2176,9 @@ margin: 45px auto;
     .filter_img img{
       height: 60%;
     }
+    .how_it_works_drop .filter_item_img_s .img_block_item img {
+    width: 95%;
+  }
   
 }
 @media (max-width: 769px) {
@@ -2637,7 +2638,7 @@ margin: 45px auto;
   }
 
   .how_it_works_drop .filter_item_img_s .img_block_item img {
-    width: 75%;
+    width: 90%;
   }
   .how_it_works_header .h3_block {
     margin-right: 5px;
