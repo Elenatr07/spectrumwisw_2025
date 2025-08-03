@@ -8,8 +8,8 @@
 <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-RGCWCGP7Z3'); </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="//raynce/lightmode/style.css">
-    <link rel="stylesheet" href="//raynce/buyme/buy_me.css">
+    <link rel="stylesheet" href="lightmode/style.css">
+    <link rel="stylesheet" href="buy_me.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
             <div class="header_block">
            
                 <div class="header">
-                        <div class="logo"><img src="//raynce/img/raynce.svg" alt=""></div>
+                        <div class="logo"><img src="img/raynce.svg" alt=""></div>
                         <div class="phone call"><a href="tel:+4407543654256" class="link_phone">+4407543654256</a></div>
                 </div>
                 <div class="slogan_block">
@@ -88,7 +88,7 @@
                  <h3 class="title title_send_block">Contact Us</h3>
             <form action="" method="post" id="formmain">
                 <div class="form_fields">
-                      <input type="text" name="first_name" placeholder="First Name" value="<?=$firstName?>">
+                      <input type="text" name="first_name" placeholder="First Name" value="">
                       <input type="text" name="last_name" placeholder="Last Name">
                       <input type="text" name="name" placeholder="Company Name">
                       <input type="text" name="location" placeholder="Location">

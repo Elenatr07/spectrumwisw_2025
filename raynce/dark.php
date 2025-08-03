@@ -3,10 +3,13 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RGCWCGP7Z3"></script> 
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-RGCWCGP7Z3'); </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="//raynce/darkmode/dark.css">
-    <link rel="stylesheet" href="//raynce/buyme/buy_me.css">
+    <link rel="stylesheet" href="darkmode/dark.css">
+    <link rel="stylesheet" href="buy_me.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +19,7 @@
 </head>
 
 <body>
-<div class="buy_me_now"> <a href="buy_me.html" class="link_buy">Buy Me Now</a> </div> <!--only fo but_me_now-->
+<div class="buy_me_now"> <a href="#" onclick="buyMe(this)" class="link_buy">Buy Me Now</a> </div> <!--only for but_me_now-->
 <div class="darkmode"> <a href="index.php" class="style_mode">View in Light Mode</a> </div> <!--only for style mode-->
     <div class="container_main"> 
         <div class="container_header" >
@@ -89,7 +92,7 @@
                  <h3 class="title title_send_block">Contact Us</h3>
             <form action="" method="post" id="formmain">
                 <div class="form_fields">
-                      <input type="text" name="first_name" placeholder="First Name" value="<?=$firstName?>">
+                      <input type="text" name="first_name" placeholder="First Name" value="">
                       <input type="text" name="last_name" placeholder="Last Name">
                       <input type="text" name="name" placeholder="Company Name">
                       <input type="text" name="location" placeholder="Location">
@@ -116,7 +119,10 @@
 
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="//raynce/scrypt.js"></script>
+    <script src="scrypt.js"></script>
+    <script src="../scripts/buyMe.js"></script>
+   
+
 
 </body>
 

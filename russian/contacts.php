@@ -39,7 +39,7 @@
                             </div>
                             <div class="dropdown-content">
                                 <a title="" id="select_russian" href="#" class="link">Русский</a>
-                                <a id="select_english" href="../contacts.html" class="link">English</a>
+                                <a id="select_english" href="../contacts.php" class="link">English</a>
                             </div>
                         </li>
                         <li class="about_link"><a class="link" href="index.html">На главную</a></li>

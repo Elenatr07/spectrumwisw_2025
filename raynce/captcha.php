@@ -4,7 +4,7 @@
     do
     {
     $num[$i] = mt_rand(0,9);
-    echo "<img src='//raynce/images/".$num[$i].".gif' border='0' align='bottom' vspace='5px' width='45px' heigth='45px'>";
+    echo "<img src='images/".$num[$i].".gif' border='0' align='bottom' vspace='5px' width='45px' heigth='45px'>";
     $i++;
     }
     while ($i<6);
