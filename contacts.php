@@ -38,7 +38,7 @@
                                 <div class="row_up"></div>
                             </div>
                             <div class="dropdown-content">
-                                <a title="" id="select_russian" href="russian/contacts.html" class="link">Русский</a>
+                                <a title="" id="select_russian" href="russian/contacts.php" class="link">Русский</a>
                                 <a id="select_english" href="#" class="link">English</a>
                             </div>
                         </li>

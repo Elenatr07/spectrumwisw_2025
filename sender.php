@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $textFild = "<b>Message:</b>";
 
     $service = strip_tags($_POST['services']);
-    $serviceFild = "<b>Service::</b>";
+    $serviceFild = "<b>Service:</b>";
 
 	$to = "energotr07@yandex.ru"; 
     $sendform = "$email";	
@@ -29,12 +29,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
     $headers .= "Content-Transfer-Encoding: 8bit \r\n";
-    $message = "$nameFild $name
-                $mailFild $email
-                $phoneFild $phone
-                $serviceFild $service
-                $textFild $text
-                ";
+    $message = "
+<html>
+    <head>
+        <title>'.$subject.'</title>
+    </head>
+    <body>
+        <h3 style='color: red; margin-bottom: 20px;'>Message from the site SpectrumWise </h3>
+        <div>$nameFild $name</div>
+        <div>$mailFild $email</div>
+        <div>$phoneFild $phone</div>
+        <div>$serviceFild $service</div>
+        <div>$textFild $text</div>
+
+    </body>
+</html> ";
 	
 
 	
